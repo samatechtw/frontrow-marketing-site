@@ -1,0 +1,36 @@
+<template>
+<div class="footer">
+  <div class="container">
+    <div class="footer-title">
+      {{ $t('company') }}
+    </div>
+    <div class="footer-subtitle">
+      {{ $t('footer') }}
+    </div>
+  </div>
+</div>
+</template>
+
+<script>
+export default {
+  name: 'tpa-footer',
+};
+</script>
+
+<style lang="postcss">
+@import '/src/assets/css/global.css';
+
+.footer {
+  background: $dark2;
+  color: $white;
+  padding: 80px 72px;
+  text-align: center;
+  .footer-title {
+    @mixin title 50px;
+  }
+  .footer-subtitle {
+    @mixin text 12px;
+    margin-top: 8px;
+  }
+}
+</style>
