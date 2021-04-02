@@ -97,6 +97,7 @@ export default {
       color: $text-light2;
       .bullet {
         width: 14px;
+        min-width: 14px;
         height: 14px;
         margin-right: 8px;
       }

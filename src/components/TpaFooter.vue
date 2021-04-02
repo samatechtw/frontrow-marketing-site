@@ -23,7 +23,7 @@ export default {
 .footer {
   background: $dark2;
   color: $white;
-  padding: 80px 72px;
+  padding: 80px 0;
   text-align: center;
   .footer-title {
     @mixin title 50px;

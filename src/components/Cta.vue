@@ -1,18 +1,11 @@
 <template>
 <div class="cta">
-  <div
-    class="cta-bg"
-    :style="{
-      'background-image': `url(${CtaBg})`,
-    }"
-  >
-    <div class="cta-overlay" />
-    <div class="cta-text-wrap">
-      <div class="cta-title">
-        {{ $t('company') }}
-      </div>
+  <div class="cta-bg" />
+  <div class="cta-overlay">
+    <div class="cta-text-wrap container">
+      <div class="cta-title" v-html="$t('cta')" />
       <div class="cta-text">
-        {{ $t('cta') }}
+        {{ $t('cta_text') }}
       </div>
     </div>
     <div class="cta-scroll" @click="scrollBenefits">
@@ -42,40 +35,61 @@ export default {
 @import '/src/assets/css/global.css';
 
 .cta {
-  background-color: $white;
+  background-color: $black;
   height: 800px;
   color: white;
+  height: 840px;
+  max-height: 95vh;
   .cta-bg {
+    width: 80%;
     height: 100%;
-    width: 100%;
+    margin-left: auto;
+    background-image: url(/src/assets/img/cta_bg.jpg);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(108, 110, 114, 0)), url(/src/assets/img/cta_bg.jpg);
     background-size: cover;
-    background-position: 50% 10%;
-    @mixin flex-center;
-    .cta-scroll {
-      position: absolute;
-      bottom: 48px;
-      @mixin text 16px;
-      text-align: center;
-      cursor: pointer;
-      img {
-        width: 18px;
-        margin-top: 8px;
-      }
-    }
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
   }
   .cta-overlay {
+    @mixin flex-center;
     @mixin overlay;
-    background-color: $overlay;
+  }
+  .cta-scroll {
+    position: absolute;
+    bottom: 48px;
+    @mixin text 16px;
+    text-align: center;
+    cursor: pointer;
+    img {
+      width: 18px;
+      margin-top: 8px;
+    }
   }
   .cta-text-wrap {
     position: relative;
-    text-align: center;
+    width: 100%;
     .cta-title {
       @mixin title 52px;
-      height: 80px;
     }
     .cta-text {
       @mixin text 16px;
+      margin-top: 8px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .cta-bg {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  @media (max-width: 1100px) {
+    .cta-text-wrap {
+      text-align: center;
+    }
+  }
+  @media (max-width: 520px) {
+    .cta-title br {
+      display: none;
     }
   }
 }

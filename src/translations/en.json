@@ -1,6 +1,7 @@
 {
   "company": "TPA HOLDINGS",
-  "cta": "Community-Driven Decentralized Inventory Financing",
+  "cta": "Make Your Tokens <br>Work For You",
+  "cta_text": "DeFi lending made possible by TPA holdings",
   "scroll": "Scroll",
   "header": {
     "benefits": "Benefits",
@@ -10,50 +11,49 @@
     "faq": "FAQ"
   },
   "whitepaper": {
-    "title": "THE FASTEST WAY TO GROW YOUR BUSINESS",
-    "subtitle": "Download the Whitepaper to learn more.",
+    "title": "Discover why Inventory Financing is making waves in DeFi",
+    "subtitle": "See Whitepaper for more",
     "download": "Download",
     "whitepaper": "Whitepaper"
   },
   "benefits": {
-    "title1": "Why TPA is",
-    "title2": "especially",
-    "title3": "beneficial for you.",
-    "subtitle": "TBD",
+    "title": "An Opportunity For Insiders",
+    "subtitle": "The TPA Pool™  allows participating TPA token holders to generate industry‑leading returns* from a tried-and-true inventory financing model. All loans are fully collateralized with real-world inventory, essentially eliminating risk.",
+    "asterisk": "*Up to 20% based on historical average returns.",
     "images": {
-      "smooth": "Smooth Out Cash",
-      "faster": "Faster Bank Loan",
-      "improve": "Improve Credit",
-      "profit": "Business Profit"
+      "defi": "DeFi Lending Pool",
+      "interest": "Earn Interest<br>on Tokens",
+      "loans": "“Zero Risk” Loans",
+      "profit": "Proven Company<br>Performance"
     },
     "who": "Who We Are",
-    "who_text": "TPA Holdings is a publicly listed company in South Korea with global capabilities that encompass manufacturing, distribution, marketing, and media.",
+    "who_text": "TPA Holdings has years of proven success with its inventory financing model, which is a responsibility of the TPA Retail division. The company’s subsidiaries span a wide range of industries and capabilities and are even listed on South Korea’s major stock exchange.",
     "learn": "Learn More"    
   },
   "how": {
     "title": "HOW IT WORKS",
-    "subtitle": "TBD",
+    "subtitle": "TPA Retail specializes in inventory financing deals based on sales contracts with TV home shopping networks in South Korea, a 18.7 trillion Korean won (KRW) market and growing. TPA historical returns range from 16-24% on investment.",
     "hover": "HOVER OVER DEPARTMENT",
     "items": [
       {
         "title": "Propose Product",
-        "text": "TBD"
+        "text": "A small or medium enterprise (SME) with an existing product applies to the TV network in the hopes of marketing their product to customers on a home shopping channel."
       },
       {
         "title": "Receive Contract",
-        "text": "TBD"
+        "text": "Upon approval by the TV network, the SME will receive a sales contract stipulating the broadcast time and date, inventory requirements, terms of sale, and other conditions. The TV network will suggest TPA Holdings to the SME if they require financing, logistics, or other services."
       },
       {
         "title": "Seek Loan",
-        "text": "TBD"
+        "text": "The SME will now take their approved sales contract to TPA Retail and apply for a loan. TPA Retail experts will review the business and market opportunity for the SME’s product and propose inventory financing terms for a loan up to 500 million KRW."
       },
       {
         "title": "Due Diligence",
-        "text": "TBD"
+        "text": "In addition to evaluating the SME, TPA Retail will coordinate directly with the TV network partners to review the sales contract and negotiate the logistics of the loan and repayment conditions."
       },
       {
         "title": "Receive Bond",
-        "text": "TBD"
+        "text": "As the financier of the deal, TPA Retail will receive a bond stipulating that sales revenues from the broadcast segment will be transferred to TPA Retail directly and not the SME until the loan principal and interest is paid back in full."
       },
       {
         "title": "Submit Loan",
@@ -61,54 +61,53 @@
       },
       {
         "title": "Receive TPA",
-        "text": "TBD"
+        "text": "The TPA Pool will release the required principal in TPA tokens to TPA Retail. The timer for repayment will officially begin at this point."
       },
       {
         "title": "Purchase Goods",
-        "text": "TBD"
+        "text": "TPA Retail will liquidate the TPA tokens in order to pay the manufacturer directly for the inventory as well as TPA Logistics for warehousing and 3PL services."
       },
       {
         "title": "Store Goods",
-        "text": "TBD"
+        "text": "The manufacturer will send inventory directly to one of the four logistics centers belonging to TPA Logistics. Products will be inspected for quality at the manufacturer and again when it is received at TPA Logistics."
       },
       {
         "title": "Ship Goods",
-        "text": "TBD"
+        "text": "TPA Logistics will then be responsible for shipping the inventory to the TV Networks as needed."
       },
       {
         "title": "Receive Revenue",
-        "text": "TBD"
+        "text": "After the shopping segment concludes according to the original broadcasting schedule, the TV home shopping networks will fulfill their bond and send the sales revenues to TPA Retail, minus their share according to the original sales contract with the SME."
       },
       {
         "title": "Return Principal",
-        "text": "TBD"
+        "text": "TPA Retail will use these revenues to purchase TPA tokens and return the principal amount to the Loan Pool, as well as the extra tokens representing the interest that the SME owes on the loan."
       },
       {
         "title": "Pay Investors",
-        "text": "TBD"
+        "text": "The loan at this point has been paid back successfully, so the TPA Pool smart contract will automatically pay out the interest to the TPA Holders in the form of a TPA token."
       },
       {
         "title": "Pay SME",
-        "text": "TBD"
+        "text": "At this point, the SME will receive their share of the sales revenues, which is the remainder after the loan principle, interest, cost of goods sold, and marketing costs have all been deducted."
       }
     ]
   },
   "risks": {
-    "title1": "RISK FACTORS AND MITIGATION",
-    "title2": "TPA MANAGEMENT PLAN",
-    "subtitle": "TBD",
+    "title": "DeFi and Investor Safety",
+    "subtitle": "Decentralized Finance (DeFi) technology introduces a new level of security and efficiency to an already-working lending model. The result is higher returns and lower risk, automated and protected by smart contracts and decentralization.",
     "items": [
       {
-        "title": "Risk Title 1",
-        "text": "Body paragraph if need be. Or we can delete this line here."
+        "title": "DeFi Security",
+        "text": "The TPA Pool is a smart contract that automates payouts to TPA holders and is fully guaranteed by the Liquidity Reserve. "
       },
       {
-        "title": "Risk Title 2",
-        "text": "Body paragraph if need be. Or we can delete this line here."
+        "title": "Real Collateral",
+        "text": "All loans are fully collateralized by real-world inventory that can be sold through partnerships with South Korea’s largest TV shopping networks."
       },
       {
-        "title": "Risk Title 3",
-        "text": "Body paragraph if need be. Or we can delete this line here."
+        "title": "Proven Performance",
+        "text": "TPA Holdings is a major corporation with key partnerships and diverse international capabilities, resulting in years of success with this model."
       }
     ]
   },
@@ -124,7 +123,6 @@
   },
   "faq": {
     "title": "FREQUENTLY ASKED QUESTIONS",
-    "subtitle": "TBD",
     "items": [
       {
         "title": "Why TPA?",
@@ -132,26 +130,25 @@
       },
       {
         "title": "What happens if a loan defaults?",
-        "text": "TBD"
+        "text": "All loans are backed by the inventory itself as collateral. Historically, a careful vetting process and industry-leading expertise has resulted in a 4% default rate, in which the full loan amounts were ultimately recovered by TPA Holdings.\n\nThe Liquidity Reserve is designed to automate recovery into the loan pool in order to avoid business interruption and potential liquidity problems. When a company defaults on a loan, the Liquidity Reserve will immediately restore the principle to the loan pool and TPA Holdings will restore the Liquidity Reserve after liquidating the collateral. The Liquidity Reserve shall always be equal to or larger than the loan pool, incentivizing TPA Holdings to lock a greater amount of tokens out of circulation into the reserve in order to grow the volume of loans over time."
       },
       {
         "title": "How many prospective investments are already in place?",
-        "text": "TBD"
+        "text": "Currently, TPA Holdings has 101 home shopping investment target companies in place. In total, the prospective annual investment amount is currently 70.1 billion KRW (approximately $62.63 million USD)."
       },
       {
         "title": "What creates demand for the token?",
-        "text": "TBD"
+        "text": "1. Interest payments: interest generated on loans will be used to purchase TPA on the open market and returned to the TPA Pool, where it will be and distributed securely and automatically to TPA token holders who have staked into the pool.\n\n2. Investment returns: as the company continues to be profitable and the volume of loans and interest payments increase, more holder will be motivated to purchase TPA tokens and stake them into the pool. Investment returns based on TPA Holding’s historical earnings on inventory financing are 16-24%.\n\n3. Business growth: as TPA Holding’s volume of investments grow over time, more TPA tokens will be required to be locked into the Liquidity Reserve."
       },
       {
         "title": "Who owns and controls the TPA tokens?",
-        "text": "TBD"
+        "text": "The TPA token allows decentralization of the inventory financing model where 100% of the interest payments gained on loans from the TPA pool will be distributed to the token holders in that pool. TPA Holdings does not take a \"cut\" or fee on these interest payments; they belong to the community.\n\nWhile the publicly traded TPA Holdings will operate the core inventory financing model, the TPA tokens will be issued and held by a non-Korean partner that will enable the tokens to be used within the TPA ecosystem in Korea."
       }
     ]
   },
   "partners": "PARTNERS",
   "contact": {
     "title": "CONTACT US",
-    "subtitle": "TBD",
     "name": "Name",
     "email": "Email",
     "inquiry": "Inquiry",

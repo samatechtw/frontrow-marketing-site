@@ -1,7 +1,7 @@
 <template>
-<Sticky>
-  <div class="header">
-    <div class="container">
+<Sticky class="header-sticky">
+  <div class="header container">
+    <div class="content">
       <div class="header-left">
         <img :src="Logo" @click="scroll(0)">
       </div>
@@ -110,13 +110,14 @@ export default {
 <style lang="postcss">
 @import '/src/assets/css/global.css';
 
+.header-sticky {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: $white;
+}
 .header {
   @mixin medium 16px;
   height: 64px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-
-  background-color: $white;
-  .container {
+  .content {
     @mixin flex-center;
     height: 100%;
     position: relative;
@@ -179,6 +180,12 @@ export default {
     img {
       height: 38px;
       cursor: pointer;
+    }
+  }
+  @media (max-width: 900px) {
+    .header-right {
+      margin-left: auto;
+      margin-right: 32px;
     }
   }
   @media (max-width: 640px) {

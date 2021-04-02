@@ -1,11 +1,17 @@
 <template>
 <div class="contact">
+  <svg
+    class="contact-background-clip"
+    viewBox="0 0 100 40"
+    preserveAspectRatio="none"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path fill="#0087cb" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
+  </svg>
   <div class="container">
     <div class="contact-title">
       {{ $t('contact.title') }}
-    </div>
-    <div class="contact-subtitle">
-      {{ $t('contact.subtitle') }}
     </div>
     <TpaInput
       v-model="name"
@@ -49,20 +55,21 @@ export default {
 .contact {
   background: $blue;
   color: $white;
-  padding: 96px 0 72px;
+  padding: 180px 0 72px;
   text-align: center;
+  .contact-background-clip {
+    @mixin overlay;
+    background-color: $grey1;
+    height: 120px;
+  }
   .container {
     max-width: 600px;
   }
   .contact-title {
-    @mixin title 27px;
-  }
-  .contact-subtitle {
-    @mixin text 15px;
-    margin-top: 24px;
+    @mixin title 28px;
   }
   .contact-name {
-    margin-top: 64px;
+    margin-top: 56px;
   }
   .contact-send {
     width: 130px;
@@ -73,6 +80,18 @@ export default {
     height: 40px;
     border-radius: 4px;
     cursor: pointer;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 140px;
+    .contact-background-clip {
+      height: 60px;
+    }
+  }
+  @media (max-width: 540px) {
+    padding-top: 110px;
+    .contact-background-clip {
+      height: 40px;
+    }
   }
 }
 </style>

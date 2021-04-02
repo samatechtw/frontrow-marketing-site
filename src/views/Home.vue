@@ -8,7 +8,6 @@
   <Risks ref="risks" :selected="activeSection === 'risks'" />
   <Token ref="token" :selected="activeSection === 'token'" />
   <Faq ref="faq" :selected="activeSection === 'faq'" />
-  <Partners />
   <Contact />
   <TpaFooter />
 </div>

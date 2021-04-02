@@ -5,9 +5,6 @@
     <div class="faq-title">
       {{ $t('faq.title') }}
     </div>
-    <div class="faq-subtitle">
-      {{ $t('faq.subtitle') }}
-    </div>
     <div class="faq-items">
       <div
         v-for="(faq, index) in $tm('faq.items')"
@@ -101,20 +98,22 @@ export default {
 .faq {
   background: $grey1;
   text-align: center;
-  padding: 72px 0 80px;
+  padding: 72px 0 48px;
   #faq {
     top: -60px;
   }
   .faq-title {
     @mixin title 26px;
   }
-  .faq-subtitle {
-    @mixin text 16px;
-    margin-top: 32px;
-    color: $text-light;
-  }
   .faq-items {
     margin-top: 88px;
+  }
+  svg {
+    flex-shrink: 0;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    margin-left: auto;
+    top: -1px;
   }
   .faq-item {
     display: flex;
@@ -123,8 +122,8 @@ export default {
     padding: 0 0 8px;
     .faq-question {
       @mixin title 19px;
-      margin-bottom: 16px;
       padding-bottom: 24px;
+      padding-top: 16px;
       cursor: pointer;
       color: $text-light;
       border-bottom: 1px solid $grey3;
@@ -142,15 +141,13 @@ export default {
         transform: rotate(90deg);
         opacity: 0;
       }
+      svg {
+        transform: rotate(180deg);
+      }
     }
     .faq-text {
       margin-left: 48px;
       position: relative;
-      width: 100%;
-    }
-    .faq-pseudo-answer {
-      position: absolute;
-      visibility: hidden;
       width: 100%;
     }
     .faq-answer, .faq-pseudo-answer {
@@ -158,9 +155,17 @@ export default {
       @mixin text 15px;
       line-height: 24px;
       color: $text-light2;
+      white-space: pre-line;
       word-break: break-word;
       transition: all 0.3s;
       overflow: hidden;
+      position: relative;
+      top: 16px;
+    }
+    .faq-pseudo-answer {
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
     }
     .animate-height-enter, .animate-height-leave-to {
       max-height: 0 !important;
@@ -168,16 +173,13 @@ export default {
   }
   @media (max-width: 700px) {
     .faq-item {
-      padding: 40px 32px 30px;
-      .faq-question {
-        font-size: 24px;
+      padding-left: 0;
+      padding-right: 0;
+      .faq-text {
+        margin-left: 0;
       }
       .faq-caret {
         top: 0;
-      }
-      .faq-answer, .faq-pseudo-answer {
-        font-size: 18px;
-        line-height: 28px;
       }
     }
   }

@@ -3,51 +3,40 @@
   <div id="benefits" class="anchor" />
   <div class="container">
     <div class="benefits-title">
-      <div class="benefits-title1">
-        {{ $t('benefits.title1') }}
-      </div>
-      <div class="benefits-title2">
-        {{ $t('benefits.title2') }}
-      </div>
-      <div class="benefits-title3">
-        {{ $t('benefits.title3') }}
+      <div class="benefits-title">
+        {{ $t('benefits.title') }}
       </div>
     </div>
     <div class="benefits-subtitle">
       {{ $t('benefits.subtitle') }}
     </div>
+    <div class="benefits-asterisk">
+      {{ $t('benefits.asterisk') }}
+    </div>
     <div class="benefits-images">
-      <div class="benefits-smooth">
+      <div class="benefits-image">
         <div class="benefits-image-wrap">
-          <img :src="Smooth">
+          <img :src="Defi">
         </div>
-        <div class="benefits-image-text">
-          {{ $t('benefits.images.smooth') }}
-        </div>
+        <div class="benefits-image-text" v-html="$t('benefits.images.defi')" />
       </div>
-      <div class="benefits-improve">
+      <div class="benefits-image">
         <div class="benefits-image-wrap">
-          <img :src="Improve">
+          <img :src="Interest">
         </div>
-        <div class="benefits-image-text">
-          {{ $t('benefits.images.improve') }}
-        </div>
+        <div class="benefits-image-text" v-html="$t('benefits.images.interest')" />
       </div>
-      <div class="benefits-faster">
+      <div class="benefits-image">
         <div class="benefits-image-wrap">
-          <img :src="Faster">
+          <img :src="Loans">
         </div>
-        <div class="benefits-image-text">
-          {{ $t('benefits.images.faster') }}
-        </div>
+        <div class="benefits-image-text" v-html="$t('benefits.images.loans')" />
       </div>
-      <div class="benefits-business">
+      <div class="benefits-image">
         <div class="benefits-image-wrap">
           <img :src="Business">
         </div>
-        <div class="benefits-image-text">
-          {{ $t('benefits.images.profit') }}
-        </div>
+        <div class="benefits-image-text" v-html="$t('benefits.images.profit')" />
       </div>
     </div>
   </div>
@@ -64,7 +53,7 @@
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path fill="#fff" d="M 0 24 L 0 0 L 100 0 L 100 24 C 70 00, 30 00, 0 24" />
+      <path fill="#fff" d="M 0 100 L 0 0 L 100 0 L 100 100 C 70 00, 30 00, 0 100" />
     </svg>
     <div class="container who">
       <div class="who-left">
@@ -74,9 +63,11 @@
         <div class="who-text">
           {{ $t('benefits.who_text') }}
         </div>
-        <div class="who-button">
-          {{ $t('benefits.learn') }}
-        </div>
+        <a target="_blank" :href="WhitepaperLink">
+          <div class="who-button">
+            {{ $t('benefits.learn') }}
+          </div>
+        </a>
       </div>
       <div class="who-right">
         <img :src="Who">
@@ -87,8 +78,15 @@
 </template>
 
 <script>
+import WhitepaperLink from '/TPA Whitepaper 210222.pdf';
+
 export default {
   name: 'benefits',
+  data() {
+    return {
+      WhitepaperLink,
+    };
+  },
 };
 </script>
 
@@ -98,32 +96,29 @@ export default {
 .benefits {
   .benefits-title {
     @mixin title 26px;
-    margin-top: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .benefits-title2 {
-      background-color: $black;
-      color: white;
-      margin: 0 8px;
-      padding: 8px;
-    }
+    text-align: center;
+    margin-top: 72px;
   }
   .benefits-subtitle {
-    @mixin text 16px;
-    color: $text-light;
-    margin-top: 24px;
+    @mixin subtitle;
+  }
+  .benefits-asterisk {
     text-align: center;
+    @mixin text 10px;
+    color: $text-light;
+    margin-top: 10px;
   }
   .benefits-images {
-    margin-top: 64px;
+    margin: 48px auto 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 940px;
     .benefits-image-text {
       @mixin text 16px;
       color: $blue;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 16px;
+      line-height: 24px;
     }
     .benefits-image-wrap {
       border: 1px solid $grey3;
@@ -132,31 +127,11 @@ export default {
       border-radius: 79px;
       width: 158px;
       height: 158px;
+      margin-top: 32px;
       img {
         width: 100%;
         height: 100%;
         border-radius: 71px;
-      }
-    }
-    .benefits-smooth {
-      margin-top: 100px;
-    }
-    .benefits-improve {
-      margin: 60px 0 0 24px;
-    }
-    .benefits-faster {
-      margin: 100px 0 0 16px;
-    }
-    .benefits-business {
-      margin-left: 48px;
-      .benefits-image-wrap {
-        width: 326px;
-        height: 326px;
-        border-radius: 168px;
-        padding: 11px;
-      }
-      img {
-        border-radius: 157px;
       }
     }
   }
@@ -174,23 +149,24 @@ export default {
   }
   .who-background-clip {
     @mixin overlay;
+    height: 200px;
   }
   .who {
     position: relative;
     display: flex;
-    margin-top: 120px;
-    padding: 320px 0 160px;
+    margin-top: 40px;
+    padding: 260px 40px 160px;
     .who-left {
       color: $white;
       width: 40%;
-      padding-top: 64px;
+      padding-top: 48px;
       .who-title {
         @mixin title 28px;
       }
       .who-text {
         @mixin text 16px;
         color: $grey3;
-        margin-top: 16px;
+        margin-top: 24px;
         max-width: 440px;
         line-height: 28px;
       }
@@ -202,6 +178,7 @@ export default {
         margin-top: 32px;
         @mixin flex-center;
         width: 132px;
+        color: white;
       }
     }
     .who-right {
@@ -211,6 +188,40 @@ export default {
       img {
         width: 100%;
       }
+    }
+  }
+  @media (max-width: 1020px) {
+    .who-background-clip {
+      height: 150px;
+    }
+    .who {
+      flex-wrap: wrap;
+      .who-left, .who-right {
+        text-align: center;
+        width: 100%;
+        .who-text {
+          margin: 24px auto 0;
+        }
+        .who-button {
+          margin: 32px auto 0;
+        }
+      }
+      .who-right {
+        padding: 64px 0 0;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (max-width: 740px) {
+    .benefits-images {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 400px;
+    }
+    .who-background-clip {
+      height: 80px;
+      top: -1px;
     }
   }
 }

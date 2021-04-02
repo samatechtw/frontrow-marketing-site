@@ -10,17 +10,26 @@
       </div>
     </div>
     <div class="whitepaper-right">
-      <div class="whitepaper-button">
-        {{ buttonText }}
-      </div>
+      <a target="_blank" :href="WhitepaperLink">
+        <div class="whitepaper-button">
+          {{ buttonText }}
+        </div>
+      </a>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+import WhitepaperLink from '/TPA Whitepaper 210222.pdf';
+
 export default {
   name: 'whitepaper',
+  data() {
+    return {
+      WhitepaperLink,
+    };
+  },
   computed: {
     buttonText() {
       return this.$t('whitepaper.download');
@@ -52,11 +61,30 @@ export default {
     margin-left: auto;
     .whitepaper-button {
       background: $black;
+      color: white;
       height: 40px;
       width: 134px;
+      margin-left: 24px;
       @mixin title 16px;
       @mixin flex-center;
       border-radius: 4px;
+    }
+  }
+  @media (max-width: 520px) {
+    height: auto;
+    padding: 32px 0;
+    .container {
+      flex-wrap: wrap;
+    }
+    .whitepaper-left, .whitepaper-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+    .whitepaper-right {
+      margin-top: 24px;
     }
   }
 }

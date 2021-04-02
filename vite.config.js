@@ -4,10 +4,7 @@ import ViteImages from 'vite-plugin-vue-images';
 
 module.exports = {
   assetsInlineLimit: 1,
-  css: {
-    scopeBehavior: 'global',
-    globalModulePaths: ['./src/assets/css'],
-  },
+  assetsInclude:  /\.(pdf|jpg|png)$/,
   plugins: [
     Vue(),
     ViteComponents(),
