@@ -195,8 +195,7 @@ export default {
       height: 150px;
     }
     .who {
-      flex-wrap: wrap;
-      .who-left, .who-right {
+      .who-left { 
         text-align: center;
         width: 100%;
         .who-text {
@@ -207,9 +206,7 @@ export default {
         }
       }
       .who-right {
-        padding: 64px 0 0;
-        max-width: 640px;
-        margin: 0 auto;
+        display: none;
       }
     }
   }
@@ -220,7 +217,7 @@ export default {
       max-width: 400px;
     }
     .who-background-clip {
-      height: 80px;
+      height: 70px;
       top: -1px;
     }
   }

@@ -33,7 +33,7 @@
   "how": {
     "title": "HOW IT WORKS",
     "subtitle": "TPA Retail specializes in inventory financing deals based on sales contracts with TV home shopping networks in South Korea, a 18.7 trillion Korean won (KRW) market and growing. TPA historical returns range from 16-24% on investment.",
-    "hover": "HOVER OVER DEPARTMENT",
+    "hover": "The Lending Process",
     "items": [
       {
         "title": "Propose Product",
@@ -91,7 +91,14 @@
         "title": "Pay SME",
         "text": "At this point, the SME will receive their share of the sales revenues, which is the remainder after the loan principle, interest, cost of goods sold, and marketing costs have all been deducted."
       }
-    ]
+    ],
+    "holders": "$ TPA HOLDERS",
+    "pool": "TPA POOL",
+    "retail": "TPA RETAIL",
+    "manufacturer": "MANUFACTURER",
+    "logistics": "TPA LOGISTICS",
+    "network": "TV NETWORK",
+    "sme": "SME"
   },
   "risks": {
     "title": "DeFi and Investor Safety",
