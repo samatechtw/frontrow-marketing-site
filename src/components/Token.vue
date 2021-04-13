@@ -61,6 +61,7 @@ export default {
   }
   .token-allocation {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 72px;
   }
   .token-left {
@@ -78,6 +79,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 16px;
     img {
       width: 100%;
       max-width: 260px;
@@ -115,6 +117,15 @@ export default {
   .token-timeline {
     width: 100%;
     margin-top: 88px;
+  }
+  @media (max-width: 540px) {
+    .token-left, .token-right {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .token-right {
+      margin-top: 40px;
+    }
   }
 }
 </style>
