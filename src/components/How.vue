@@ -230,7 +230,6 @@ export default {
     },
     clsList(list) {
       const indexes = list.map(n => n - 1);
-      console.log(this.selectedIndex, indexes);
       if(indexes.includes(this.selectedIndex)) {
         return 'selected';
       }

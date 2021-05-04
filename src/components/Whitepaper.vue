@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import WhitepaperLink from '/TPA Whitepaper 210222.pdf';
+import WhitepaperLink from '/TPA_whitepaper_210426.pdf';
 
 export default {
   name: 'whitepaper',

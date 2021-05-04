@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import WhitepaperLink from '/TPA Whitepaper 210222.pdf';
+import WhitepaperLink from '/TPA_whitepaper_210426.pdf';
 
 export default {
   name: 'benefits',
@@ -128,10 +128,14 @@ export default {
       width: 158px;
       height: 158px;
       margin-top: 32px;
+      transition: all 0.2s ease;
       img {
         width: 100%;
         height: 100%;
         border-radius: 71px;
+      }
+      &:hover {
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
       }
     }
   }
