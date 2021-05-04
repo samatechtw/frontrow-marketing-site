@@ -22,6 +22,7 @@
       v-model="email"
       :title="$t('contact.email')"
       class="contact-email"
+      inputType="email"
     />
     <TpaInput
       v-model="inquiry"
@@ -29,21 +30,95 @@
       class="contact-inquiry"
       :rows="6"
     />
-    <div class="contact-send">
-      {{ $t('contact.send') }}
+    <div v-if="error" class="contact-error">
+      {{ error }}
+    </div>
+    <div class="contact-send" @click="send">
+      <LoadingText :text="$t('contact.send')" :loading="sending" />
     </div>
   </div>
 </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { FetchApi } from '@sampullman/fetch-api';
+
+const jsonInterceptor = async (res) => {
+  res.data = res.body ? await res.json() : null;
+  return res;
+};
+
+const api = new FetchApi({
+  responseInterceptors: [jsonInterceptor],
+});
+
+const sendEmail = (name, email, inquiry) => (
+  api.request({
+    url: 'https://api.sendinblue.com/v3/smtp/email',
+    method: 'POST',
+    headers: {
+      charset: 'iso-8859-1',
+      'api-key': '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',
+    },
+    data: {
+      sender: { name, email },
+      to: [{
+        name: 'TPA Info',
+        email: 'info@tpa.finance',
+      }],
+      subject: 'TPA Marketing Site Form',
+      htmlContent: '<html><head></head><body>' +
+        `<h4>From: ${email}</h4><h4>Name: ${name}</h4><h4>Inquiry:</h4><p>${inquiry}</p></body></html>`,
+    },
+  })
+);
+
+const RATE_LIMIT_KEY = 'rate-limit';
+
 export default {
   name: 'contact',
-  data() {
+  setup() {
+    const { t } = useI18n();
+    const name = ref('');
+    const email = ref('');
+    const inquiry = ref('');
+    const error = ref(null);
+    const sending = ref(false);
+    const send = async () => {
+      error.value = null;
+      const now = new Date().getTime();
+      const prevTime = parseInt(localStorage.getItem(RATE_LIMIT_KEY) || '0');
+      if(prevTime && (now - prevTime) < 1000 * 60 * 2) {
+        error.value = t('contact.email_limit');
+      } else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value) && email.value.length < 100) {
+        error.value = t('contact.invalid_email');
+      } else if(name.value.length < 2 || name.value.length > 100) {
+        error.value = t('contact.invalid_name');
+      } else if(inquiry.value.length < 10 || inquiry.value.length > 1000) {
+        error.value = t('contact.invalid_inquiry');
+      } else {
+        try {
+          sending.value = true;
+          await sendEmail(name.value, email.value, inquiry.value);
+          error.value = t('contact.email_success');
+          localStorage.setItem(RATE_LIMIT_KEY, now.toString());
+        } catch(e) {
+          console.log('EMAIL ERR', e);
+          error.value = t('contact.email_error');
+        } finally {
+          sending.value = false;
+        }
+      }
+    };
     return {
-      name: '',
-      email: '',
-      inquiry: '',
+      name,
+      email,
+      inquiry,
+      error,
+      send,
+      sending,
     };
   },
 };
@@ -70,6 +145,10 @@ export default {
   }
   .contact-name {
     margin-top: 56px;
+  }
+  .contact-error {
+    @mixin medium 12px;
+    color: $dark1;
   }
   .contact-send {
     width: 130px;

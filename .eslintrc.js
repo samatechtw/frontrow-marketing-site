@@ -27,6 +27,7 @@ module.exports = {
         import: { after: true },
         export: { after: true },
         try: { after: true },
+        finally: { after: true },
         const: { after: true },
         let: { after: true },
         default: { after: true },
