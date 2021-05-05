@@ -28,7 +28,9 @@
     },
     "who": "Who We Are",
     "who_text": "TPA Holdings has years of proven success with its inventory financing model, which is a responsibility of the TPA Retail division. The company’s subsidiaries span a wide range of industries and capabilities and are even listed on South Korea’s major stock exchange.",
-    "learn": "Learn More"    
+    "one_pager": "Read our one pager for more details.",
+    "one_pager_en": "One Pager",
+    "one_pager_kr": "One Pager (한국어)"
   },
   "how": {
     "title": "HOW IT WORKS",

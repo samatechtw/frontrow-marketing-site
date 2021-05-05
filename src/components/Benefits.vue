@@ -63,11 +63,21 @@
         <div class="who-text">
           {{ $t('benefits.who_text') }}
         </div>
-        <a target="_blank" :href="WhitepaperLink">
-          <div class="who-button">
-            {{ $t('benefits.learn') }}
-          </div>
-        </a>
+        <div class="who-text">
+          {{ $t('benefits.one_pager') }}
+        </div>
+        <div class="who_buttons">
+          <a target="_blank" :href="OnepagerEnLink">
+            <div class="who-button">
+              {{ $t('benefits.one_pager_en') }}
+            </div>
+          </a>
+          <a target="_blank" :href="OnepagerKrLink">
+            <div class="who-button">
+              {{ $t('benefits.one_pager_kr') }}
+            </div>
+          </a>
+        </div>
       </div>
       <div class="who-right">
         <img :src="Who">
@@ -78,13 +88,15 @@
 </template>
 
 <script>
-import WhitepaperLink from '/TPA_whitepaper_210426.pdf';
+import OnepagerKrLink from '/210426_TPA_FINANCE_KOR.pdf';
+import OnepagerEnLink from '/210426_TPA_FINANCE_ENG.pdf';
 
 export default {
   name: 'benefits',
   data() {
     return {
-      WhitepaperLink,
+      OnepagerKrLink,
+      OnepagerEnLink,
     };
   },
 };
@@ -181,7 +193,7 @@ export default {
         border-radius: 4px;
         margin-top: 32px;
         @mixin flex-center;
-        width: 132px;
+        width: 180px;
         color: white;
       }
     }
@@ -191,6 +203,7 @@ export default {
       padding-left: 64px;
       img {
         width: 100%;
+        align-self: center;
       }
     }
   }
