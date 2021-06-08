@@ -12,7 +12,7 @@
     <div class="whitepaper-right">
       <a target="_blank" :href="WhitepaperLink">
         <div class="whitepaper-button">
-          {{ buttonText }}
+          {{ $t('whitepaper.download') }}
         </div>
       </a>
     </div>
@@ -24,16 +24,10 @@
 import WhitepaperLink from '/TPA_whitepaper_210426.pdf';
 
 export default {
-  name: 'whitepaper',
-  data() {
+  setup() {
     return {
       WhitepaperLink,
     };
-  },
-  computed: {
-    buttonText() {
-      return this.$t('whitepaper.download');
-    },
   },
 };
 </script>

@@ -2,11 +2,12 @@
 <div class="home-wrap">
   <TpaHeader :activeSection="activeSection" />
   <Cta />
-  <Whitepaper />
-  <Benefits ref="benefits" :selected="activeSection === 'benefits'" />
-  <How ref="how" :selected="activeSection === 'how'" />
-  <Risks ref="risks" :selected="activeSection === 'risks'" />
+  <Who ref="who" :selected="activeSection === 'who'" />
+  <Future ref="nft" :selected="activeSection === 'nft'" />
+  <Features />
+  <Design />
   <Token ref="token" :selected="activeSection === 'token'" />
+  <Team ref="team" :selected="activeSection === 'team'" />
   <Faq ref="faq" :selected="activeSection === 'faq'" />
   <Contact />
   <TpaFooter />
@@ -21,7 +22,6 @@ export default {
   data() {
     return {
       activeSection: null,
-      portfolioColumns: 3,
     };
   },
   methods: {
@@ -39,26 +39,14 @@ export default {
         this.activeSection = section;
       }
     },
-    onResize() {
-      if(window.innerWidth < 700) {
-        this.portfolioColumns = 2;
-      } else {
-        this.portfolioColumns = 3;
-      }
-    },
   },
   mounted() {
     this.sections = Object.keys(this.$refs).reverse();
     this.onScrollDebounce = debounce(this.onScroll, 100);
     window.addEventListener('scroll', this.onScrollDebounce, { passive: true });
-
-    this.onResizeDebounce = debounce(this.onResize, 500);
-    window.addEventListener('resize', this.onResizeDebounce);
-    this.onResize();
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.onScrollDebounce);
-    window.removeEventListener('resize', this.onResizeDebounce);
   },
 };
 </script>

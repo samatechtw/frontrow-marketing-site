@@ -1,10 +1,18 @@
 <template>
 <div class="faq">
-  <div id="faq" class="anchor" />
-  <div class="container">
-    <div class="faq-title">
-      {{ $t('faq.title') }}
+  <div class="faq-intro">
+    <div class="container">
+      <img :src="Teamwork">
     </div>
+    <div class="faq-intro-block" />
+  </div>
+  <div id="faq" class="anchor" />
+  <div class="container faq-content">
+    <TpaTitle
+      :text="$t('faq.title')"
+      :textBg="$t('header.faq')"
+      :dark="true"
+    />
     <div class="faq-items">
       <div
         v-for="(faq, index) in $tm('faq.items')"
@@ -96,17 +104,37 @@ export default {
 @import '/src/assets/css/global.css';
 
 .faq {
-  background: $grey1;
+  position: relative;
+  background: $blue;
   text-align: center;
-  padding: 72px 0 48px;
+  padding-bottom: 64px;
+  .faq-intro {
+    position: relative;
+    background-color: white;
+    text-align: left;
+    img {
+      position: relative;
+      width: 395px;
+      bottom: -53px;
+    }
+    .faq-intro-block {
+      position: absolute;
+      height: 83px;
+      width: 40%;
+      max-width: 440px;
+      background-color: $dark1;
+      right: 0;
+      bottom: 72px;
+    }
+  }
   #faq {
     top: -60px;
   }
-  .faq-title {
-    @mixin title 26px;
+  .faq-content {
+    padding-top: 72px;
   }
   .faq-items {
-    margin-top: 88px;
+    margin-top: 24px;
   }
   svg {
     flex-shrink: 0;
@@ -121,21 +149,21 @@ export default {
     box-sizing: border-box;
     padding: 0 0 8px;
     .faq-question {
-      @mixin title 19px;
+      @mixin medium 19px;
       padding-bottom: 24px;
       padding-top: 16px;
       cursor: pointer;
-      color: $text-light;
-      border-bottom: 1px solid $grey3;
+      color: white;
+      border-bottom: 1px solid white;
     }
     &.opened {
       opacity: 1;
       .faq-question {
-        color: $blue;
+        color: white;
       }
       .faq-caret-vertical {
         transform: rotate(90deg);
-        background-color: #2a2a2a;
+        background-color: white;
       }
       .faq-caret-horizontal {
         transform: rotate(90deg);
@@ -154,7 +182,7 @@ export default {
       font-family: 'PTSerif', sans-serif;
       @mixin text 15px;
       line-height: 24px;
-      color: $text-light2;
+      color: white;
       white-space: pre-line;
       word-break: break-word;
       transition: all 0.3s;

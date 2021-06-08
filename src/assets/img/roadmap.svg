@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="930px" height="258px" viewBox="0 0 930 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Q3" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#0B86A1">
+            <tspan x="22" y="17">Q3</tspan>
+        </text>
+        <text id="2021" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#0B86A1">
+            <tspan x="22" y="252">2021</tspan>
+        </text>
+        <text id="2022" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#0B86A1">
+            <tspan x="374" y="252">2022</tspan>
+        </text>
+        <text id="Q3" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#1A7495">
+            <tspan x="202" y="17">Q3</tspan>
+        </text>
+        <text id="Q1" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#2A6488">
+            <tspan x="381" y="17">Q1</tspan>
+        </text>
+        <text id="Q2" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#3D537C">
+            <tspan x="561" y="17">Q2</tspan>
+        </text>
+        <text id="Future" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#951A4D">
+            <tspan x="740" y="17">Future</tspan>
+        </text>
+        <text id="2022---Beyond" font-family="Montserrat-Bold, Montserrat" font-size="18" font-weight="bold" line-spacing="23" fill="#951A4D">
+            <tspan x="740" y="252">2022 - Beyond</tspan>
+        </text>
+        <text id="•-Token-audited-•-Be" font-family="Montserrat-Regular, Montserrat" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#8E9BAF">
+            <tspan x="22" y="51">• Token audited</tspan>
+            <tspan x="22" y="74">• Begin platform</tspan>
+            <tspan x="22" y="97">developmnent</tspan>
+            <tspan x="22" y="120">• Joint Venture with</tspan>
+            <tspan x="22" y="143">SM Entertainment</tspan>
+            <tspan x="22" y="166">and P Nation</tspan>
+        </text>
+        <text id="•-Complete-UX-and-UI" font-family="Montserrat-Regular, Montserrat" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#8E9BAF">
+            <tspan x="202" y="51">• Complete UX and</tspan>
+            <tspan x="202" y="74">UI design</tspan>
+            <tspan x="202" y="97">• MVP mobile and</tspan>
+            <tspan x="202" y="120">website</tspan>
+            <tspan x="202" y="143">• Platform smart</tspan>
+            <tspan x="202" y="166">contracts</tspan>
+        </text>
+        <text id="•-Testnet-deploy-•-S" font-family="Montserrat-Regular, Montserrat" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#8E9BAF">
+            <tspan x="381" y="51">• Testnet deploy</tspan>
+            <tspan x="381" y="74">• Smart contract</tspan>
+            <tspan x="381" y="97">integrations</tspan>
+        </text>
+        <text id="•-MVP-mainnet-deploy" font-family="Montserrat-Regular, Montserrat" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#8E9BAF">
+            <tspan x="561" y="51">• MVP mainnet</tspan>
+            <tspan x="561" y="74">deployment</tspan>
+            <tspan x="561" y="97">• Public platform</tspan>
+            <tspan x="561" y="120">release</tspan>
+        </text>
+        <text id="•-Extended-platform" font-family="Montserrat-Regular, Montserrat" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#8E9BAF">
+            <tspan x="740" y="51">• Extended platform and</tspan>
+            <tspan x="740" y="74">mobile features</tspan>
+            <tspan x="740" y="97">• Platform scaling</tspan>
+        </text>
+        <path id="Line-2" d="M900.950619,202.599275 L925,214.5 L901.049791,226.59907 L901.008,216.598 L804.008264,216.999983 L802.008281,217.008247 L801.991753,213.008281 L803.991736,213.000017 L900.991,212.598 L900.950619,202.599275 Z" fill="#951A4D" fill-rule="nonzero"></path>
+        <rect id="Rectangle" fill="#951A4D" x="723" y="210" width="180" height="9"></rect>
+        <rect id="Rectangle-Copy-8" fill="#2A6488" x="363" y="210" width="180" height="9"></rect>
+        <rect id="Rectangle-Copy-10" fill="#0B86A1" x="3" y="210" width="180" height="9"></rect>
+        <rect id="Rectangle-Copy-6" fill="#3D537C" x="543" y="210" width="180" height="9"></rect>
+        <rect id="Rectangle-Copy-9" fill="#1A7495" x="183" y="210" width="180" height="9"></rect>
+        <g id="Group-3" transform="translate(0.000000, 8.000000)">
+            <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
+            <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
+        </g>
+        <g id="Group-3-Copy-2" transform="translate(360.000000, 8.000000)">
+            <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
+            <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
+        </g>
+        <g id="Group-3-Copy" transform="translate(180.000000, 8.000000)">
+            <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
+            <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
+        </g>
+        <g id="Group-3-Copy-3" transform="translate(540.000000, 8.000000)">
+            <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
+            <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
+        </g>
+        <g id="Group-3-Copy-4" transform="translate(720.000000, 8.000000)">
+            <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
+            <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
+        </g>
+    </g>
+</svg>

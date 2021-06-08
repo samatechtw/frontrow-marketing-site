@@ -1,95 +1,74 @@
 <template>
-<div class="cta">
-  <div class="cta-bg" />
-  <div class="cta-overlay">
-    <div class="cta-text-wrap container">
-      <div class="cta-title" v-html="$t('cta')" />
-      <div class="cta-text">
-        {{ $t('cta_text') }}
+<div class="cta-wrap">
+  <div class="container">
+    <div class="cta-left">
+      <div class="cta-text-wrap">
+        <img :src="Ismedia">
+        <div class="cta-title" v-html="$t('cta')" />
+        <div class="cta-text">
+          {{ $t('cta_text') }}
+        </div>
       </div>
     </div>
-    <div class="cta-scroll" @click="scrollBenefits">
-      <div class="cta-scroll-text">
-        {{ $t('scroll') }}
-      </div>
-      <img :src="Scroll">
+    <div class="cta-right">
+      <img :src="Cta">
     </div>
   </div>
 </div>
 </template>
 
-<script>
-export default {
-  name: 'cta',
-  methods: {
-    scrollBenefits() {
-      document.getElementById('benefits').scrollIntoView({
-        behavior: 'smooth',
-      });
-    },
-  },
-};
-</script>
-
 <style lang="postcss">
 @import '/src/assets/css/global.css';
 
-.cta {
-  background-color: $black;
-  height: 800px;
-  color: white;
-  height: 840px;
-  max-height: 95vh;
-  .cta-bg {
-    width: 80%;
-    height: 100%;
-    margin-left: auto;
-    background-image: url(/src/assets/img/cta_bg.jpg);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(108, 110, 114, 0)), url(/src/assets/img/cta_bg.jpg);
-    background-size: cover;
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
+.cta-wrap {
+  background-color: $grey1;
+  .container {
+    display: flex;
+    padding: 80px 0 88px;
   }
-  .cta-overlay {
-    @mixin flex-center;
-    @mixin overlay;
+  .cta-left {
+    width: 50%;
+    margin-left: 40px;
   }
-  .cta-scroll {
-    position: absolute;
-    bottom: 48px;
-    @mixin text 16px;
-    text-align: center;
-    cursor: pointer;
+  .cta-right {
+    width: 50%;
     img {
-      width: 18px;
-      margin-top: 8px;
+      width: 100%;
+      margin-left: -40px;
+      max-width: 400px;
     }
   }
   .cta-text-wrap {
     position: relative;
+    z-index: 10;
     width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 80px;
+
+    img {
+      width: 110px;
+    }
     .cta-title {
-      @mixin title 52px;
+      @mixin title 34px;
+      margin-top: 12px;
+      color: black;
+      white-space: nowrap;
     }
     .cta-text {
-      @mixin text 16px;
-      margin-top: 8px;
-    }
-  }
-  @media (max-width: 1100px) {
-    .cta-bg {
-      background-size: cover;
-      background-position: center;
-    }
-  }
-  @media (max-width: 1100px) {
-    .cta-text-wrap {
-      text-align: center;
+      @mixin medium 20px;
+      margin-top: 24px;
+      color: #795df6;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #795df6;
+      align-self: flex-start;
     }
   }
   @media (max-width: 520px) {
-    .cta-title br {
-      display: none;
+    flex-wrap: wrap;
+    .cta-left, .cta-right {
+      width: 100%;
     }
   }
 }

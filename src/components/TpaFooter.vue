@@ -2,7 +2,7 @@
 <div class="footer">
   <div class="container">
     <div class="footer-title">
-      {{ $t('company') }}
+      {{ $t('ismedia') }}
     </div>
     <div class="footer-subtitle">
       {{ $t('footer') }}

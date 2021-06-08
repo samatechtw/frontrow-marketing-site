@@ -63,10 +63,10 @@ export default {
   data() {
     return {
       headerLinks: [
-        link('benefits', this.scrollAnchor),
-        link('how', this.scrollAnchor),
-        link('risks', this.scrollAnchor),
+        link('who', this.scrollAnchor),
+        link('nft', this.scrollAnchor),
         link('token', this.scrollAnchor),
+        link('team', this.scrollAnchor),
         link('faq', this.scrollAnchor),
       ],
       sidebarOpened: false,

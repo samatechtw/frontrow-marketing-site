@@ -5,9 +5,7 @@
     <div class="token-title1">
       {{ $t('token.title1') }}
     </div>
-    <div class="token-title2">
-      {{ $t('token.title2') }}
-    </div>    
+    <TpaTitle :text="$t('token.title2')" class="token-title2" />
     <div class="token-allocation">
       <div class="token-left">
         <img :src="Allocation">
@@ -17,21 +15,25 @@
       </div>
     </div>
     <div class="token-schedule">
-      <div class="token-schedule-title">
-        {{ $t('token.lock_title') }}
-      </div>
-      <div
-        v-for="(item, index) in $tm('token.lock_items')"
-        :key="index"
-        :class="`token-schedule-item item${index}`"
-      >
-        <div class="bullet" />
-        <div class="token-schedule-text">
-          {{ item }}
+      <div class="lockup-items">
+        <TpaTitle :text="$t('token.lockup')" />
+        <div
+          v-for="(item, index) in $tm('token.lock_items')"
+          :key="index"
+          :class="`token-schedule-item item${index}`"
+        >
+          <div class="bullet" />
+          <div class="token-schedule-text">
+            {{ item }}
+          </div>
         </div>
       </div>
+      <div class="lockup-image">
+        <img :src="Lockup">
+      </div>
     </div>
-    <img :src="Timeline" class="token-timeline">
+    <TpaTitle :text="$t('token.roadmap')" class="roadmap-title" />
+    <img :src="Roadmap" class="token-timeline">
   </div>
 </div>
 </template>
@@ -46,7 +48,7 @@ export default {
 @import '/src/assets/css/global.css';
 
 .token {
-  padding: 72px 0 80px;
+  padding: 72px 0 88px;
   text-align: center;
   #token {
     top: -60px;
@@ -54,10 +56,6 @@ export default {
   .token-title1 {
     @mixin title 20px;
     color: $blue;
-  }
-  .token-title2 {
-    @mixin title 28px;
-    margin-top: 4px;
   }
   .token-allocation {
     display: flex;
@@ -86,37 +84,60 @@ export default {
     }
   }
   .token-schedule {
-    margin-top: 88px;
-    text-align: left;
-    .token-schedule-title {
-      @mixin title 19px;
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .lockup-items {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative;
+      margin-top: 64px;
+      width: 55%;
+      text-align: left;
+    }
+    .lockup-image {
+      display: flex;
+      align-items: flex-start;
+      width: 55%;
+      margin-left: -10%;
+      img {
+        max-width: 512px;
+        width: 100%;
+      }
     }
     .token-schedule-item {
-      margin-top: 12px;
+      margin-top: 24px;
       @mixin text 15px;
       display: flex;
-      align-items: center;
+      text-align: left;
       color: $text-light2;
+      padding-right: 25%;
       .bullet {
         width: 14px;
         min-width: 14px;
         height: 14px;
         margin-right: 8px;
+        margin-top: 3px;
       }
       &.item0 .bullet {
         background-color: #f4dfc5;
       }
       &.item1 .bullet {
-        background-color: #6d4B7f;
+        background-color: #8e9bf9;
       }
       &.item2 .bullet {
-        background-color: #888a89;
+        background-color: #cccccc;
       }
     }
   }
+  .roadmap-title {
+    margin-top: 88px;
+  }
   .token-timeline {
     width: 100%;
-    margin-top: 88px;
+    margin-top: 48px;
   }
   @media (max-width: 540px) {
     .token-left, .token-right {

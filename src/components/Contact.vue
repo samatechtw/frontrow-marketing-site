@@ -1,5 +1,5 @@
 <template>
-<div class="contact">
+<div class="contact-wrap">
   <svg
     class="contact-background-clip"
     viewBox="0 0 100 40"
@@ -7,34 +7,48 @@
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path fill="#0087cb" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
+    <path fill="#ffffff" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
   </svg>
-  <div class="container">
-    <div class="contact-title">
-      {{ $t('contact.title') }}
+  <div class="container contact">
+    <TpaTitle :text="$t('contact.title')" />
+    <div class="contact-left-wrap">
+      <div class="contact-left">
+        <div class="contact-title">
+          {{ $t('contact.name_title') }}
+        </div>
+        <TpaInput
+          v-model="name"
+          :title="$t('contact.name')"
+          class="contact-name"
+        />
+        <div class="contact-title">
+          {{ $t('contact.email_title') }}
+        </div>
+        <TpaInput
+          v-model="email"
+          :title="$t('contact.email')"
+          class="contact-email"
+          inputType="email"
+        />
+        <div class="contact-title">
+          {{ $t('contact.inquiry') }}
+        </div>
+        <TpaInput
+          v-model="inquiry"
+          :title="$t('contact.inquiry')"
+          class="contact-inquiry"
+          :rows="6"
+        />
+        <div v-if="error" class="contact-error">
+          {{ error }}
+        </div>
+        <div class="contact-send" @click="send">
+          <LoadingText :text="$t('contact.send')" :loading="sending" />
+        </div>
+      </div>
     </div>
-    <TpaInput
-      v-model="name"
-      :title="$t('contact.name')"
-      class="contact-name"
-    />
-    <TpaInput
-      v-model="email"
-      :title="$t('contact.email')"
-      class="contact-email"
-      inputType="email"
-    />
-    <TpaInput
-      v-model="inquiry"
-      :title="$t('contact.inquiry')"
-      class="contact-inquiry"
-      :rows="6"
-    />
-    <div v-if="error" class="contact-error">
-      {{ error }}
-    </div>
-    <div class="contact-send" @click="send">
-      <LoadingText :text="$t('contact.send')" :loading="sending" />
+    <div class="contact-right">
+      <img :src="ContactLady">
     </div>
   </div>
 </div>
@@ -127,37 +141,64 @@ export default {
 <style lang="postcss">
 @import '/src/assets/css/global.css';
 
-.contact {
-  background: $blue;
-  color: $white;
+.contact-wrap {
+  background: white;
+  color: $dark4;
   padding: 180px 0 72px;
   text-align: center;
-  .contact-background-clip {
-    @mixin overlay;
-    background-color: $grey1;
-    height: 120px;
+  width: 100%;
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 840px;
+    align-items: flex-start;
+    .tpa-title-wrap {
+      width: 100%;
+      margin-bottom: 24px;
+    }
   }
-  .container {
-    max-width: 600px;
+  .contact-left-wrap {
+    width: 50%;
+    padding-right: 40px;
+    .contact-left {
+      max-width: 390px;
+    }
+  }
+  .contact-right {
+    width: 50%;
+    @mixin flex-center;
+    img {
+      width: 244px;
+      margin-left: 40px;
+    }
   }
   .contact-title {
-    @mixin title 28px;
+    @mixin medium 15px;
+    margin-top: 16px;
+    text-align: left;
   }
-  .contact-name {
-    margin-top: 56px;
+  .tpa-input-wrap {
+    margin-top: 8px;
+  }
+  .contact-background-clip {
+    @mixin overlay;
+    background-color: $blue;
+    height: 120px;
   }
   .contact-error {
     @mixin medium 12px;
     color: $dark1;
   }
   .contact-send {
-    width: 130px;
+    width: 100%;
     @mixin flex-center;
-    @mixin title 15px;
-    margin: 48px auto 0;
-    background-color: $dark2;
+    @mixin semibold 15px;
+    margin: 24px auto 0;
+    background-color: $blue;
     height: 40px;
     border-radius: 4px;
+    color: white;
     cursor: pointer;
   }
   @media (max-width: 1000px) {

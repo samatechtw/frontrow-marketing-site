@@ -5,10 +5,12 @@
     v-bind="commonProps"
     :rows="rows"
     :autocomplete="autocomplete"
+    :placeholder="title"
     :value.prop="modelValue"
     @input="$emit('update:modelValue', $event.target.value)"
     @keyup.enter="$emit('handle-enter')"
   />
+  <!--
   <label
     v-if="title"
     class="tpa-input-title"
@@ -17,6 +19,7 @@
   >
     {{ title }}
   </label>
+  -->
 </div>
 </template>
 
@@ -125,7 +128,7 @@ export default {
 
   .tpa-input {
     @mixin medium 15px;
-    color: $text-light;
+    color: $dark4;
     background: $white;
     width: 100%;
     height: 56px;
