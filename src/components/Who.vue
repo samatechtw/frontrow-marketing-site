@@ -6,6 +6,15 @@
     {{ $t('who.text') }}
   </div>
   <div class="who-image">
+    <svg
+      class="who-background-clip"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path fill="#f5f8fa" d="M 0 100 L 0 30 C 30 -4 70 -4 100 30 L 100 100 Z" />
+    </svg>
     <img :src="Who">
   </div>
   <div class="who-onepager-wrap">
@@ -63,16 +72,26 @@ export default {
   }
   .who-image {
     width: 100%;
+    position: relative;
+    background-color: f5f6fa;
+    padding-bottom: 88px;
     img {
       width: 460px;
       max-width: 80%;
       margin-top: 64px;
+      position: relative;
+    }
+    .who-background-clip {
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      width: 100%;
     }
   }
   .who-onepager-wrap {
     background-color: #8e9bf9;
     width: 100%;
-    margin-top: 80px;
   }
   .who-onepager {
     width: 100%;
