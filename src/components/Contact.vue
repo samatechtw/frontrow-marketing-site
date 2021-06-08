@@ -212,6 +212,23 @@ export default {
     .contact-background-clip {
       height: 40px;
     }
+    .contact-left-wrap, .contact-right {
+      width: 100%;
+    }
+    .contact-left-wrap {
+      position: relative;
+      z-index: 4;
+      padding-right: 0;
+      .contact-left {
+        max-width: 100%;
+      }
+    }
+    .contact-right {
+      width: 70%;
+      position: absolute;
+      top: 200px;
+      z-index: 1;
+    }
   }
 }
 </style>

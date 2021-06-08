@@ -140,12 +140,46 @@ export default {
     margin-top: 48px;
   }
   @media (max-width: 540px) {
+    padding-top: 48px;
     .token-left, .token-right {
       width: 90%;
       margin: 0 auto;
     }
     .token-right {
       margin-top: 40px;
+    }
+    .token-title2 {
+      .tpa-title {
+        top: 4px;
+      }
+      .tpa-title-bg {
+        display: none;
+      }
+    }
+    .token-schedule {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 64px;
+      .tpa-title-wrap {
+        .tpa-title {
+          top: 4px;
+        }
+        .tpa-title-bg {
+          display: none;
+        }
+      }
+      .lockup-items {
+        width: 100%;
+        align-items: center;
+        .token-schedule-item {
+          align-self: flex-start;
+          padding: 0;
+        }
+      }
+      .lockup-image {
+        width: 70%;
+        margin: 40px 0 0;
+      }
     }
   }
 }

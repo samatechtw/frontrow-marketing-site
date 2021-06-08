@@ -65,10 +65,34 @@
       align-self: flex-start;
     }
   }
-  @media (max-width: 520px) {
-    flex-wrap: wrap;
+  @media (max-width: 640px) {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 0;
+    }
     .cta-left, .cta-right {
       width: 100%;
+      justify-content: center;
+      margin: 0;
+    }
+    .cta-text-wrap {
+      text-align: center;
+      align-items: center;
+      .cta-title {
+        white-space: unset;
+        font-size: 24px;
+      }
+      .cta-text {
+        align-self: center;
+      }
+    }
+    .cta-right {
+      margin-top: 40px;
+      text-align: center;
+      img {
+        margin: 0;
+      }
     }
   }
 }

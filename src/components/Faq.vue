@@ -199,6 +199,11 @@ export default {
       max-height: 0 !important;
     }
   }
+  @media (max-width: 540px) {
+    .faq-intro img {
+      width: 300px;
+    }
+  }
   @media (max-width: 700px) {
     .faq-item {
       padding-left: 0;

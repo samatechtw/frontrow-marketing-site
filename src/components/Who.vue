@@ -106,6 +106,21 @@ export default {
       }
     }
   }
+  @media (max-width: 640px) {
+    padding-top: 104px;
+    .who-onepager {
+      flex-wrap: wrap;
+      justify-content: center;
+      > div {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .onepager-right {
+        margin-top: 24px;
+      }
+    }
+  }
 }
 
 </style>

@@ -41,5 +41,11 @@
       width: 100%;
     }
   }
+  @media (max-width: 540px) {
+    flex-wrap: wrap;
+    .future-left, .future-right {
+      width: 100%;
+    }
+  }
 }
 </style>

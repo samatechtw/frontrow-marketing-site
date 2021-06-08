@@ -64,6 +64,20 @@
     color: $dark3;
     line-height: 1.7em;
   }
+  @media (max-width: 540px) {
+    padding-top: 40px;
+    .team-content {
+      flex-wrap: wrap;
+    }
+    .team-member {
+      width: 100%;
+      max-width: 300px;
+      margin: 32px 0 0;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 </style>
