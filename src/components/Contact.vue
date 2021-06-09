@@ -156,6 +156,8 @@ export default {
     .tpa-title-wrap {
       width: 100%;
       margin-bottom: 24px;
+      position: relative;
+      z-index: 10;
     }
   }
   .contact-left-wrap {

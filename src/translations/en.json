@@ -136,9 +136,13 @@
     "roadmap": "Roadmap",
     "lockup": "Lock-Up Schedule",
     "lock_items": [
-      "Team, Advisor & Partners (10 Months) - 10% unlocks each month from the 3rd month upon listing",
-      "Marketing (10 Months) - 10% unlocks each month",
-      "Token Sales (40 Weeks) - 2.5% unlocks each week"
+      "Defi Loan & Reward pool: 5% unlocked on Month 0 and 5% unlocks each month from Month 11",
+      "Ecosystem: 5 % unlocks each month from Month 35",
+      "Foundation Reserve: 5% unlocks each month from Month 35",
+      "Team, Advisors & Partners: 5% unlocks each month Month 11",
+      "Marketing: 5% unlocked on Month 0 and 5% unlocks each month from Month 11",
+      "Token Sales (Private): 5% unlocks each week from Month 0 for private investors",
+      "Token Sales (Public): no lock for public investors (total tokens limited to 0.08% of the total supply)"
     ]
   },
   "team": {

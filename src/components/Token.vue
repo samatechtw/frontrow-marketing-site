@@ -88,12 +88,14 @@ export default {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    .tpa-title-wrap .tpa-title {
+      text-align: center;
+    }
     .lockup-items {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       position: relative;
-      margin-top: 64px;
       width: 55%;
       text-align: left;
     }
@@ -108,7 +110,7 @@ export default {
       }
     }
     .token-schedule-item {
-      margin-top: 24px;
+      margin-top: 20px;
       @mixin text 15px;
       display: flex;
       text-align: left;
@@ -121,14 +123,29 @@ export default {
         margin-right: 8px;
         margin-top: 3px;
       }
-      &.item0 .bullet {
-        background-color: #f4dfc5;
+      &.item0 {
+        margin-top: 0;
+        .bullet {
+          background-color: rgb(245, 163, 148);
+        }
       }
       &.item1 .bullet {
-        background-color: #8e9bf9;
+        background-color: rgb(107, 177, 224);
       }
       &.item2 .bullet {
-        background-color: #cccccc;
+        background-color: rgb(115, 201, 214);
+      }
+      &.item3 .bullet {
+        background-color: rgb(245, 224, 197);
+      }
+      &.item4 .bullet {
+        background-color: rgb(143, 152, 249);
+      }
+      &.item5 .bullet {
+        background-color: rgb(204, 204, 204);
+      }
+      &.item6 .bullet {
+        background-color: rgb(204, 204, 204);
       }
     }
   }
@@ -139,23 +156,7 @@ export default {
     width: 100%;
     margin-top: 48px;
   }
-  @media (max-width: 540px) {
-    padding-top: 48px;
-    .token-left, .token-right {
-      width: 90%;
-      margin: 0 auto;
-    }
-    .token-right {
-      margin-top: 40px;
-    }
-    .token-title2 {
-      .tpa-title {
-        top: 4px;
-      }
-      .tpa-title-bg {
-        display: none;
-      }
-    }
+  @media (max-width: 740px) {
     .token-schedule {
       flex-wrap: wrap;
       justify-content: center;
@@ -163,6 +164,7 @@ export default {
       .tpa-title-wrap {
         .tpa-title {
           top: 4px;
+          margin-bottom: 24px;
         }
         .tpa-title-bg {
           display: none;
@@ -179,6 +181,24 @@ export default {
       .lockup-image {
         width: 70%;
         margin: 40px 0 0;
+      }
+    }
+  }
+  @media (max-width: 540px) {
+    padding-top: 48px;
+    .token-left, .token-right {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .token-right {
+      margin-top: 40px;
+    }
+    .token-title2 {
+      .tpa-title {
+        top: 4px;
+      }
+      .tpa-title-bg {
+        display: none;
       }
     }
   }
