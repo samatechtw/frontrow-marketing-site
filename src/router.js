@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '/src/views/Home.vue';
+import WhitepaperRedirect from '/src/views/WhitepaperRedirect.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -9,6 +10,10 @@ const router = createRouter({
       name: 'Home',
       component: Home,
       meta: { title: 'TPA Holdings' },
+    },
+    {
+      path: '/whitepaper',
+      component: WhitepaperRedirect,
     },
   ],
 });

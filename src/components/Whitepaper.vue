@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="whitepaper-right">
-      <a target="_blank" :href="WhitepaperLink">
+      <a target="_blank" :href="WhitepaperEng">
         <div class="whitepaper-button">
           {{ $t('whitepaper.download') }}
         </div>
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import WhitepaperLink from '/TPA_whitepaper_210426.pdf';
+import { WhitepaperEng } from '/src/config';
 
 export default {
   setup() {
     return {
-      WhitepaperLink,
+      WhitepaperEng,
     };
   },
 };

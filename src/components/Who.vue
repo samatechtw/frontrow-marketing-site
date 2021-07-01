@@ -41,8 +41,7 @@
 </template>
 
 <script>
-import WhitepaperEng from '/TPA_whitepaper_bithumb_ENG_210604.pdf';
-import WhitepaperKor from '/TPA_whitepaper_bithumb_KOR_210604.pdf';
+import { WhitepaperEng, WhitepaperKor } from '/src/config';
 
 export default {
   setup() {
