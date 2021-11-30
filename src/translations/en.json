@@ -111,23 +111,15 @@
     "network": "TV NETWORK",
     "sme": "SME"
   },
-  "risks": {
+  "risk": {
     "title": "DeFi and Investor Safety",
-    "subtitle": "Decentralized Finance (DeFi) technology introduces a new level of security and efficiency to an already-working lending model. The result is higher returns and lower risk, automated and protected by smart contracts and decentralization.",
-    "items": [
-      {
-        "title": "DeFi Security",
-        "text": "The TPA Pool is a smart contract that automates payouts to TPA holders and is fully guaranteed by the Liquidity Reserve. "
-      },
-      {
-        "title": "Real Collateral",
-        "text": "All loans are fully collateralized by real-world inventory that can be sold through partnerships with South Korea’s largest TV shopping networks."
-      },
-      {
-        "title": "Proven Performance",
-        "text": "TPA Holdings is a major corporation with key partnerships and diverse international capabilities, resulting in years of success with this model."
-      }
-    ]
+    "text": "Decentralized Finance (DeFi) technology introduces a new level of security and efficiency to an already-working lending model. The result is higher returns and lower risk, automated and protected by smart contracts and decentralization.",
+    "security_title": "DeFi Security",
+    "security_text": "The FRR Pool is a smart contract that automates payouts to Front Row holders and is fully guaranteed by the Liquidity Reserve. ",
+    "collateral_title": "Real Collateral",
+    "collateral_text": "All loans are fully collateralized by real-world inventory that can be sold through partnerships with South Korea’s largest TV shopping networks.",
+    "performance_title": "Proven Performance",
+    "performance_text": "Front Row is a major corporation with key partnerships and diverse international capabilities, resulting in years of success with this model."
   },
   "token": {
     "title": "TOKEN ALLOCATION",

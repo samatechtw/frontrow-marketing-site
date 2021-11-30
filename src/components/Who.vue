@@ -44,12 +44,14 @@ const { t } = useI18n();
   align-items: center;
   text-align: center;
   width: 100%;
-  padding: 88px 0 0;
+  padding: 64px 0 0;
   .who-text {
     @mixin text 15px;
     width: 620px;
     max-width: 90%;
     color: $text2;
+    margin: 24px 0 16px;
+    line-height: 23px;
   }
   .who-image {
     width: 100%;

@@ -4,6 +4,7 @@
     <Cta />
     <Benefits ref="benefits" :selected="activeSection === 'benefits'" />
     <Who ref="who" :selected="activeSection === 'who'" />
+    <Risk ref="risk" :selected="activeSection === 'risk'" />
     <Future ref="nft" :selected="activeSection === 'nft'" />
     <Features />
     <Design />
