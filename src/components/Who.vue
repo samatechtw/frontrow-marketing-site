@@ -71,7 +71,7 @@ const { t } = useI18n();
     }
   }
   @media (max-width: 640px) {
-    padding-top: 104px;
+    padding-top: 40px;
   }
 }
 </style>

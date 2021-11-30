@@ -23,14 +23,12 @@
   },
   "benefits": {
     "title": "An Opportunity For Insiders",
-    "subtitle": "The TPA Pool™  allows participating TPA token holders to generate industry‑leading returns* from a tried-and-true inventory financing model. All loans are fully collateralized with real-world inventory, essentially eliminating risk.",
+    "text": "The FRR Pool™  allows participating TPA token holders to generate industry‑leading returns* from a tried-and-true inventory financing model. All loans are fully collateralized with real-world inventory, essentially eliminating risk.",
     "asterisk": "*Up to 20% based on historical average returns.",
-    "images": {
-      "defi": "DeFi Lending Pool",
-      "interest": "Earn Interest<br>on Tokens",
-      "loans": "“Zero Risk” Loans",
-      "profit": "Proven Company<br>Performance"
-    }
+    "lending": "DeFi Lending Pool",
+    "interest": "Earn Interest<br>on Tokens",
+    "loans": "“Zero Risk” Loans",
+    "performance": "Proven Company<br>Performance"
   },
   "who": {
     "title": "Who We Are",

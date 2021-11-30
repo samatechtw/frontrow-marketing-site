@@ -1,16 +1,16 @@
 <template>
   <div class="banner-wrap">
     <div class="banner container">
-      <div class="onepager-left">
-        <div class="onepager-title">
+      <div class="banner-left">
+        <div class="banner-title">
           {{ title }}
         </div>
-        <div class="onepager-text">
+        <div class="banner-text">
           {{ text }}
         </div>
       </div>
-      <div class="onepager-right">
-        <a target="_blank" :href="link" class="fr-button onepager-eng">
+      <div class="banner-right">
+        <a target="_blank" :href="link" class="fr-button banner-eng">
           {{ linkText }}
         </a>
       </div>
@@ -52,22 +52,20 @@ defineProps({
   justify-content: space-between;
   color: white;
   align-items: center;
-  padding: 43px 0;
+  padding: 43px 24px;
   text-align: left;
-  .onepager-title {
+  .banner-title {
     @mixin title 18px;
   }
-  .onepager-text {
+  .banner-text {
     @mixin text 15px;
     margin-top: 4px;
   }
-  .onepager-right {
+  .banner-right {
     @mixin title 15px;
     display: flex;
-    .onepager-kor {
-      margin-left: 16px;
-    }
     > a {
+      margin-left: 16px;
       cursor: pointer;
       padding-left: 48px;
       padding-right: 48px;
@@ -81,7 +79,7 @@ defineProps({
       justify-content: center;
       text-align: center;
     }
-    .onepager-right {
+    .banner-right {
       margin-top: 24px;
     }
   }

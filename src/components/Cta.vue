@@ -75,7 +75,7 @@ const { t } = useI18n();
     }
   }
   @media (max-width: 640px) {
-    .container {
+    .cta-container {
       flex-wrap: wrap;
       justify-content: center;
       padding-bottom: 0;

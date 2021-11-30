@@ -2,6 +2,7 @@
   <div class="home-wrap">
     <FRHeader :activeSection="activeSection" />
     <Cta />
+    <Benefits ref="benefits" :selected="activeSection === 'benefits'" />
     <Who ref="who" :selected="activeSection === 'who'" />
     <Future ref="nft" :selected="activeSection === 'nft'" />
     <Features />
