@@ -101,6 +101,10 @@ const linkClick = (link) => {
       &:not(:first-child) {
         margin-left: 0;
       }
+      &.active {
+        text-decoration: underline;
+        color: $purple;
+      }
     }
   }
 }

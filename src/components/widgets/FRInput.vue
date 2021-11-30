@@ -105,7 +105,7 @@ const commonProps = computed(() => {
   }
 
   label {
-    @mixin medium 15px;
+    @mixin text 15px;
     color: #adadad;
     letter-spacing: 0;
     position: absolute;
@@ -126,7 +126,7 @@ const commonProps = computed(() => {
   }
 
   .fr-input {
-    @mixin medium 15px;
+    @mixin text 15px;
     color: $text2;
     background: $white;
     width: 100%;

@@ -46,14 +46,15 @@ a {
 
 .fr-button {
   @mixin flex-center;
+  @mixin medium 16px;
   background-color: $teal;
   border-radius: 23px;
-  height: 40px;
+  height: 46px;
   color: $purple;
 }
 
 .container {
-  max-width: 940px;
+  max-width: 980px;
   box-sizing: border-box;
   padding-left: 40px;
   padding-right: 40px;

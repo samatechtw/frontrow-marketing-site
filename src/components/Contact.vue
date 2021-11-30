@@ -9,10 +9,10 @@
     >
       <path fill="#ffffff" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
     </svg>
+    <div class="fr-title">
+      {{ t('contact.title') }}
+    </div>
     <div class="container contact">
-      <div class="fr-title">
-        {{ t('contact.title') }}
-      </div>
       <div class="contact-left-wrap">
         <div class="contact-left">
           <div class="contact-title">
@@ -37,11 +37,11 @@
             class="contact-inquiry"
             :rows="6"
           />
-          <div v-if="error" class="contact-error">
-            {{ error }}
-          </div>
           <div class="fr-button contact-send" @click="send">
             <LoadingText :text="t('contact.send')" :loading="sending" />
+          </div>
+          <div v-if="error" class="contact-error">
+            {{ error }}
           </div>
         </div>
       </div>
@@ -138,36 +138,34 @@ const send = async () => {
   padding: 180px 0 72px;
   text-align: center;
   width: 100%;
+  .fr-title {
+    margin: 32px 0 64px;
+  }
   .contact {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     max-width: 840px;
-    align-items: flex-start;
-    .fr-title-wrap {
-      width: 100%;
-      margin-bottom: 24px;
-      position: relative;
-      z-index: 10;
-    }
+    justify-content: center;
   }
   .contact-left-wrap {
-    width: 50%;
+    max-width: 330px;
+    flex-grow: 1;
     padding-right: 40px;
     .contact-left {
       max-width: 390px;
     }
   }
   .contact-right {
-    width: 50%;
+    max-width: 244px;
     @mixin flex-center;
     img {
-      width: 244px;
+      width: 100%;
       margin-left: 40px;
     }
   }
   .contact-title {
-    @mixin medium 15px;
+    @mixin text 15px;
     margin-top: 16px;
     text-align: left;
   }
@@ -180,8 +178,9 @@ const send = async () => {
     height: 120px;
   }
   .contact-error {
-    @mixin medium 12px;
-    color: $red;
+    @mixin regular 15px;
+    color: $text2;
+    margin-top: 16px;
   }
   .contact-send {
     width: 100%;

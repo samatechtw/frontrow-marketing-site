@@ -1,6 +1,6 @@
 <template>
   <div class="future">
-    <div id="nft" class="anchor" />
+    <div id="future" class="anchor" />
     <div class="future-left">
       <img :src="NftFuture" />
       <div class="future-block" />
@@ -17,8 +17,9 @@
 .future {
   width: 100%;
   display: flex;
-  margin-top: 140px;
-  margin-bottom: 80px;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background-color: $bg-light2;
   .future-left {
     width: 50%;
     position: relative;
@@ -43,6 +44,7 @@
   }
   @media (max-width: 540px) {
     flex-wrap: wrap;
+    padding-top: 96px;
     .future-left,
     .future-right {
       width: 100%;

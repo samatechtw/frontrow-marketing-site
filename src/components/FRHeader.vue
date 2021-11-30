@@ -80,7 +80,7 @@ const calculateUnderline = (link: HeaderLink) => {
 
 const headerLinks = [
   link('benefits', scrollAnchor),
-  link('how', scrollAnchor),
+  link('who', scrollAnchor),
   link('risks', scrollAnchor),
   link('token', scrollAnchor),
   link('faq', scrollAnchor),

@@ -2,7 +2,7 @@
   <div class="token">
     <div id="token" class="anchor" />
     <div class="container">
-      <div class="fr-title token-title2">
+      <div class="fr-title">
         {{ t('token.title') }}
       </div>
       <div class="token-allocation">
@@ -56,14 +56,10 @@ const { t, tm } = useI18n();
   #token {
     top: -60px;
   }
-  .token-title1 {
-    @mixin title 20px;
-    color: $blue;
-  }
   .token-allocation {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 72px;
+    margin-top: 88px;
   }
   .token-left {
     width: 60%;
@@ -91,22 +87,25 @@ const { t, tm } = useI18n();
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    .fr-title-wrap .fr-title {
-      text-align: center;
+    justify-content: space-between;
+    .fr-title {
+      align-self: flex-end;
+      margin-bottom: 40px;
+      padding-right: 24px;
     }
     .lockup-items {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       position: relative;
-      width: 55%;
+      max-width: 400px;
+      padding-right: 24px;
       text-align: left;
     }
     .lockup-image {
       display: flex;
       align-items: flex-start;
-      width: 55%;
-      margin-left: -10%;
+      max-width: 490px;
       img {
         max-width: 512px;
         width: 100%;
@@ -118,7 +117,6 @@ const { t, tm } = useI18n();
       display: flex;
       text-align: left;
       color: $text1;
-      padding-right: 25%;
       .bullet {
         width: 14px;
         min-width: 14px;
@@ -159,19 +157,12 @@ const { t, tm } = useI18n();
     width: 100%;
     margin-top: 48px;
   }
-  @media (max-width: 740px) {
+  @media (max-width: 970px) {
     .token-schedule {
-      flex-wrap: wrap;
       justify-content: center;
-      margin-top: 64px;
-      .fr-title-wrap {
-        .fr-title {
-          top: 4px;
-          margin-bottom: 24px;
-        }
-        .fr-title-bg {
-          display: none;
-        }
+      .fr-title {
+        padding: 0;
+        align-self: center;
       }
       .lockup-items {
         width: 100%;
@@ -184,25 +175,6 @@ const { t, tm } = useI18n();
       .lockup-image {
         width: 70%;
         margin: 40px 0 0;
-      }
-    }
-  }
-  @media (max-width: 540px) {
-    padding-top: 48px;
-    .token-left,
-    .token-right {
-      width: 90%;
-      margin: 0 auto;
-    }
-    .token-right {
-      margin-top: 40px;
-    }
-    .token-title2 {
-      .fr-title {
-        top: 4px;
-      }
-      .fr-title-bg {
-        display: none;
       }
     }
   }

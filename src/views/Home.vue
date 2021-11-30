@@ -4,8 +4,8 @@
     <Cta />
     <Benefits ref="benefits" :selected="activeSection === 'benefits'" />
     <Who ref="who" :selected="activeSection === 'who'" />
-    <Risk ref="risk" :selected="activeSection === 'risk'" />
-    <Future ref="nft" :selected="activeSection === 'nft'" />
+    <Risk ref="risks" :selected="activeSection === 'risks'" />
+    <Future />
     <Features />
     <Design />
     <Token ref="token" :selected="activeSection === 'token'" />
@@ -18,41 +18,43 @@
   </div>
 </template>
 
-<script>
+<script lang="ts" setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { debounce } from '/src/utils';
 
-export default {
-  name: 'home',
-  data() {
-    return {
-      activeSection: null,
-    };
-  },
-  methods: {
-    onScroll() {
-      const top = window.pageYOffset;
-      const section = this.sections.find((section, idx) => {
-        if (
-          top > this.$refs[section].$el.offsetTop - 350 ||
-          idx === this.sections.length - 1
-        ) {
-          return true;
-        }
-      });
-      if (section !== this.activeSection) {
-        this.activeSection = section;
-      }
-    },
-  },
-  mounted() {
-    this.sections = Object.keys(this.$refs).reverse();
-    this.onScrollDebounce = debounce(this.onScroll, 100);
-    window.addEventListener('scroll', this.onScrollDebounce, { passive: true });
-  },
-  beforeUnmount() {
-    window.removeEventListener('resize', this.onScrollDebounce);
-  },
+const activeSection = ref();
+
+const benefits = ref();
+const who = ref();
+const risks = ref();
+const token = ref();
+const faq = ref();
+const itemRefs = { benefits, who, risks, token, faq };
+const sections = Object.keys(itemRefs).reverse();
+
+const onScroll = () => {
+  const top = window.pageYOffset;
+  const section = sections.find((section, idx) => {
+    if (
+      top > itemRefs[section].value.$el.offsetTop - 350 ||
+      idx === sections.length - 1
+    ) {
+      return true;
+    }
+  });
+  if (section !== activeSection.value) {
+    activeSection.value = section;
+  }
 };
+
+const onScrollDebounce = debounce(onScroll, 150);
+
+onMounted(() => {
+  window.addEventListener('scroll', onScrollDebounce, { passive: true });
+});
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', onScrollDebounce);
+});
 </script>
 
 <style lang="postcss">

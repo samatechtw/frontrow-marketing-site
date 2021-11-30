@@ -1,6 +1,6 @@
 <template>
   <div class="risk">
-    <div id="risk" class="anchor" />
+    <div id="risks" class="anchor" />
     <div class="container">
       <div class="fr-title">
         {{ t('risk.title') }}

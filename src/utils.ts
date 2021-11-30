@@ -1,19 +1,12 @@
 // eslint-disable-next-line
-export function debounce(func: any, wait: number): (...args: unknown[]) => void {
-  let timeout: ReturnType<typeof setTimeout> | null;
-  return function (...args: unknown[]) {
-    // eslint-disable-next-line
-    const context = this;
-    const callNow = !timeout;
-    if (timeout) {
-      clearTimeout(timeout);
-    }
-
-    timeout = setTimeout(() => {
-      timeout = null;
-    }, wait);
-    if (callNow) {
-      func.apply(context, args);
+export function debounce(func, wait) {
+  let timer;
+  return (...args) => {
+    if (!timer) {
+      timer = setTimeout(() => {
+        func.apply(this, args);
+        timer = null;
+      }, wait);
     }
   };
 }

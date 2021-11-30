@@ -1,10 +1,10 @@
 <template>
   <div class="faq">
     <div class="faq-intro">
+      <div class="faq-intro-block" />
       <div class="container">
         <img :src="Teamwork" />
       </div>
-      <div class="faq-intro-block" />
     </div>
     <div id="faq" class="anchor" />
     <div class="container faq-content">
@@ -65,7 +65,7 @@ const selectedFaq = ref();
 const initialHeights = tm('faq.items') as string[];
 const answerHeights = ref(initialHeights.map((_item) => '0'));
 
-const toggleFaq = (index) => {
+const toggleFaq = (index: number) => {
   if (selectedFaq.value === index) {
     selectedFaq.value = null;
   } else {
@@ -90,9 +90,6 @@ const setItemRef = (el) => {
 onBeforeUpdate(() => {
   itemRefs = [];
 });
-onUpdated(() => {
-  console.log(itemRefs);
-});
 </script>
 
 <style lang="postcss">
@@ -112,31 +109,32 @@ onUpdated(() => {
       width: 395px;
       bottom: -53px;
     }
-    .faq-intro-block {
-      position: absolute;
-      height: 83px;
-      width: 40%;
-      max-width: 440px;
-      background-color: $teal;
-      right: 0;
-      bottom: 72px;
-    }
+  }
+  .faq-intro-block {
+    position: absolute;
+    height: 83px;
+    width: 40%;
+    max-width: 440px;
+    background-color: $teal;
+    right: 0;
+    bottom: 72px;
   }
   #faq {
     top: -60px;
   }
   .faq-content {
-    padding-top: 72px;
+    padding-top: 88px;
   }
   .faq-items {
     margin-top: 24px;
   }
   svg {
-    flex-shrink: 0;
+    stroke: white;
     transition: transform 0.2s ease-in-out;
     position: relative;
     margin-left: auto;
-    top: -1px;
+    top: 28px;
+    left: -32px;
   }
   .faq-item {
     display: flex;
@@ -144,18 +142,15 @@ onUpdated(() => {
     box-sizing: border-box;
     padding: 0 0 8px;
     .faq-question {
-      @mixin medium 19px;
+      @mixin medium 18px;
       padding-bottom: 24px;
       padding-top: 16px;
+      color: $teal;
       cursor: pointer;
-      color: white;
       border-bottom: 1px solid white;
     }
     &.opened {
       opacity: 1;
-      .faq-question {
-        color: white;
-      }
       .faq-caret-vertical {
         transform: rotate(90deg);
         background-color: white;
@@ -196,12 +191,20 @@ onUpdated(() => {
       max-height: 0 !important;
     }
   }
-  @media (max-width: 540px) {
-    .faq-intro img {
-      width: 300px;
-    }
-  }
   @media (max-width: 700px) {
+    .faq-intro-block {
+      width: 100%;
+      max-width: unset;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .faq-intro {
+      text-align: center;
+      img {
+        max-width: 80%;
+      }
+    }
     .faq-item {
       padding-left: 0;
       padding-right: 0;
@@ -212,6 +215,8 @@ onUpdated(() => {
         top: 0;
       }
     }
+  }
+  @media (max-width: 540px) {
   }
 }
 </style>

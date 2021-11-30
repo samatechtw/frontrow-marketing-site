@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="container">
       <div class="footer-title">
-        {{ t('ismedia') }}
+        {{ t('company') }}
       </div>
       <div class="footer-subtitle">
         {{ t('footer') }}
@@ -22,14 +22,15 @@ const { t } = useI18n();
 
 .footer {
   background: $bg-light1;
-  color: $white;
+  color: $purple;
   padding: 80px 0;
   text-align: center;
   .footer-title {
-    @mixin title 50px;
+    @mixin title 46px;
   }
   .footer-subtitle {
     @mixin text 12px;
+    color: $text2;
     margin-top: 8px;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="design">
-    <div class="design-title">
+    <div class="fr-title">
       {{ t('nft.design') }}
     </div>
     <div class="design-image">
@@ -20,11 +20,7 @@ const { t } = useI18n();
 
 .design {
   text-align: center;
-  padding: 96px 0;
-  .design-title {
-    @mixin title 26px;
-    color: #0a0a0a;
-  }
+  padding: 96px 0 64px;
   img {
     width: 100%;
     margin-top: 40px;

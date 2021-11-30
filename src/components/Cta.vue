@@ -89,6 +89,8 @@ const { t } = useI18n();
     .cta-text-wrap {
       text-align: center;
       padding: 0;
+      margin: 0;
+      max-width: 90%;
       .cta-title {
         font-size: 36px;
       }

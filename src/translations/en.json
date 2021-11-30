@@ -23,7 +23,7 @@
   },
   "benefits": {
     "title": "An Opportunity For Insiders",
-    "text": "The FRR Pool™  allows participating TPA token holders to generate industry‑leading returns* from a tried-and-true inventory financing model. All loans are fully collateralized with real-world inventory, essentially eliminating risk.",
+    "text": "The FRR Pool™  allows participating Front Row token holders to generate industry‑leading returns* from a tried-and-true inventory financing model. All loans are fully collateralized with real-world inventory, essentially eliminating risk.",
     "asterisk": "*Up to 20% based on historical average returns.",
     "lending": "DeFi Lending Pool",
     "interest": "Earn Interest<br>on Tokens",
@@ -32,7 +32,7 @@
   },
   "who": {
     "title": "Who We Are",
-    "text": "TPA Holdings has years of proven success with its inventory financing model, which is a responsibility of the TPA Retail division. The company’s subsidiaries span a wide range of industries and capabilities and are even listed on South Korea’s major stock exchange.",
+    "text": "Front Row has years of proven success with its inventory financing model, which is a responsibility of the FRR Retail division. The company’s subsidiaries span a wide range of industries and capabilities and are even listed on South Korea’s major stock exchange.",
     "onepager": "More details available in our One Pager",
     "available": "Available in English and Korean",
     "eng": "ENG",
@@ -40,76 +40,6 @@
   },
   "nft": {
     "design": "PLATFORM DESIGN"
-  },
-  "how": {
-    "title": "HOW IT WORKS",
-    "subtitle": "TPA Retail specializes in inventory financing deals based on sales contracts with TV home shopping networks in South Korea, a 18.7 trillion Korean won (KRW) market and growing. TPA historical returns range from 16-24% on investment.",
-    "hover": "The Lending Process",
-    "items": [
-      {
-        "title": "Propose Product",
-        "text": "A small or medium enterprise (SME) with an existing product applies to the TV network in the hopes of marketing their product to customers on a home shopping channel."
-      },
-      {
-        "title": "Receive Contract",
-        "text": "Upon approval by the TV network, the SME will receive a sales contract stipulating the broadcast time and date, inventory requirements, terms of sale, and other conditions. The TV network will suggest TPA Holdings to the SME if they require financing, logistics, or other services."
-      },
-      {
-        "title": "Seek Loan",
-        "text": "The SME will now take their approved sales contract to TPA Retail and apply for a loan. TPA Retail experts will review the business and market opportunity for the SME’s product and propose inventory financing terms for a loan up to 500 million KRW."
-      },
-      {
-        "title": "Due Diligence",
-        "text": "In addition to evaluating the SME, TPA Retail will coordinate directly with the TV network partners to review the sales contract and negotiate the logistics of the loan and repayment conditions."
-      },
-      {
-        "title": "Receive Bond",
-        "text": "As the financier of the deal, TPA Retail will receive a bond stipulating that sales revenues from the broadcast segment will be transferred to TPA Retail directly and not the SME until the loan principal and interest is paid back in full."
-      },
-      {
-        "title": "Submit Loan",
-        "text": "Once all terms of the loan is finalized and all parties are signed and committed, TPA Retail will submit the terms of the loan to the TPA Pool smart contract on the Ethereum network.The terms will include the TPA tokens required as principle, the interest to be paid by the SME on the loan, and the schedule of repayment, among other details."
-      },
-      {
-        "title": "Receive TPA",
-        "text": "The TPA Pool will release the required principal in TPA tokens to TPA Retail. The timer for repayment will officially begin at this point."
-      },
-      {
-        "title": "Purchase Goods",
-        "text": "TPA Retail will liquidate the TPA tokens in order to pay the manufacturer directly for the inventory as well as TPA Logistics for warehousing and 3PL services."
-      },
-      {
-        "title": "Store Goods",
-        "text": "The manufacturer will send inventory directly to one of the four logistics centers belonging to TPA Logistics. Products will be inspected for quality at the manufacturer and again when it is received at TPA Logistics."
-      },
-      {
-        "title": "Ship Goods",
-        "text": "TPA Logistics will then be responsible for shipping the inventory to the TV Networks as needed."
-      },
-      {
-        "title": "Receive Revenue",
-        "text": "After the shopping segment concludes according to the original broadcasting schedule, the TV home shopping networks will fulfill their bond and send the sales revenues to TPA Retail, minus their share according to the original sales contract with the SME."
-      },
-      {
-        "title": "Return Principal",
-        "text": "TPA Retail will use these revenues to purchase TPA tokens and return the principal amount to the Loan Pool, as well as the extra tokens representing the interest that the SME owes on the loan."
-      },
-      {
-        "title": "Pay Investors",
-        "text": "The loan at this point has been paid back successfully, so the TPA Pool smart contract will automatically pay out the interest to the TPA Holders in the form of a TPA token."
-      },
-      {
-        "title": "Pay SME",
-        "text": "At this point, the SME will receive their share of the sales revenues, which is the remainder after the loan principle, interest, cost of goods sold, and marketing costs have all been deducted."
-      }
-    ],
-    "holders": "$ TPA HOLDERS",
-    "pool": "TPA POOL",
-    "retail": "TPA RETAIL",
-    "manufacturer": "MANUFACTURER",
-    "logistics": "TPA LOGISTICS",
-    "network": "TV NETWORK",
-    "sme": "SME"
   },
   "risk": {
     "title": "DeFi and Investor Safety",
@@ -145,15 +75,15 @@
     "cfo_text": "Chairman of the Board of Directors at TPA Group. Former Division Director at KTB Investment & Securities Co., Ltd. Former General Manager at KWOOM Securities Co. Ltd."
   },
   "faq": {
-    "title": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Frequently Asked Questions",
     "items": [
       {
-        "title": "What sets isMedia’s NFT platform apart?",
-        "text": "isMedia, a publicly traded company (KOSDAQ) based in South Korea, is launching the next-generation of NFT platform that goes beyond any platform that exists today. Users will be able to mint, purchase, and trade NFTs as easily on mobile devices as they can on the web, thanks to UX/UI design work done by MetaLab (metalab.co). MetaLab is a world-famous design firm delivering industry-leading products for clients including Dapper Labs (NBA Top Shots, Genies), Gemini (Nifty Gateway), Coinbase, Slack, and more.\n\nisMedia’s platform takes it a further step in functionality with the incorporation of DeFi and gamification features that will give NFTs true utility and functionality and make the platform “sticky” for users. In partnership with TPA Holdings, a global corporation with years of profitable experience with financial lending products, isMedia will be able to offer game-changing features such as NFT and DeFi lending pools, crowdfunding, indexes, derivatives, and more. In addition, gamified features such as user challenges, games, exclusive “drops”, and more will keep users engaged with the platform to earn rewards and up their rankings."
+        "title": "Why Front Row?",
+        "text": "The FRR token allows holders to participate in an existing and successful inventory financing model managed by Front Row, a publicly-traded distribution company founded in South Korea. All interest revenues generated by the inventory financing model will be automatically distributed as dividends via smart contract to FRR token holders who stake their tokens into the FRR pool. All loans are backed by inventory as collateral and the pool is guaranteed by the Liquidity Reserve smart contract, ensuring holders will never experience withdrawal problems or business interruptions. Prospective investment returns based on Front Row’s historical earnings on inventory financing are 16-24%."
       },
       {
-        "title": "What is the TPA token?",
-        "text": "The TPA token is a utility token used on the isMedia platform that enables the DeFi offerings, platform gamification, user governance, and more. The TPA token will be offered as a “reverse-ICO” or the tokenization of an existing and profitable business model, initially through the financial loan pools managed by TPA Holdings, a subsidiary business of isMedia."
+        "title": "What happens if a loan defaults?",
+        "text": "TBD"
       },
       {
         "title": "What NFTs will be offered on the platform?",
@@ -165,9 +95,8 @@
       }
     ]
   },
-  "partners": "PARTNERS",
   "contact": {
-    "title": "CONTACT US",
+    "title": "Contact",
     "name_title": "Full Name",
     "name": "Name",
     "email_title": "Email Address",
@@ -181,5 +110,5 @@
     "email_success": "Inquiry sent successfully",
     "email_limit": "Inquiry rate limit exceeded, try again in a few minutes."
   },
-  "footer": "© 2021 TPA Holdings Co., Ltd. All Rights Reserved"
+  "footer": "© 2021 Front Row Foundation Co., Ltd. All Rights Reserved"
 }
