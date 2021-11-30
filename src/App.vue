@@ -53,7 +53,7 @@ a {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 1020px;
   box-sizing: border-box;
   padding-left: 40px;
   padding-right: 40px;

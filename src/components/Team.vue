@@ -2,39 +2,45 @@
   <div class="team container">
     <div id="team" class="anchor" />
     <div class="fr-title">
-      {{ $t('team.title') }}
+      {{ t('team.title') }}
     </div>
     <div class="team-content">
       <div class="team-member">
         <img :src="TpaCeo" />
         <div class="team-title">
-          {{ $t('team.tpa') }}
+          {{ t('team.tpa') }}
         </div>
         <div class="team-text">
-          {{ $t('team.tpa_text') }}
+          {{ t('team.tpa_text') }}
         </div>
       </div>
       <div class="team-member">
         <img :src="IsmediaCeo" />
         <div class="team-title">
-          {{ $t('team.ismedia') }}
+          {{ t('team.ismedia') }}
         </div>
         <div class="team-text">
-          {{ $t('team.ismedia_text') }}
+          {{ t('team.ismedia_text') }}
         </div>
       </div>
       <div class="team-member">
         <img :src="Cfo" />
         <div class="team-title">
-          {{ $t('team.cfo') }}
+          {{ t('team.cfo') }}
         </div>
         <div class="team-text">
-          {{ $t('team.cfo_text') }}
+          {{ t('team.cfo_text') }}
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+</script>
 
 <style lang="postcss">
 @import '/src/assets/css/global.css';

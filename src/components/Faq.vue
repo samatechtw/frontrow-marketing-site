@@ -9,11 +9,11 @@
     <div id="faq" class="anchor" />
     <div class="container faq-content">
       <div class="fr-title-dark">
-        {{ $t('faq.title') }}
+        {{ t('faq.title') }}
       </div>
       <div class="faq-items">
         <div
-          v-for="(faq, index) in $tm('faq.items')"
+          v-for="(faq, index) in tm('faq.items') as Record<string, string>[]"
           :key="index"
           class="faq-item"
           :class="index === selectedFaq ? 'opened' : 'closed'"
@@ -22,7 +22,11 @@
             <div class="faq-question" @click="toggleFaq(index)">
               {{ faq.title }}
             </div>
-            <transition name="animate-height" @enter="enter(index)" @leave="leave">
+            <transition
+              name="animate-height"
+              @enter="enter(index as number)"
+              @leave="leave"
+            >
               <div
                 v-if="index === selectedFaq"
                 :style="{
@@ -34,7 +38,7 @@
                 {{ faq.text }}
               </div>
             </transition>
-            <div :ref="`answer${index}`" class="faq-pseudo-answer">
+            <div :ref="setItemRef" class="faq-pseudo-answer">
               {{ faq.text }}
             </div>
           </div>
@@ -50,32 +54,45 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'faq',
-  data() {
-    return {
-      selectedFaq: null,
-      answerHeights: this.$tm('faq.items').map((_item) => 0),
-    };
-  },
-  methods: {
-    toggleFaq(index) {
-      if (this.selectedFaq === index) {
-        this.selectedFaq = null;
-      } else {
-        this.selectedFaq = index;
-      }
-    },
-    enter(index) {
-      const height = parseInt(getComputedStyle(this.$refs[`answer${index}`]).height);
-      this.answerHeights[index] = `${height + 24}px`;
-    },
-    leave() {
-      this.answerHeights = this.$tm('faq.items').map((_item) => 0);
-    },
-  },
+<script lang="ts" setup>
+import { ref, onBeforeUpdate, onUpdated } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t, tm } = useI18n();
+
+let itemRefs = [];
+const selectedFaq = ref();
+const initialHeights = tm('faq.items') as string[];
+const answerHeights = ref(initialHeights.map((_item) => '0'));
+
+const toggleFaq = (index) => {
+  if (selectedFaq.value === index) {
+    selectedFaq.value = null;
+  } else {
+    selectedFaq.value = index;
+  }
 };
+
+const enter = (index: number) => {
+  const height = parseInt(getComputedStyle(itemRefs[index]).height);
+  answerHeights.value[index] = `${height + 24}px`;
+};
+
+const leave = () => {
+  answerHeights.value = initialHeights.map((_item) => '0');
+};
+
+const setItemRef = (el) => {
+  if (el) {
+    itemRefs.push(el);
+  }
+};
+onBeforeUpdate(() => {
+  itemRefs = [];
+});
+onUpdated(() => {
+  console.log(itemRefs);
+});
 </script>
 
 <style lang="postcss">

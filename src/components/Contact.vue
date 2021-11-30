@@ -11,29 +11,29 @@
     </svg>
     <div class="container contact">
       <div class="fr-title">
-        {{ $t('contact.title') }}
+        {{ t('contact.title') }}
       </div>
       <div class="contact-left-wrap">
         <div class="contact-left">
           <div class="contact-title">
-            {{ $t('contact.name_title') }}
+            {{ t('contact.name_title') }}
           </div>
-          <FRInput v-model="name" :title="$t('contact.name')" class="contact-name" />
+          <FRInput v-model="name" :title="t('contact.name')" class="contact-name" />
           <div class="contact-title">
-            {{ $t('contact.email_title') }}
+            {{ t('contact.email_title') }}
           </div>
           <FRInput
             v-model="email"
-            :title="$t('contact.email')"
+            :title="t('contact.email')"
             class="contact-email"
             inputType="email"
           />
           <div class="contact-title">
-            {{ $t('contact.inquiry') }}
+            {{ t('contact.inquiry') }}
           </div>
           <FRInput
             v-model="inquiry"
-            :title="$t('contact.inquiry')"
+            :title="t('contact.inquiry')"
             class="contact-inquiry"
             :rows="6"
           />
@@ -41,7 +41,7 @@
             {{ error }}
           </div>
           <div class="fr-button contact-send" @click="send">
-            <LoadingText :text="$t('contact.send')" :loading="sending" />
+            <LoadingText :text="t('contact.send')" :loading="sending" />
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { FetchApi } from '@sampullman/fetch-api';
@@ -66,7 +66,7 @@ const api = new FetchApi({
   responseInterceptors: [jsonInterceptor],
 });
 
-const sendEmail = (name, email, inquiry) =>
+const sendEmail = (name: string, email: string, inquiry: string) =>
   api.request({
     url: 'https://api.sendinblue.com/v3/smtp/email',
     method: 'POST',
@@ -92,52 +92,40 @@ const sendEmail = (name, email, inquiry) =>
 
 const RATE_LIMIT_KEY = 'rate-limit';
 
-export default {
-  setup() {
-    const { t } = useI18n();
-    const name = ref('');
-    const email = ref('');
-    const inquiry = ref('');
-    const error = ref(null);
-    const sending = ref(false);
-    const send = async () => {
-      error.value = null;
-      const now = new Date().getTime();
-      const prevTime = parseInt(localStorage.getItem(RATE_LIMIT_KEY) || '0');
-      if (prevTime && now - prevTime < 1000 * 60 * 2) {
-        error.value = t('contact.email_limit');
-      } else if (
-        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value) &&
-        email.value.length < 100
-      ) {
-        error.value = t('contact.invalid_email');
-      } else if (name.value.length < 2 || name.value.length > 100) {
-        error.value = t('contact.invalid_name');
-      } else if (inquiry.value.length < 10 || inquiry.value.length > 1000) {
-        error.value = t('contact.invalid_inquiry');
-      } else {
-        try {
-          sending.value = true;
-          await sendEmail(name.value, email.value, inquiry.value);
-          error.value = t('contact.email_success');
-          localStorage.setItem(RATE_LIMIT_KEY, now.toString());
-        } catch (e) {
-          console.log('EMAIL ERR', e);
-          error.value = t('contact.email_error');
-        } finally {
-          sending.value = false;
-        }
-      }
-    };
-    return {
-      name,
-      email,
-      inquiry,
-      error,
-      send,
-      sending,
-    };
-  },
+const { t } = useI18n();
+const name = ref('');
+const email = ref('');
+const inquiry = ref('');
+const error = ref(null);
+const sending = ref(false);
+const send = async () => {
+  error.value = null;
+  const now = new Date().getTime();
+  const prevTime = parseInt(localStorage.getItem(RATE_LIMIT_KEY) || '0');
+  if (prevTime && now - prevTime < 1000 * 60 * 2) {
+    error.value = t('contact.email_limit');
+  } else if (
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value) &&
+    email.value.length < 100
+  ) {
+    error.value = t('contact.invalid_email');
+  } else if (name.value.length < 2 || name.value.length > 100) {
+    error.value = t('contact.invalid_name');
+  } else if (inquiry.value.length < 10 || inquiry.value.length > 1000) {
+    error.value = t('contact.invalid_inquiry');
+  } else {
+    try {
+      sending.value = true;
+      await sendEmail(name.value, email.value, inquiry.value);
+      error.value = t('contact.email_success');
+      localStorage.setItem(RATE_LIMIT_KEY, now.toString());
+    } catch (e) {
+      console.log('EMAIL ERR', e);
+      error.value = t('contact.email_error');
+    } finally {
+      sending.value = false;
+    }
+  }
 };
 </script>
 

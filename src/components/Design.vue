@@ -1,13 +1,19 @@
 <template>
-<div class="design">
-  <div class="design-title">
-    {{ $t('nft.design') }}
+  <div class="design">
+    <div class="design-title">
+      {{ t('nft.design') }}
+    </div>
+    <div class="design-image">
+      <img :src="NftDesign" />
+    </div>
   </div>
-  <div class="design-image">
-    <img :src="NftDesign">
-  </div>
-</div>
 </template>
+
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+</script>
 
 <style lang="postcss">
 @import '/src/assets/css/global.css';

@@ -1,110 +1,99 @@
 <template>
-<Sticky class="header-sticky">
-  <div class="header container">
-    <div class="content">
-      <div class="header-left">
-        <img :src="Logo" @click="scroll(0)">
-      </div>
-      <FRHeaderLinks
-        class="header-right"
-        :links="headerLinks"
-        :activeLink="activeLink"
-        :activeSection="activeSection"
-      />
-      <div
-        class="sidebar-toggle"
-        @click="sidebarOpened = true"
-      >
-        <em /><em /><em />
-      </div>
-      <div
-        class="header-sidebar-wrap"
-        :class="{ opened: sidebarOpened }"
-        @click="sidebarOpened = false"
-      >
-        <div class="header-sidebar" @click.stop>
-          <Cross
-            class="sidebar-close sidebar-toggle"
-            :clickable="true"
-            color="black"
-            @click="sidebarOpened = false"
-          />
-          <FRHeaderLinks
-            class="header-links-mobile"
-            :links="headerLinks"
-            :activeLink="activeLink"
-            :activeSection="activeSection"
-            @linkClick="sidebarOpened = false"
-          />
+  <Sticky class="header-sticky">
+    <div class="header container">
+      <div class="content">
+        <div class="header-left">
+          <img :src="Logo" @click="scroll(0)" />
+        </div>
+        <FRHeaderLinks
+          class="header-right"
+          :links="headerLinks"
+          :activeLink="activeLink"
+          :activeSection="activeSection"
+        />
+        <div class="sidebar-toggle" @click="sidebarOpened = true"><em /><em /><em /></div>
+        <div
+          class="header-sidebar-wrap"
+          :class="{ opened: sidebarOpened }"
+          @click="sidebarOpened = false"
+        >
+          <div class="header-sidebar" @click.stop>
+            <Cross
+              class="sidebar-close sidebar-toggle"
+              :clickable="true"
+              @click="sidebarOpened = false"
+            />
+            <FRHeaderLinks
+              class="header-links-mobile"
+              :links="headerLinks"
+              :activeLink="activeLink"
+              :activeSection="activeSection"
+              @linkClick="sidebarOpened = false"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</Sticky>
+  </Sticky>
 </template>
 
-<script>
+<script lang="ts" setup>
+import { computed, ref, toRefs } from 'vue';
+import { HeaderLink, HeaderLinkFn } from '/src/utils';
 
-const link = (id, fn) => ({
+const link = (id: string, fn: HeaderLinkFn): HeaderLink => ({
   id,
   headerId: `header-${id}`,
   title: `header.${id}`,
   fn: () => fn(id),
 });
 
-export default {
-  name: 'tpa-header',
-  props: {
-    activeSection: {
-      type: String,
-      default: null,
-    },
+const props = defineProps({
+  activeSection: {
+    type: String,
+    default: null,
   },
-  data() {
-    return {
-      headerLinks: [
-        link('who', this.scrollAnchor),
-        link('nft', this.scrollAnchor),
-        link('token', this.scrollAnchor),
-        link('team', this.scrollAnchor),
-        link('faq', this.scrollAnchor),
-      ],
-      sidebarOpened: false,
-    };
-  },
-  computed: {
-    activeLink() {
-      let link = this.headerLinks.find(link => link.id === this.activeSection);
-      if(link) {
-        link = this.calculateUnderline(link);
-      }
-      return link;
-    },
-  },
-  methods: {
-    scroll(top) {
-      window.scroll({
-        top,
-        left: 0,
-        behavior: 'smooth',
-      });
-    },
-    scrollAnchor(id) {
-      document.getElementById(id).scrollIntoView({
-        behavior: 'smooth',
-      });
-    },
-    calculateUnderline(link) {
-      const el = document.getElementById(link.headerId);
-      const size = el.getBoundingClientRect();
-      return {
-        ...link,
-        width: `${size.width}px`,
-        left: `${el.offsetLeft}px`,
-      };
-    }
-  },
+});
+const { activeSection } = toRefs(props);
+
+const scroll = (top) => {
+  window.scroll({
+    top,
+    left: 0,
+    behavior: 'smooth',
+  });
 };
+const scrollAnchor = (id: string) => {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth',
+  });
+};
+const calculateUnderline = (link: HeaderLink) => {
+  const el = document.getElementById(link.headerId);
+  const size = el.getBoundingClientRect();
+  return {
+    ...link,
+    width: `${size.width}px`,
+    left: `${el.offsetLeft}px`,
+  };
+};
+
+const headerLinks = [
+  link('benefits', scrollAnchor),
+  link('how', scrollAnchor),
+  link('risks', scrollAnchor),
+  link('token', scrollAnchor),
+  link('faq', scrollAnchor),
+];
+const sidebarOpened = ref(false);
+
+const activeLink = computed(() => {
+  let link = headerLinks.find((link) => link.id === activeSection.value);
+  if (link) {
+    link = calculateUnderline(link);
+  }
+  return link;
+});
 </script>
 
 <style lang="postcss">
@@ -115,7 +104,6 @@ export default {
   background-color: $white;
 }
 .header {
-  @mixin medium 16px;
   height: 64px;
   .content {
     @mixin flex-center;
@@ -156,7 +144,7 @@ export default {
       display: block;
       width: 19px;
       height: 2px;
-      background: black;
+      background: $purple;
       margin-top: 5px;
       transition: all 0.3s;
 
@@ -189,7 +177,8 @@ export default {
     }
   }
   @media (max-width: 640px) {
-    .header-sidebar-wrap, .sidebar-toggle {
+    .header-sidebar-wrap,
+    .sidebar-toggle {
       display: block;
     }
     .header-right {

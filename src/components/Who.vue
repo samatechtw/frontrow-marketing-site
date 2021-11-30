@@ -2,10 +2,10 @@
   <div class="who">
     <div id="who" class="anchor" />
     <div class="fr-title">
-      {{ $t('who.title') }}
+      {{ t('who.title') }}
     </div>
     <div class="who-text">
-      {{ $t('who.text') }}
+      {{ t('who.text') }}
     </div>
     <div class="who-image">
       <svg
@@ -23,15 +23,15 @@
       <div class="who-onepager container">
         <div class="onepager-left">
           <div class="onepager-title">
-            {{ $t('who.onepager') }}
+            {{ t('who.onepager') }}
           </div>
           <div class="onepager-text">
-            {{ $t('who.available') }}
+            {{ t('who.available') }}
           </div>
         </div>
         <div class="onepager-right">
           <a target="_blank" :href="WhitepaperEng" class="fr-button onepager-eng">
-            {{ $t('who.eng') }}
+            {{ t('who.eng') }}
           </a>
         </div>
       </div>
@@ -39,17 +39,12 @@
   </div>
 </template>
 
-<script>
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
 import { WhitepaperEng, WhitepaperKor } from '/src/config';
 
-export default {
-  setup() {
-    return {
-      WhitepaperEng,
-      WhitepaperKor,
-    };
-  },
-};
+const { t } = useI18n();
 </script>
 
 <style lang="postcss">

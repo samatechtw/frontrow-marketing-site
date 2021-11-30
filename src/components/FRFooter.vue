@@ -2,19 +2,19 @@
   <div class="footer">
     <div class="container">
       <div class="footer-title">
-        {{ $t('ismedia') }}
+        {{ t('ismedia') }}
       </div>
       <div class="footer-subtitle">
-        {{ $t('footer') }}
+        {{ t('footer') }}
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'tpa-footer',
-};
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <style lang="postcss">

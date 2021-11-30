@@ -14,6 +14,9 @@ $spinner2: #9267f9;
 
 $overlay: rgba(#2e3136, 0.7);
 
+$font-title: 'Haas', Helvetica, sans-serif;
+$font-text: 'Plex', Garamond, serif;
+
 @define-mixin flex-center {
   display: flex;
   flex-direction: row;
@@ -37,25 +40,25 @@ $overlay: rgba(#2e3136, 0.7);
 }
 
 @define-mixin title $size {
-  font-family: 'Montserrat', 'Avenir', Helvetica;
+  font-family: $font-title;
   font-weight: 700;
   font-size: $size;
 }
 
-@define-mixin semibold $size {
-  font-family: 'Montserrat', 'Avenir', Helvetica;
-  font-weight: 600;
-  font-size: $size;
-}
-
 @define-mixin medium $size {
-  font-family: 'Montserrat', 'Avenir', Helvetica;
+  font-family: $font-title;
   font-weight: 500;
   font-size: $size;
 }
 
+@define-mixin regular $size {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: $size;
+}
+
 @define-mixin text $size {
-  font-family: 'Montserrat', Garamond, serif;
+  font-family: $font-text;
   font-weight: 400;
   font-size: $size;
 }

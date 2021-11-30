@@ -1,5 +1,5 @@
 <template>
-  <div class="tpa-input-wrap">
+  <div class="fr-input-wrap">
     <component
       :is="rows ? 'textarea' : 'input'"
       v-bind="commonProps"
@@ -7,13 +7,13 @@
       :autocomplete="autocomplete"
       :placeholder="title"
       :value.prop="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)"
-      @keyup.enter="$emit('handle-enter')"
+      @input="emit('update:modelValue', $event.target.value)"
+      @keyup.enter="emit('handle-enter')"
     />
     <!--
   <label
     v-if="title"
-    class="tpa-input-title"
+    class="fr-input-title"
     :for="`input${_uid}`"
     :class="{ 'active': (placeholder || (modelValue || modelValue === 0)) }"
   >
@@ -22,73 +22,73 @@
   --></div>
 </template>
 
-<script>
-import { UidMixin } from '/src/utils';
+<script lang="ts" setup>
+import { computed, toRefs } from 'vue';
+import { uidSingleton } from '/src/utils';
 
-export default {
-  name: 'tpa-input',
-  mixins: [UidMixin],
-  emits: ['update:modelValue', 'handle-enter'],
-  props: {
-    modelValue: {
-      type: [Number, String],
-      default: null,
-    },
-    placeholder: {
-      type: String,
-      default: null,
-    },
-    title: {
-      type: String,
-      default: null,
-    },
-    inputType: {
-      type: String,
-      default: 'text',
-    },
-    rows: {
-      type: Number,
-      default: null,
-    },
-    autocomplete: {
-      type: String,
-      default: 'off',
-    },
-    inputClass: {
-      type: String,
-      default: null,
-    },
-    maxLength: {
-      type: Number,
-      default: undefined,
-    },
+const uid = uidSingleton.next();
+
+const emit = defineEmits(['update:modelValue', 'handle-enter']);
+
+const props = defineProps({
+  modelValue: {
+    type: [Number, String],
+    default: null,
   },
-  computed: {
-    commonProps() {
-      const props = {
-        class: {
-          'tpa-input': true,
-          'tpa-textarea': !!this.rows,
-          [this.inputClass]: this.inputClass,
-        },
-        maxlength: this.maxLength,
-        // eslint-disable-next-line
-        name: `input${this._uid}`,
-        placeholder: this.placeholder,
-      };
-      if (!this.rows) {
-        props.type = this.inputType;
-      }
-      return props;
-    },
+  placeholder: {
+    type: String,
+    default: null,
   },
-};
+  title: {
+    type: String,
+    default: null,
+  },
+  inputType: {
+    type: String,
+    default: 'text',
+  },
+  rows: {
+    type: Number,
+    default: null,
+  },
+  autocomplete: {
+    type: String,
+    default: 'off',
+  },
+  inputClass: {
+    type: String,
+    default: null,
+  },
+  maxLength: {
+    type: Number,
+    default: undefined,
+  },
+});
+const { inputClass, inputType, maxLength, placeholder, rows } = toRefs(props);
+
+const commonProps = computed(() => {
+  const common: Record<string, unknown> = {
+    class: {
+      'fr-input': true,
+      'fr-textarea': !!rows.value,
+      [inputClass.value]: inputClass.value,
+    },
+    maxlength: maxLength.value,
+    // eslint-disable-next-line
+    name: `input${uid}`,
+    placeholder: placeholder.value,
+  };
+  if (!rows.value) {
+    common.type = inputType;
+  }
+  return common;
+});
 </script>
 
 <style lang="postcss">
 @import '/src/assets/css/global.css';
 
-.tpa-input-wrap {
+.fr-input-wrap {
   margin-bottom: 15px;
   margin-top: 24px;
   position: relative;
@@ -117,7 +117,7 @@ export default {
     transition: 0.2s ease all;
   }
   label.active,
-  .tpa-input:focus ~ label {
+  .fr-input:focus ~ label {
     top: -10px;
     font-size: 13px;
     color: white;
@@ -125,7 +125,7 @@ export default {
     border-radius: 8px;
   }
 
-  .tpa-input {
+  .fr-input {
     @mixin medium 15px;
     color: $text2;
     background: $white;
@@ -139,7 +139,7 @@ export default {
     padding-left: 24px;
     padding-right: 16px;
 
-    &.tpa-textarea {
+    &.fr-textarea {
       height: unset;
     }
 

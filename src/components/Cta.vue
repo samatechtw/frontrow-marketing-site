@@ -3,9 +3,9 @@
     <div class="container">
       <div class="cta-left">
         <div class="cta-text-wrap">
-          <div class="cta-title" v-html="$t('cta')" />
+          <div class="cta-title" v-html="t('cta')" />
           <div class="cta-text">
-            {{ $t('cta_text') }}
+            {{ t('cta_text') }}
           </div>
         </div>
       </div>
@@ -15,6 +15,12 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+</script>
 
 <style lang="postcss">
 @import '/src/assets/css/global.css';

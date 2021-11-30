@@ -3,7 +3,7 @@
     <div id="token" class="anchor" />
     <div class="container">
       <div class="fr-title token-title2">
-        {{ $t('token.title') }}
+        {{ t('token.title') }}
       </div>
       <div class="token-allocation">
         <div class="token-left">
@@ -16,10 +16,10 @@
       <div class="token-schedule">
         <div class="lockup-items">
           <div class="fr-title">
-            {{ $t('token.lockup') }}
+            {{ t('token.lockup') }}
           </div>
           <div
-            v-for="(item, index) in $tm('token.lock_items')"
+            v-for="(item, index) in tm('token.lock_items') as Record<string, string>"
             :key="index"
             :class="`token-schedule-item item${index}`"
           >
@@ -34,17 +34,17 @@
         </div>
       </div>
       <div class="fr-title roadmap-title">
-        {{ $t('token.roadmap') }}
+        {{ t('token.roadmap') }}
       </div>
       <img :src="Roadmap" class="token-timeline" />
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'token',
-};
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t, tm } = useI18n();
 </script>
 
 <style lang="postcss">

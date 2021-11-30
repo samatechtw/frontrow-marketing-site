@@ -1,35 +1,30 @@
 <template>
-<div class="whitepaper">
-  <div class="container">
-    <div class="whitepaper-left">
-      <div class="whitepaper-title">
-        {{ $t('whitepaper.title') }}
-      </div>
-      <div class="whitepaper-subtitle">
-        {{ $t('whitepaper.subtitle') }}
-      </div>
-    </div>
-    <div class="whitepaper-right">
-      <a target="_blank" :href="WhitepaperEng">
-        <div class="whitepaper-button">
-          {{ $t('whitepaper.download') }}
+  <div class="whitepaper">
+    <div class="container">
+      <div class="whitepaper-left">
+        <div class="whitepaper-title">
+          {{ t('whitepaper.title') }}
         </div>
-      </a>
+        <div class="whitepaper-subtitle">
+          {{ t('whitepaper.subtitle') }}
+        </div>
+      </div>
+      <div class="whitepaper-right">
+        <a target="_blank" :href="WhitepaperEng">
+          <div class="whitepaper-button">
+            {{ t('whitepaper.download') }}
+          </div>
+        </a>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
-<script>
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
 import { WhitepaperEng } from '/src/config';
 
-export default {
-  setup() {
-    return {
-      WhitepaperEng,
-    };
-  },
-};
+const { t } = useI18n();
 </script>
 
 <style lang="postcss">
@@ -70,7 +65,8 @@ export default {
     .container {
       flex-wrap: wrap;
     }
-    .whitepaper-left, .whitepaper-right {
+    .whitepaper-left,
+    .whitepaper-right {
       display: flex;
       flex-direction: column;
       align-items: center;

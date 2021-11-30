@@ -1,49 +1,44 @@
 @font-face {
-  font-family: 'Montserrat';
-  src:
-    url('/src/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-    url('/src/assets/fonts/Montserrat-Regular.woff') format('woff'),
-    url('/src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'Plex';
+  src: url('../fonts/IBMPlexSans.woff2') format('woff2'),
+    url('../fonts/IBMPlexSans.woff') format('woff'),
+    url('../fonts/IBMPlexSans.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src:
-    url('/src/assets/fonts/Montserrat-Medium.woff2') format('woff2'),
-    url('/src/assets/fonts/Montserrat-Medium.woff') format('woff'),
-    url('/src/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-family: 'Plex';
+  src: url('../fonts/IBMPlexSansMedium.woff2') format('woff2'),
+    url('../fonts/IBMPlexSansMedium.woff') format('woff'),
+    url('../fonts/IBMPlexSansMedium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src:
-    url('/src/assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-    url('/src/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
-    url('/src/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src:
-    url('/src/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
-    url('/src/assets/fonts/Montserrat-Bold.woff') format('woff'),
-    url('/src/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Plex';
+  src: url('../fonts/IBMPlexSansBold.woff2') format('woff2'),
+    url('../fonts/IBMPlexSansBold.woff') format('woff'),
+    url('../fonts/IBMPlexSansBold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PTSerif';
-  src:
-    url('/src/assets/fonts/PTSerif-Regular.woff2') format('woff2'),
-    url('/src/assets/fonts/PTSerif-Regular.woff') format('woff'),
-    url('/src/assets/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-family: 'Haas';
+  src: url('../fonts/NeueHaasRoman.woff2') format('woff2'),
+    url('../fonts/NeueHaasRoman.woff') format('woff'),
+    url('../fonts/NeueHaasRoman.ttf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Haas';
+  src: url('../fonts/NeueHaasMedium.woff2') format('woff2'),
+    url('../fonts/NeueHaasMedium.woff') format('woff'),
+    url('../fonts/NeueHaasMedium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
