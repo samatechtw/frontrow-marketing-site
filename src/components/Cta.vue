@@ -1,6 +1,6 @@
 <template>
   <div class="cta-wrap">
-    <div class="container">
+    <div class="cta-container container">
       <div class="cta-left">
         <div class="cta-text-wrap">
           <div class="cta-title">
@@ -18,11 +18,18 @@
         <img :src="Cta" />
       </div>
     </div>
+    <Banner
+      :title="t('whitepaper.title')"
+      :text="t('whitepaper.subtitle')"
+      :link="WhitepaperEng"
+      :linkText="t('whitepaper.download')"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
+import { WhitepaperEng } from '../config';
 
 const { t } = useI18n();
 </script>
@@ -32,7 +39,7 @@ const { t } = useI18n();
 
 .cta-wrap {
   background-color: $bg-light1;
-  .container {
+  .cta-container {
     display: flex;
     padding: 80px 0 88px;
   }

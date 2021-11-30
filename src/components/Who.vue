@@ -19,30 +19,18 @@
       </svg>
       <img :src="Who" />
     </div>
-    <div class="who-onepager-wrap">
-      <div class="who-onepager container">
-        <div class="onepager-left">
-          <div class="onepager-title">
-            {{ t('who.onepager') }}
-          </div>
-          <div class="onepager-text">
-            {{ t('who.available') }}
-          </div>
-        </div>
-        <div class="onepager-right">
-          <a target="_blank" :href="WhitepaperEng" class="fr-button onepager-eng">
-            {{ t('who.eng') }}
-          </a>
-        </div>
-      </div>
-    </div>
+    <Banner
+      :title="t('who.onepager')"
+      :text="t('who.available')"
+      :link="OnepagerEng"
+      :linkText="t('who.eng')"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-
-import { WhitepaperEng, WhitepaperKor } from '/src/config';
+import { OnepagerEng } from '/src/config';
 
 const { t } = useI18n();
 </script>
@@ -82,51 +70,8 @@ const { t } = useI18n();
       width: 100%;
     }
   }
-  .who-onepager-wrap {
-    background-color: #8e9bf9;
-    width: 100%;
-  }
-  .who-onepager {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    align-items: center;
-    padding: 43px 0;
-    text-align: left;
-    .onepager-title {
-      @mixin title 18px;
-    }
-    .onepager-text {
-      @mixin text 15px;
-      margin-top: 4px;
-    }
-    .onepager-right {
-      @mixin title 15px;
-      display: flex;
-      .onepager-kor {
-        margin-left: 16px;
-      }
-      > a {
-        cursor: pointer;
-        width: 140px;
-      }
-    }
-  }
   @media (max-width: 640px) {
     padding-top: 104px;
-    .who-onepager {
-      flex-wrap: wrap;
-      justify-content: center;
-      > div {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-      }
-      .onepager-right {
-        margin-top: 24px;
-      }
-    }
   }
 }
 </style>
