@@ -3,7 +3,12 @@
     <div class="container">
       <div class="cta-left">
         <div class="cta-text-wrap">
-          <div class="cta-title" v-html="t('cta')" />
+          <div class="cta-title">
+            {{ t('cta1') }}
+          </div>
+          <div class="cta-title">
+            {{ t('cta2') }}
+          </div>
           <div class="cta-text">
             {{ t('cta_text') }}
           </div>
@@ -40,7 +45,7 @@ const { t } = useI18n();
     img {
       width: 100%;
       margin-left: -40px;
-      max-width: 400px;
+      max-width: 523px;
     }
   }
   .cta-text-wrap {
@@ -50,24 +55,16 @@ const { t } = useI18n();
     display: flex;
     height: 100%;
     flex-direction: column;
-    padding-top: 80px;
+    padding: 80px 0 0 40px;
 
-    img {
-      width: 110px;
-    }
     .cta-title {
-      @mixin title 34px;
-      margin-top: 12px;
-      color: black;
-      white-space: nowrap;
+      @mixin title 44px;
+      color: $purple;
     }
     .cta-text {
-      @mixin medium 20px;
-      margin-top: 24px;
-      color: #795df6;
-      padding-bottom: 6px;
-      border-bottom: 2px solid #795df6;
-      align-self: flex-start;
+      @mixin text 15px;
+      margin-top: 8px;
+      color: $text2;
     }
   }
   @media (max-width: 640px) {
@@ -84,20 +81,16 @@ const { t } = useI18n();
     }
     .cta-text-wrap {
       text-align: center;
-      align-items: center;
+      padding: 0;
       .cta-title {
-        white-space: unset;
-        font-size: 24px;
-      }
-      .cta-text {
-        align-self: center;
+        font-size: 36px;
       }
     }
     .cta-right {
       margin-top: 40px;
       text-align: center;
       img {
-        margin: 0;
+        max-width: 80%;
       }
     }
   }
