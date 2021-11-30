@@ -4,17 +4,18 @@ $dark1: #1b2023;
 $dark2: #212528;
 $dark3: #313131;
 $dark4: #444e5f;
+$text-title: #451dd6;
+$teal: #0ceabf;
 $text-light: #777;
 $text-light2: #505050;
 $grey1: #f7f7f7;
 $grey2: #d8d8d8;
 $grey3: #d5d5d5;
 $blue: #0087cb;
-$green: #34C38F;
+$green: #34c38f;
 $orange: #fa6400;
 
 $overlay: rgba(#2e3136, 0.7);
-
 
 @define-mixin flex-center {
   display: flex;
@@ -78,7 +79,7 @@ $overlay: rgba(#2e3136, 0.7);
   position: relative;
   &:before,
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -1px;
     width: 0px;

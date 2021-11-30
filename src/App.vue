@@ -1,5 +1,5 @@
 <template>
-<router-view />
+  <router-view />
 </template>
 
 <script>
@@ -12,7 +12,8 @@ export default {
 @import './assets/css/font.css';
 @import './assets/css/global.css';
 
-html,body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -33,6 +34,16 @@ a {
   text-decoration: none;
 }
 
+.fr-title {
+  @mixin title 26px;
+  color: $text-title;
+}
+
+.fr-title-dark {
+  @mixin title 26px;
+  color: $teal;
+}
+
 .container {
   max-width: 1120px;
   box-sizing: border-box;
@@ -46,5 +57,4 @@ a {
     padding-right: 20px;
   }
 }
-
 </style>

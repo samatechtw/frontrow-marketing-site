@@ -1,52 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="994px" height="553px" viewBox="0 0 994 553" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 37</title>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="929.009276" height="489" rx="28"></rect>
-        <filter x="-6.0%" y="-8.2%" width="112.1%" height="122.9%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.400894272 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="Website-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home" transform="translate(-15.000000, -4569.000000)">
-            <g id="Group-37" transform="translate(47.000000, 4585.000000)">
-                <g id="Rectangle">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#0A0A0A" fill-rule="evenodd" xlink:href="#path-1"></use>
-                </g>
-                <text id="BASIC-FEATURES-OF-NF" font-family="Montserrat-Bold, Montserrat" font-size="26" font-weight="bold" line-spacing="45" fill="#FFFFFF">
-                    <tspan x="90.5046382" y="56">BASIC FEATURES</tspan>
-                    <tspan x="90.5046382" y="101">OF NFT MARKETPLACE</tspan>
-                </text>
-                <text id="MINT-BURN-TRADE-LEAS" font-family="Montserrat-Bold, Montserrat" font-size="12" font-weight="bold" line-spacing="30" fill="#FFFFFF">
-                    <tspan x="452.504638" y="210">MINT</tspan>
-                    <tspan x="452.504638" y="240">BURN</tspan>
-                    <tspan x="452.504638" y="270">TRADE</tspan>
-                    <tspan x="452.504638" y="300">LEASE</tspan>
-                    <tspan x="452.504638" y="330">BORROW</tspan>
-                    <tspan x="452.504638" y="360">GAMIFICATION</tspan>
-                </text>
-                <text id="2-0-2-1" font-family="Montserrat-Bold, Montserrat" font-size="12" font-weight="bold" line-spacing="30" fill="#FFFFFF">
-                    <tspan x="839.504638" y="43">2</tspan>
-                    <tspan x="839.504638" y="73">0</tspan>
-                    <tspan x="839.504638" y="103">2</tspan>
-                    <tspan x="839.504638" y="133">1</tspan>
-                </text>
-                <rect id="Rectangle" fill="#FFFFFF" x="89.5046382" y="300" width="282" height="76"></rect>
-                <line x1="453.004638" y1="0.5" x2="453.004638" y2="489.5" id="Path-14-Copy-2" stroke="#FFFFFF" stroke-width="1.5" opacity="0.0957481748"></line>
-                <line x1="90.0046382" y1="0.5" x2="90.0046382" y2="489.5" id="Path-14-Copy-4" stroke="#FFFFFF" stroke-width="1.5" opacity="0.0957481748"></line>
-                <line x1="275.004638" y1="0.5" x2="275.004638" y2="489.5" id="Path-14-Copy-5" stroke="#FFFFFF" stroke-width="1.5" opacity="0.0957481748"></line>
-                <line x1="849.004638" y1="0.5" x2="849.004638" y2="489.5" id="Path-14-Copy-3" stroke="#FFFFFF" stroke-width="1.5" opacity="0.0957481748"></line>
-                <text id="FEATURES" font-family="Montserrat-Bold, Montserrat" font-size="12" font-weight="bold" line-spacing="30" fill="#0A0A0A">
-                    <tspan x="260.504638" y="358">FEATURES</tspan>
-                </text>
-                <g id="icons/Arrow-Left-2/Line" transform="translate(349.504638, 361.000000) scale(-1, 1) translate(-349.504638, -361.000000) translate(343.504638, 357.000000)" fill="#23262F">
-                    <path d="M9.00345167,0.285974398 L11.7726845,3.39704574 C12.0757682,3.73754283 12.0757715,4.26237517 11.7726911,4.60287565 L9.00345825,7.71401819 C8.68237141,8.07474904 8.14009236,8.0972464 7.79224432,7.76426785 C7.44439629,7.4312893 7.42270237,6.86892653 7.74378922,6.50819568 L9.18516914,4.88885251 L0.857143441,4.88885415 C0.383756746,4.88885415 6.74405151e-07,4.49088575 6.74405151e-07,3.99996687 C6.74405151e-07,3.50904778 0.383756378,3.11107896 0.85714343,3.11107896 L9.18513888,3.11107732 L7.74379573,1.49181201 C7.42270479,1.13108495 7.44439297,0.568721993 7.79223692,0.235739133 C8.14008168,-0.0972437018 8.68236073,-0.0747525912 9.00345167,0.285974398 Z" id="vector-(Stroke)" transform="translate(6.000000, 4.000000) scale(1, -1) rotate(-179.999990) translate(-6.000000, -4.000000) "></path>
-                </g>
-                <path d="M848.504638,189.414214 L848.504638,377 L660.918852,377 L848.504638,189.414214 Z" id="Rectangle" stroke="#FFFFFF" stroke-width="2"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="994" height="553" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-6%" y="-8.2%" width="112.1%" height="122.9%" filterUnits="objectBoundingBox" id="a"><feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.400894272 0" in="shadowBlurOuter1"/></filter><rect id="b" x="0" y="0" width="929.009" height="489" rx="28"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(32 16)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#451DD6" xlink:href="#b"/></g><text font-family="NeueHaasDisplay-Bold, Neue Haas Grotesk Display Pro" font-size="26" font-weight="bold" letter-spacing="1" fill="#0CEABF" transform="translate(32 16)">
+                    <tspan x="133.924" y="48">BASIC FEATURES</tspan>
+                    <tspan x="96.33" y="93">OF NFT MARKETPLACE</tspan>
+                </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF" transform="translate(32 16)">
+                    <tspan x="452.505" y="211">MINT</tspan>
+                    <tspan x="452.505" y="234">BURN</tspan>
+                    <tspan x="452.505" y="257">TRADE</tspan>
+                    <tspan x="452.505" y="280">LEASE</tspan>
+                    <tspan x="452.505" y="303">BORROW</tspan>
+                    <tspan x="452.505" y="326">GAMIFICATION</tspan>
+                </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF" transform="translate(32 16)">
+                    <tspan x="839.505" y="44">2</tspan>
+                    <tspan x="839.505" y="67">0</tspan>
+                    <tspan x="839.505" y="90">2</tspan>
+                    <tspan x="839.505" y="113">1</tspan>
+                </text><path fill="#FFDA00" d="M121.505 316h282v76h-282z"/><path stroke="#FFF" stroke-width="1.5" opacity=".096" d="M485.005 16.5v489M122.005 16.5v489M307.005 16.5v489M881.005 16.5v489"/><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#451DD6" transform="translate(32 16)">
+                    <tspan x="229.505" y="359">FEATURES</tspan>
+                </text><path d="m384.508 373.286 2.77 3.111a.913.913 0 0 1 0 1.206l-2.77 3.111a.836.836 0 0 1-1.211.05.912.912 0 0 1-.049-1.256l1.442-1.62h-8.328c-.474 0-.857-.397-.857-.888s.383-.889.857-.889h8.328l-1.442-1.62a.912.912 0 0 1 .049-1.255.836.836 0 0 1 1.211.05Z" fill="#451DD6"/><path d="M880.505 205.414V393H692.919l187.586-187.586Z" stroke="#FFF" stroke-width="2"/></g></svg>

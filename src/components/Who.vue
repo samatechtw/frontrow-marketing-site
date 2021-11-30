@@ -1,43 +1,45 @@
 <template>
-<div class="who">
-  <div id="who" class="anchor" />
-  <FRTitle :text="$t('who.title')" />
-  <div class="who-text">
-    {{ $t('who.text') }}
-  </div>
-  <div class="who-image">
-    <svg
-      class="who-background-clip"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path fill="#f5f8fa" d="M 0 100 L 0 30 C 30 -4 70 -4 100 30 L 100 100 Z" />
-    </svg>
-    <img :src="Who">
-  </div>
-  <div class="who-onepager-wrap">
-    <div class="who-onepager container">
-      <div class="onepager-left">
-        <div class="onepager-title">
-          {{ $t('who.onepager') }}
+  <div class="who">
+    <div id="who" class="anchor" />
+    <div class="fr-title">
+      {{ $t('who.title') }}
+    </div>
+    <div class="who-text">
+      {{ $t('who.text') }}
+    </div>
+    <div class="who-image">
+      <svg
+        class="who-background-clip"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path fill="#f5f8fa" d="M 0 100 L 0 30 C 30 -4 70 -4 100 30 L 100 100 Z" />
+      </svg>
+      <img :src="Who" />
+    </div>
+    <div class="who-onepager-wrap">
+      <div class="who-onepager container">
+        <div class="onepager-left">
+          <div class="onepager-title">
+            {{ $t('who.onepager') }}
+          </div>
+          <div class="onepager-text">
+            {{ $t('who.available') }}
+          </div>
         </div>
-        <div class="onepager-text">
-          {{ $t('who.available') }}
+        <div class="onepager-right">
+          <a target="_blank" :href="WhitepaperEng" class="onepager-eng">
+            {{ $t('who.eng') }}
+          </a>
+          <a target="_blank" :href="WhitepaperKor" class="onepager-kor">
+            {{ $t('who.kor') }}
+          </a>
         </div>
-      </div>
-      <div class="onepager-right">
-        <a target="_blank" :href="WhitepaperEng" class="onepager-eng">
-          {{ $t('who.eng') }}
-        </a>
-        <a target="_blank" :href="WhitepaperKor" class="onepager-kor">
-          {{ $t('who.kor') }}
-        </a>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -50,7 +52,7 @@ export default {
       WhitepaperKor,
     };
   },
-}
+};
 </script>
 
 <style lang="postcss">
@@ -140,5 +142,4 @@ export default {
     }
   }
 }
-
 </style>

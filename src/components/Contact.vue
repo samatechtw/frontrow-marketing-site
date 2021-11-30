@@ -10,7 +10,9 @@
     <path fill="#ffffff" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
   </svg>
   <div class="container contact">
-    <FRTitle :text="$t('contact.title')" />
+    <div class="fr-title">
+      {{ $t('contact.title') }}
+    </div>
     <div class="contact-left-wrap">
       <div class="contact-left">
         <div class="contact-title">

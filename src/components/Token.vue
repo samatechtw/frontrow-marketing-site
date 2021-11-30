@@ -1,41 +1,47 @@
 <template>
-<div class="token">
-  <div id="token" class="anchor" />
-  <div class="container">
-    <div class="token-title1">
-      {{ $t('token.title1') }}
-    </div>
-    <FRTitle :text="$t('token.title2')" class="token-title2" />
-    <div class="token-allocation">
-      <div class="token-left">
-        <img :src="Allocation">
+  <div class="token">
+    <div id="token" class="anchor" />
+    <div class="container">
+      <div class="token-title1">
+        {{ $t('token.title1') }}
       </div>
-      <div class="token-right">
-        <img :src="AllocationText">
+      <div class="fr-title token-title2">
+        {{ $t('token.title2') }}
       </div>
-    </div>
-    <div class="token-schedule">
-      <div class="lockup-items">
-        <FRTitle :text="$t('token.lockup')" />
-        <div
-          v-for="(item, index) in $tm('token.lock_items')"
-          :key="index"
-          :class="`token-schedule-item item${index}`"
-        >
-          <div class="bullet" />
-          <div class="token-schedule-text">
-            {{ item }}
-          </div>
+      <div class="token-allocation">
+        <div class="token-left">
+          <img :src="Allocation" />
+        </div>
+        <div class="token-right">
+          <img :src="AllocationText" />
         </div>
       </div>
-      <div class="lockup-image">
-        <img :src="Lockup">
+      <div class="token-schedule">
+        <div class="lockup-items">
+          <div class="fr-title">
+            {{ $t('token.lockup') }}
+          </div>
+          <div
+            v-for="(item, index) in $tm('token.lock_items')"
+            :key="index"
+            :class="`token-schedule-item item${index}`"
+          >
+            <div class="bullet" />
+            <div class="token-schedule-text">
+              {{ item }}
+            </div>
+          </div>
+        </div>
+        <div class="lockup-image">
+          <img :src="Lockup" />
+        </div>
       </div>
+      <div class="fr-title roadmap-title">
+        {{ $t('token.roadmap') }}
+      </div>
+      <img :src="Roadmap" class="token-timeline" />
     </div>
-    <FRTitle :text="$t('token.roadmap')" class="roadmap-title" />
-    <img :src="Roadmap" class="token-timeline">
   </div>
-</div>
 </template>
 
 <script>
@@ -186,7 +192,8 @@ export default {
   }
   @media (max-width: 540px) {
     padding-top: 48px;
-    .token-left, .token-right {
+    .token-left,
+    .token-right {
       width: 90%;
       margin: 0 auto;
     }

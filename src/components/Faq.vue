@@ -1,75 +1,53 @@
 <template>
-<div class="faq">
-  <div class="faq-intro">
-    <div class="container">
-      <img :src="Teamwork">
+  <div class="faq">
+    <div class="faq-intro">
+      <div class="container">
+        <img :src="Teamwork" />
+      </div>
+      <div class="faq-intro-block" />
     </div>
-    <div class="faq-intro-block" />
-  </div>
-  <div id="faq" class="anchor" />
-  <div class="container faq-content">
-    <FRTitle
-      :text="$t('faq.title')"
-      :textBg="$t('header.faq')"
-      :dark="true"
-    />
-    <div class="faq-items">
-      <div
-        v-for="(faq, index) in $tm('faq.items')"
-        :key="index"
-        class="faq-item"
-        :class="index === selectedFaq ? 'opened' : 'closed'"
-      >
-        <div class="faq-text">
-          <div
-            class="faq-question"
-            @click="toggleFaq(index)"
-          >
-            {{ faq.title }}
-          </div>
-          <transition
-            name="animate-height"
-            @enter="enter(index)"
-            @leave="leave"
-          >
-            <div
-              v-if="index === selectedFaq"
-              :style="{ 'max-height': answerHeights[index], height: answerHeights[index] }"
-              class="faq-answer"
-            >
+    <div id="faq" class="anchor" />
+    <div class="container faq-content">
+      <div class="fr-title-dark">
+        {{ $t('faq.title') }}
+      </div>
+      <div class="faq-items">
+        <div
+          v-for="(faq, index) in $tm('faq.items')"
+          :key="index"
+          class="faq-item"
+          :class="index === selectedFaq ? 'opened' : 'closed'"
+        >
+          <div class="faq-text">
+            <div class="faq-question" @click="toggleFaq(index)">
+              {{ faq.title }}
+            </div>
+            <transition name="animate-height" @enter="enter(index)" @leave="leave">
+              <div
+                v-if="index === selectedFaq"
+                :style="{
+                  'max-height': answerHeights[index],
+                  height: answerHeights[index],
+                }"
+                class="faq-answer"
+              >
+                {{ faq.text }}
+              </div>
+            </transition>
+            <div :ref="`answer${index}`" class="faq-pseudo-answer">
               {{ faq.text }}
             </div>
-          </transition>
-          <div :ref="`answer${index}`" class="faq-pseudo-answer">
-            {{ faq.text }}
           </div>
+          <svg width="21" height="12" viewBox="0 0 23 14">
+            <g>
+              <line x1="1" y1="1" x2="11.5" y2="12" stroke-linecap="round" />
+              <line x1="11.5" y1="12" x2="22" y2="1" stroke-linecap="round" />
+            </g>
+          </svg>
         </div>
-        <svg
-          width="21"
-          height="12"
-          viewBox="0 0 23 14"
-        >
-          <g>
-            <line
-              x1="1"
-              y1="1"
-              x2="11.5"
-              y2="12"
-              stroke-linecap="round"
-            />
-            <line
-              x1="11.5"
-              y1="12"
-              x2="22"
-              y2="1"
-              stroke-linecap="round"
-            />
-          </g>
-        </svg>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -78,12 +56,12 @@ export default {
   data() {
     return {
       selectedFaq: null,
-      answerHeights: this.$tm('faq.items').map(_item => 0),
+      answerHeights: this.$tm('faq.items').map((_item) => 0),
     };
   },
   methods: {
     toggleFaq(index) {
-      if(this.selectedFaq === index) {
+      if (this.selectedFaq === index) {
         this.selectedFaq = null;
       } else {
         this.selectedFaq = index;
@@ -94,7 +72,7 @@ export default {
       this.answerHeights[index] = `${height + 24}px`;
     },
     leave() {
-      this.answerHeights = this.$tm('faq.items').map(_item => 0);
+      this.answerHeights = this.$tm('faq.items').map((_item) => 0);
     },
   },
 };
@@ -178,7 +156,8 @@ export default {
       position: relative;
       width: 100%;
     }
-    .faq-answer, .faq-pseudo-answer {
+    .faq-answer,
+    .faq-pseudo-answer {
       font-family: 'PTSerif', sans-serif;
       @mixin text 15px;
       line-height: 24px;
@@ -195,7 +174,8 @@ export default {
       visibility: hidden;
       width: 100%;
     }
-    .animate-height-enter, .animate-height-leave-to {
+    .animate-height-enter,
+    .animate-height-leave-to {
       max-height: 0 !important;
     }
   }

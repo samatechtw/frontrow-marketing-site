@@ -1,37 +1,39 @@
 <template>
-<div class="team container">
-  <div id="team" class="anchor" />
-  <FRTitle :text="$t('team.title')" />
-  <div class="team-content">
-    <div class="team-member">
-      <img :src="TpaCeo">
-      <div class="team-title">
-        {{ $t('team.tpa') }}
-      </div>
-      <div class="team-text">
-        {{ $t('team.tpa_text') }}
-      </div>
+  <div class="team container">
+    <div id="team" class="anchor" />
+    <div class="fr-title">
+      {{ $t('team.title') }}
     </div>
-    <div class="team-member">
-      <img :src="IsmediaCeo">
-      <div class="team-title">
-        {{ $t('team.ismedia') }}
+    <div class="team-content">
+      <div class="team-member">
+        <img :src="TpaCeo" />
+        <div class="team-title">
+          {{ $t('team.tpa') }}
+        </div>
+        <div class="team-text">
+          {{ $t('team.tpa_text') }}
+        </div>
       </div>
-      <div class="team-text">
-        {{ $t('team.ismedia_text') }}
+      <div class="team-member">
+        <img :src="IsmediaCeo" />
+        <div class="team-title">
+          {{ $t('team.ismedia') }}
+        </div>
+        <div class="team-text">
+          {{ $t('team.ismedia_text') }}
+        </div>
       </div>
-    </div>
-    <div class="team-member">
-      <img :src="Cfo">
-      <div class="team-title">
-        {{ $t('team.cfo') }}
-      </div>
-      <div class="team-text">
-        {{ $t('team.cfo_text') }}
+      <div class="team-member">
+        <img :src="Cfo" />
+        <div class="team-title">
+          {{ $t('team.cfo') }}
+        </div>
+        <div class="team-text">
+          {{ $t('team.cfo_text') }}
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <style lang="postcss">
@@ -79,5 +81,4 @@
     }
   }
 }
-
 </style>

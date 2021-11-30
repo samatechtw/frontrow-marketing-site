@@ -1,20 +1,19 @@
 <template>
-<div class="cta-wrap">
-  <div class="container">
-    <div class="cta-left">
-      <div class="cta-text-wrap">
-        <img :src="Ismedia">
-        <div class="cta-title" v-html="$t('cta')" />
-        <div class="cta-text">
-          {{ $t('cta_text') }}
+  <div class="cta-wrap">
+    <div class="container">
+      <div class="cta-left">
+        <div class="cta-text-wrap">
+          <div class="cta-title" v-html="$t('cta')" />
+          <div class="cta-text">
+            {{ $t('cta_text') }}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="cta-right">
-      <img :src="Cta">
+      <div class="cta-right">
+        <img :src="Cta" />
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <style lang="postcss">
@@ -71,7 +70,8 @@
       justify-content: center;
       padding-bottom: 0;
     }
-    .cta-left, .cta-right {
+    .cta-left,
+    .cta-right {
       width: 100%;
       justify-content: center;
       margin: 0;
