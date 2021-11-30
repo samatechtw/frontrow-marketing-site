@@ -30,11 +30,8 @@
           </div>
         </div>
         <div class="onepager-right">
-          <a target="_blank" :href="WhitepaperEng" class="onepager-eng">
+          <a target="_blank" :href="WhitepaperEng" class="fr-button onepager-eng">
             {{ $t('who.eng') }}
-          </a>
-          <a target="_blank" :href="WhitepaperKor" class="onepager-kor">
-            {{ $t('who.kor') }}
           </a>
         </div>
       </div>
@@ -66,10 +63,10 @@ export default {
   width: 100%;
   padding: 88px 0 0;
   .who-text {
+    @mixin text 15px;
     width: 620px;
     max-width: 90%;
-    @mixin text 15px;
-    color: $dark4;
+    color: $text2;
   }
   .who-image {
     width: 100%;
@@ -116,13 +113,8 @@ export default {
         margin-left: 16px;
       }
       > a {
-        @mixin flex-center;
-        background-color: $dark4;
-        border-radius: 4px;
-        height: 40px;
-        width: 126px;
         cursor: pointer;
-        color: white;
+        width: 140px;
       }
     }
   }

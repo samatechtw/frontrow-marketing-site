@@ -1,14 +1,14 @@
 <template>
-<div class="future">
-  <div id="nft" class="anchor" />
-  <div class="future-left">
-    <img :src="NftFuture">
-    <div class="future-block" />
+  <div class="future">
+    <div id="nft" class="anchor" />
+    <div class="future-left">
+      <img :src="NftFuture" />
+      <div class="future-block" />
+    </div>
+    <div class="future-right">
+      <img :src="NftDesign2" />
+    </div>
   </div>
-  <div class="future-right">
-    <img :src="NftDesign2">
-  </div>
-</div>
 </template>
 
 <style lang="postcss">
@@ -29,7 +29,7 @@
       height: 83px;
       max-width: 70%;
       width: 450px;
-      background-color: $blue;
+      background-color: $yellow;
     }
     img {
       width: 100%;
@@ -43,7 +43,8 @@
   }
   @media (max-width: 540px) {
     flex-wrap: wrap;
-    .future-left, .future-right {
+    .future-left,
+    .future-right {
       width: 100%;
     }
   }

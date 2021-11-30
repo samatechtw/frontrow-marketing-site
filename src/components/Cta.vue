@@ -20,7 +20,7 @@
 @import '/src/assets/css/global.css';
 
 .cta-wrap {
-  background-color: $grey1;
+  background-color: $bg-light1;
   .container {
     display: flex;
     padding: 80px 0 88px;

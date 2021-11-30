@@ -2,11 +2,8 @@
   <div class="token">
     <div id="token" class="anchor" />
     <div class="container">
-      <div class="token-title1">
-        {{ $t('token.title1') }}
-      </div>
       <div class="fr-title token-title2">
-        {{ $t('token.title2') }}
+        {{ $t('token.title') }}
       </div>
       <div class="token-allocation">
         <div class="token-left">
@@ -120,7 +117,7 @@ export default {
       @mixin text 15px;
       display: flex;
       text-align: left;
-      color: $text-light2;
+      color: $text1;
       padding-right: 25%;
       .bullet {
         width: 14px;

@@ -131,8 +131,7 @@
     ]
   },
   "token": {
-    "title1": "TPA TOKEN ECONOMY",
-    "title2": "TOKEN ALLOCATION",
+    "title": "TOKEN ALLOCATION",
     "roadmap": "Roadmap",
     "lockup": "Lock-Up Schedule",
     "lock_items": [

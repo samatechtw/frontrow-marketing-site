@@ -36,12 +36,20 @@ a {
 
 .fr-title {
   @mixin title 26px;
-  color: $text-title;
+  color: $purple;
 }
 
 .fr-title-dark {
   @mixin title 26px;
   color: $teal;
+}
+
+.fr-button {
+  @mixin flex-center;
+  background-color: $teal;
+  border-radius: 23px;
+  height: 40px;
+  color: $purple;
 }
 
 .container {

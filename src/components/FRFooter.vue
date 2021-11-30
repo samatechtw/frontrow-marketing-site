@@ -1,14 +1,14 @@
 <template>
-<div class="footer">
-  <div class="container">
-    <div class="footer-title">
-      {{ $t('ismedia') }}
-    </div>
-    <div class="footer-subtitle">
-      {{ $t('footer') }}
+  <div class="footer">
+    <div class="container">
+      <div class="footer-title">
+        {{ $t('ismedia') }}
+      </div>
+      <div class="footer-subtitle">
+        {{ $t('footer') }}
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
 @import '/src/assets/css/global.css';
 
 .footer {
-  background: $dark2;
+  background: $bg-light1;
   color: $white;
   padding: 80px 0;
   text-align: center;

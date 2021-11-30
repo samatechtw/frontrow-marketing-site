@@ -1,16 +1,16 @@
 <template>
-<div class="tpa-input-wrap">
-  <component
-    :is="rows ? 'textarea' : 'input'"
-    v-bind="commonProps"
-    :rows="rows"
-    :autocomplete="autocomplete"
-    :placeholder="title"
-    :value.prop="modelValue"
-    @input="$emit('update:modelValue', $event.target.value)"
-    @keyup.enter="$emit('handle-enter')"
-  />
-  <!--
+  <div class="tpa-input-wrap">
+    <component
+      :is="rows ? 'textarea' : 'input'"
+      v-bind="commonProps"
+      :rows="rows"
+      :autocomplete="autocomplete"
+      :placeholder="title"
+      :value.prop="modelValue"
+      @input="$emit('update:modelValue', $event.target.value)"
+      @keyup.enter="$emit('handle-enter')"
+    />
+    <!--
   <label
     v-if="title"
     class="tpa-input-title"
@@ -19,8 +19,7 @@
   >
     {{ title }}
   </label>
-  -->
-</div>
+  --></div>
 </template>
 
 <script>
@@ -77,7 +76,7 @@ export default {
         name: `input${this._uid}`,
         placeholder: this.placeholder,
       };
-      if(!this.rows) {
+      if (!this.rows) {
         props.type = this.inputType;
       }
       return props;
@@ -128,7 +127,7 @@ export default {
 
   .tpa-input {
     @mixin medium 15px;
-    color: $dark4;
+    color: $text2;
     background: $white;
     width: 100%;
     height: 56px;
@@ -161,19 +160,18 @@ export default {
     }
     /* stylelint-enable */
 
-    &[type=number] {
+    &[type='number'] {
       -moz-appearance: textfield;
     }
-    &[type=number]::-webkit-inner-spin-button,
-    &[type=number]::-webkit-outer-spin-button {
+    &[type='number']::-webkit-inner-spin-button,
+    &[type='number']::-webkit-outer-spin-button {
       -webkit-appearance: none;
       margin: 0;
     }
 
     &::placeholder {
-      color: #adadad;
+      color: #a5a5a5;
     }
   }
 }
-
 </style>

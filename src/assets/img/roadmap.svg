@@ -1,80 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="930px" height="260px" viewBox="0 0 930 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 4</title>
-    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home" transform="translate(-50.000000, -7231.000000)">
-            <g id="Group-35" transform="translate(50.000000, 7112.000000)">
-                <g id="Group-4" transform="translate(0.000000, 119.000000)">
-                    <text id="Q1" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+<svg width="930" height="260" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="22" y="15">Q1</tspan>
-                    </text>
-                    <text id="2021" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+                    </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="22" y="250">2021</tspan>
-                    </text>
-                    <text id="Q2" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+                    </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="202" y="15">Q2</tspan>
-                    </text>
-                    <text id="Q3" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+                    </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="381" y="15">Q3</tspan>
-                    </text>
-                    <text id="Q4" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+                    </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="561" y="15">Q4</tspan>
-                    </text>
-                    <text id="Future" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+                    </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="740" y="15">Future</tspan>
-                    </text>
-                    <text id="2022---Beyond" font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" line-spacing="23" letter-spacing="1" fill="#FFFFFF">
+                    </text><text font-family="NeueHaasDisplay-Mediu, Neue Haas Grotesk Display Pro" font-size="18" font-weight="500" letter-spacing="1" fill="#FFF">
                         <tspan x="740" y="250">2022 - Beyond</tspan>
-                    </text>
-                    <text id="Token-audited" font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#4A4A4A">
+                    </text><text font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" letter-spacing="-.36" fill="#4A4A4A">
                         <tspan x="28" y="54">Token audited</tspan>
-                    </text>
-                    <text id="Token-audited-Launch" font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#4A4A4A">
+                    </text><text font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" letter-spacing="-.36" fill="#4A4A4A">
                         <tspan x="211" y="54">Token audited</tspan>
                         <tspan x="211" y="77">Launch beta test net</tspan>
-                    </text>
-                    <text id="Full-operation" font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#4A4A4A">
+                    </text><text font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" letter-spacing="-.36" fill="#4A4A4A">
                         <tspan x="387" y="54">Full operation</tspan>
-                    </text>
-                    <text id="Initial-investment-r" font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#4A4A4A">
+                    </text><text font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" letter-spacing="-.36" fill="#4A4A4A">
                         <tspan x="567.5" y="54">Initial investment</tspan>
                         <tspan x="567.5" y="77">returns received</tspan>
                         <tspan x="567.5" y="100">by Front Row holders</tspan>
-                    </text>
-                    <text id="Continued-growth-of" font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" font-weight="normal" line-spacing="23" letter-spacing="-0.36" fill="#4A4A4A">
+                    </text><text font-family="IBMPlexSans-Regular, IBM Plex Sans" font-size="15" letter-spacing="-.36" fill="#4A4A4A">
                         <tspan x="748.5" y="54">Continued growth</tspan>
                         <tspan x="748.5" y="77">of investments and</tspan>
                         <tspan x="748.5" y="100">dividends to</tspan>
                         <tspan x="748.5" y="123">Front Row holders</tspan>
-                    </text>
-                    <path id="Line-2" d="M900.950619,205.599275 L925,217.5 L901.049791,229.59907 L901.008,219.598 L804.008264,219.999983 L802.008281,220.008247 L801.991753,216.008281 L803.991736,216.000017 L900.991,215.598 L900.950619,205.599275 Z" fill="#451DD6" fill-rule="nonzero"></path>
-                    <rect id="Rectangle" fill="#451DD6" x="723" y="213" width="180" height="9"></rect>
-                    <rect id="Rectangle-Copy-8" fill="#1DC7D6" x="363" y="213" width="180" height="9"></rect>
-                    <rect id="Rectangle-Copy-10" fill="#D61DC7" x="3" y="213" width="180" height="9"></rect>
-                    <rect id="Rectangle-Copy-6" fill="#295EDA" x="543" y="213" width="180" height="9"></rect>
-                    <rect id="Rectangle-Copy-9" fill="#E8E113" x="183" y="213" width="180" height="9"></rect>
-                    <g id="Group-3" transform="translate(0.000000, 11.000000)">
-                        <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
-                        <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
-                    </g>
-                    <g id="Group-3-Copy-2" transform="translate(360.000000, 11.000000)">
-                        <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
-                        <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
-                    </g>
-                    <g id="Group-3-Copy" transform="translate(180.000000, 11.000000)">
-                        <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
-                        <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
-                    </g>
-                    <g id="Group-3-Copy-3" transform="translate(540.000000, 11.000000)">
-                        <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
-                        <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
-                    </g>
-                    <g id="Group-3-Copy-4" transform="translate(720.000000, 11.000000)">
-                        <circle id="Oval" fill="#BABABA" cx="3.5" cy="3.5" r="3.5"></circle>
-                        <line x1="3.5" y1="4.5" x2="3.5" y2="199.5" id="Line-3" stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5"></line>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+                    </text><path d="M900.95 205.6 925 217.5l-23.95 12.1-.042-10.002-97 .402-2 .008-.016-4 2-.008 96.999-.402-.04-9.999Z" fill="#451DD6" fill-rule="nonzero"/><path fill="#451DD6" d="M723 213h180v9H723z"/><path fill="#1DC7D6" d="M363 213h180v9H363z"/><path fill="#D61DC7" d="M3 213h180v9H3z"/><path fill="#295EDA" d="M543 213h180v9H543z"/><path fill="#E8E113" d="M183 213h180v9H183z"/><g transform="translate(0 11)"><circle fill="#BABABA" cx="3.5" cy="3.5" r="3.5"/><path stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5" d="M3.5 4.5v195"/></g><g transform="translate(360 11)"><circle fill="#BABABA" cx="3.5" cy="3.5" r="3.5"/><path stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5" d="M3.5 4.5v195"/></g><g transform="translate(180 11)"><circle fill="#BABABA" cx="3.5" cy="3.5" r="3.5"/><path stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5" d="M3.5 4.5v195"/></g><g transform="translate(540 11)"><circle fill="#BABABA" cx="3.5" cy="3.5" r="3.5"/><path stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5" d="M3.5 4.5v195"/></g><g transform="translate(720 11)"><circle fill="#BABABA" cx="3.5" cy="3.5" r="3.5"/><path stroke="#BABABA" stroke-linecap="square" stroke-dasharray="5" d="M3.5 4.5v195"/></g></g></svg>

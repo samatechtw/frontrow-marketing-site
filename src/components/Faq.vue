@@ -83,7 +83,7 @@ export default {
 
 .faq {
   position: relative;
-  background: $blue;
+  background: $purple;
   text-align: center;
   padding-bottom: 64px;
   .faq-intro {
@@ -100,7 +100,7 @@ export default {
       height: 83px;
       width: 40%;
       max-width: 440px;
-      background-color: $dark1;
+      background-color: $teal;
       right: 0;
       bottom: 72px;
     }

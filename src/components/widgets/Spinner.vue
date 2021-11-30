@@ -1,7 +1,7 @@
 <template>
-<div class="spinner-wrap">
-  <div class="spinner" :style="spinnerStyle" />
-</div>
+  <div class="spinner-wrap">
+    <div class="spinner" :style="spinnerStyle" />
+  </div>
 </template>
 
 <script>
@@ -36,10 +36,10 @@ export default {
   justify-content: center;
 
   .spinner {
-    border: 6px solid $blue;
+    border: 6px solid $spinner1;
     border-radius: 50%;
-    border-top: 7px solid $green;
-    border-bottom: 7px solid $green;
+    border-top: 7px solid $spinner2;
+    border-bottom: 7px solid $spinner2;
     width: 32px;
     height: 32px;
     -webkit-animation: spin 1s linear infinite;
@@ -48,11 +48,20 @@ export default {
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-</style>>
+</style>
+>

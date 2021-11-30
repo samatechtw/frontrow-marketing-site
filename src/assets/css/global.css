@@ -1,19 +1,16 @@
 $white: #fff;
 $black: #000;
-$dark1: #1b2023;
-$dark2: #212528;
-$dark3: #313131;
-$dark4: #444e5f;
-$text-title: #451dd6;
+$text1: #212528;
+$text2: #4a4a4a;
+$bg-light1: #f4f2ff;
+$purple: #451dd6;
 $teal: #0ceabf;
-$text-light: #777;
-$text-light2: #505050;
-$grey1: #f7f7f7;
-$grey2: #d8d8d8;
-$grey3: #d5d5d5;
+$red: #ef466f;
 $blue: #0087cb;
-$green: #34c38f;
-$orange: #fa6400;
+$yellow: #ffda00;
+
+$spinner1: #9757d7;
+$spinner2: #9267f9;
 
 $overlay: rgba(#2e3136, 0.7);
 
@@ -65,7 +62,7 @@ $overlay: rgba(#2e3136, 0.7);
 
 @define-mixin subtitle {
   @mixin text 16px;
-  color: $text-light;
+  color: $text2;
   margin: 32px auto 0;
   text-align: center;
   max-width: 670px;

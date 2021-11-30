@@ -63,7 +63,7 @@
   .team-text {
     @mixin text 15px;
     margin-top: 8px;
-    color: $dark3;
+    color: $text1;
     line-height: 1.7em;
   }
   @media (max-width: 540px) {

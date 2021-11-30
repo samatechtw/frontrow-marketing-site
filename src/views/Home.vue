@@ -1,17 +1,19 @@
 <template>
-<div class="home-wrap">
-  <FRHeader :activeSection="activeSection" />
-  <Cta />
-  <Who ref="who" :selected="activeSection === 'who'" />
-  <Future ref="nft" :selected="activeSection === 'nft'" />
-  <Features />
-  <Design />
-  <Token ref="token" :selected="activeSection === 'token'" />
-  <Team ref="team" :selected="activeSection === 'team'" />
-  <Faq ref="faq" :selected="activeSection === 'faq'" />
-  <Contact />
-  <FRFooter />
-</div>
+  <div class="home-wrap">
+    <FRHeader :activeSection="activeSection" />
+    <Cta />
+    <Who ref="who" :selected="activeSection === 'who'" />
+    <Future ref="nft" :selected="activeSection === 'nft'" />
+    <Features />
+    <Design />
+    <Token ref="token" :selected="activeSection === 'token'" />
+    <!--
+    <Team ref="team" :selected="activeSection === 'team'" />
+    -->
+    <Faq ref="faq" :selected="activeSection === 'faq'" />
+    <Contact />
+    <FRFooter />
+  </div>
 </template>
 
 <script>
@@ -28,14 +30,14 @@ export default {
     onScroll() {
       const top = window.pageYOffset;
       const section = this.sections.find((section, idx) => {
-        if(
-          top > (this.$refs[section].$el.offsetTop - 350)
-          || idx === this.sections.length - 1
+        if (
+          top > this.$refs[section].$el.offsetTop - 350 ||
+          idx === this.sections.length - 1
         ) {
           return true;
         }
       });
-      if(section !== this.activeSection) {
+      if (section !== this.activeSection) {
         this.activeSection = section;
       }
     },
@@ -56,7 +58,7 @@ export default {
 
 .home-wrap {
   color: $black;
-  > div  {
+  > div {
     position: relative;
     z-index: 2;
   }
