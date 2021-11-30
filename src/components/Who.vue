@@ -1,7 +1,7 @@
 <template>
 <div class="who">
   <div id="who" class="anchor" />
-  <TpaTitle :text="$t('who.title')" />
+  <FRTitle :text="$t('who.title')" />
   <div class="who-text">
     {{ $t('who.text') }}
   </div>

@@ -1,7 +1,7 @@
 {
-  "name": "tpa-marketing-site",
+  "name": "frontrow-marketing-site",
   "version": "1.0.0",
-  "description": "Marketing splash page for TPA",
+  "description": "Marketing splash page for Front Row",
   "private": true,
   "engines": {
     "node": ">=12.20.0",
@@ -15,10 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samatech/tpa-marketing-site.git"
+    "url": "git+https://github.com/samatech/frontrow-marketing-site.git"
   },
   "keywords": [
-    "TPA",
+    "FrontRow",
+    "foundation",
     "marketing",
     "finance",
     "crypto",
@@ -28,9 +29,9 @@
   "author": "Samatech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samatech/tpa-marketing-site/issues"
+    "url": "https://github.com/samatech/frontrow-marketing-site/issues"
   },
-  "homepage": "https://github.com/samatech/tpa-marketing-site#readme",
+  "homepage": "https://github.com/samatech/frontrow-marketing-site#readme",
   "dependencies": {
     "@sampullman/fetch-api": "^0.3.2",
     "vue": "^3.0.11",

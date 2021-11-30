@@ -1,11 +1,11 @@
 <template>
 <div class="token">
-  <div  id="token" class="anchor" />
+  <div id="token" class="anchor" />
   <div class="container">
     <div class="token-title1">
       {{ $t('token.title1') }}
     </div>
-    <TpaTitle :text="$t('token.title2')" class="token-title2" />
+    <FRTitle :text="$t('token.title2')" class="token-title2" />
     <div class="token-allocation">
       <div class="token-left">
         <img :src="Allocation">
@@ -16,7 +16,7 @@
     </div>
     <div class="token-schedule">
       <div class="lockup-items">
-        <TpaTitle :text="$t('token.lockup')" />
+        <FRTitle :text="$t('token.lockup')" />
         <div
           v-for="(item, index) in $tm('token.lock_items')"
           :key="index"
@@ -32,7 +32,7 @@
         <img :src="Lockup">
       </div>
     </div>
-    <TpaTitle :text="$t('token.roadmap')" class="roadmap-title" />
+    <FRTitle :text="$t('token.roadmap')" class="roadmap-title" />
     <img :src="Roadmap" class="token-timeline">
   </div>
 </div>
@@ -88,7 +88,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    .tpa-title-wrap .tpa-title {
+    .fr-title-wrap .fr-title {
       text-align: center;
     }
     .lockup-items {
@@ -161,12 +161,12 @@ export default {
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 64px;
-      .tpa-title-wrap {
-        .tpa-title {
+      .fr-title-wrap {
+        .fr-title {
           top: 4px;
           margin-bottom: 24px;
         }
-        .tpa-title-bg {
+        .fr-title-bg {
           display: none;
         }
       }
@@ -194,10 +194,10 @@ export default {
       margin-top: 40px;
     }
     .token-title2 {
-      .tpa-title {
+      .fr-title {
         top: 4px;
       }
-      .tpa-title-bg {
+      .fr-title-bg {
         display: none;
       }
     }

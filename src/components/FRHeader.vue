@@ -5,7 +5,7 @@
       <div class="header-left">
         <img :src="Logo" @click="scroll(0)">
       </div>
-      <TpaHeaderLinks
+      <FRHeaderLinks
         class="header-right"
         :links="headerLinks"
         :activeLink="activeLink"
@@ -29,7 +29,7 @@
             color="black"
             @click="sidebarOpened = false"
           />
-          <TpaHeaderLinks
+          <FRHeaderLinks
             class="header-links-mobile"
             :links="headerLinks"
             :activeLink="activeLink"
@@ -84,8 +84,8 @@ export default {
   methods: {
     scroll(top) {
       window.scroll({
-        top, 
-        left: 0, 
+        top,
+        left: 0,
         behavior: 'smooth',
       });
     },

@@ -9,7 +9,7 @@ const router = createRouter({
       path: '/',
       name: 'Home',
       component: Home,
-      meta: { title: 'TPA Holdings' },
+      meta: { title: 'Front Row Foundation' },
     },
     {
       path: '/whitepaper',
@@ -20,7 +20,7 @@ const router = createRouter({
 
 router.afterEach((to, _from) => {
   const parentTitle = to.matched.some(record => record.meta.title);
-  document.title = to.meta.title || parentTitle || 'TPA Holdings';
+  document.title = to.meta.title || parentTitle || 'Front Row Foundation';
 });
 
 export default router;

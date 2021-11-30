@@ -8,7 +8,7 @@
   </div>
   <div id="faq" class="anchor" />
   <div class="container faq-content">
-    <TpaTitle
+    <FRTitle
       :text="$t('faq.title')"
       :textBg="$t('header.faq')"
       :dark="true"

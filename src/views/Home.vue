@@ -1,6 +1,6 @@
 <template>
 <div class="home-wrap">
-  <TpaHeader :activeSection="activeSection" />
+  <FRHeader :activeSection="activeSection" />
   <Cta />
   <Who ref="who" :selected="activeSection === 'who'" />
   <Future ref="nft" :selected="activeSection === 'nft'" />
@@ -10,7 +10,7 @@
   <Team ref="team" :selected="activeSection === 'team'" />
   <Faq ref="faq" :selected="activeSection === 'faq'" />
   <Contact />
-  <TpaFooter />
+  <FRFooter />
 </div>
 </template>
 

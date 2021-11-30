@@ -10,13 +10,13 @@
     <path fill="#ffffff" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
   </svg>
   <div class="container contact">
-    <TpaTitle :text="$t('contact.title')" />
+    <FRTitle :text="$t('contact.title')" />
     <div class="contact-left-wrap">
       <div class="contact-left">
         <div class="contact-title">
           {{ $t('contact.name_title') }}
         </div>
-        <TpaInput
+        <FRInput
           v-model="name"
           :title="$t('contact.name')"
           class="contact-name"
@@ -24,7 +24,7 @@
         <div class="contact-title">
           {{ $t('contact.email_title') }}
         </div>
-        <TpaInput
+        <FRInput
           v-model="email"
           :title="$t('contact.email')"
           class="contact-email"
@@ -33,7 +33,7 @@
         <div class="contact-title">
           {{ $t('contact.inquiry') }}
         </div>
-        <TpaInput
+        <FRInput
           v-model="inquiry"
           :title="$t('contact.inquiry')"
           class="contact-inquiry"
@@ -79,10 +79,10 @@ const sendEmail = (name, email, inquiry) => (
     data: {
       sender: { name, email },
       to: [{
-        name: 'TPA Info',
+        name: 'Front Row Info',
         email: 'info@tpa.finance',
       }],
-      subject: 'TPA Marketing Site Form',
+      subject: 'Front Row Foundation Site Form',
       htmlContent: '<html><head></head><body>' +
         `<h4>From: ${email}</h4><h4>Name: ${name}</h4><h4>Inquiry:</h4><p>${inquiry}</p></body></html>`,
     },
@@ -92,7 +92,6 @@ const sendEmail = (name, email, inquiry) => (
 const RATE_LIMIT_KEY = 'rate-limit';
 
 export default {
-  name: 'contact',
   setup() {
     const { t } = useI18n();
     const name = ref('');
@@ -153,7 +152,7 @@ export default {
     width: 100%;
     max-width: 840px;
     align-items: flex-start;
-    .tpa-title-wrap {
+    .fr-title-wrap {
       width: 100%;
       margin-bottom: 24px;
       position: relative;
@@ -180,7 +179,7 @@ export default {
     margin-top: 16px;
     text-align: left;
   }
-  .tpa-input-wrap {
+  .fr-input-wrap {
     margin-top: 8px;
   }
   .contact-background-clip {

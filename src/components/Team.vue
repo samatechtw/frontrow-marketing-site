@@ -1,7 +1,7 @@
 <template>
 <div class="team container">
   <div id="team" class="anchor" />
-  <TpaTitle :text="$t('team.title')" />
+  <FRTitle :text="$t('team.title')" />
   <div class="team-content">
     <div class="team-member">
       <img :src="TpaCeo">
