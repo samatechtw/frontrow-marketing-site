@@ -1,5 +1,6 @@
 <template>
   <div class="contact-wrap">
+    <!--
     <svg
       class="contact-background-clip"
       viewBox="0 0 100 40"
@@ -9,6 +10,7 @@
     >
       <path fill="#ffffff" d="M 0 40 L 0 0 C 30 40, 70 40, 100 0 L 100 40 L 0 40" />
     </svg>
+    -->
     <div class="fr-title">
       {{ t('contact.title') }}
     </div>
@@ -193,7 +195,7 @@ const send = async () => {
     }
   }
   @media (max-width: 540px) {
-    padding-top: 110px;
+    padding-top: 32px;
     .contact-background-clip {
       height: 40px;
     }

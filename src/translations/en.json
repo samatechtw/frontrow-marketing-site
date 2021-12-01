@@ -1,10 +1,11 @@
 {
   "company": "Front Row Foundation",
   "ismedia": "isMedia NFT",
-  "cta1": "Make Your Tokens",
-  "cta2": "Work For You",
-  "cta_text": "DeFi lending made possible by Front Row Foundation",
-  "scroll": "Scroll",
+  "home": {
+    "cta1": "Your Front Seat To",
+    "cta2": "The Future of NFTs",
+    "cta_text": "Front Row is a next-generation NFT platform that fosters real community while connecting you like never before to your favorite celebrities and icons."
+  },
   "header": {
     "benefits": "Benefits",
     "how": "How It Works",
@@ -16,7 +17,7 @@
     "faq": "FAQ"
   },
   "whitepaper": {
-    "title": "Discover why Inventory Financing is making waves in DeFi",
+    "title": "Take a sneak peak at the first truly social NFT platform",
     "subtitle": "See Whitepaper for more",
     "download": "Download",
     "whitepaper": "Whitepaper"

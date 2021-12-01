@@ -3,7 +3,6 @@
     <div id="future" class="anchor" />
     <div class="future-left">
       <img :src="NftFuture" />
-      <div class="future-block" />
     </div>
     <div class="future-right">
       <img :src="NftDesign2" />
@@ -17,7 +16,6 @@
 .future {
   width: 100%;
   display: flex;
-  padding-top: 140px;
   padding-bottom: 80px;
   background-color: $bg-light2;
   .future-left {

@@ -43,14 +43,14 @@ defineProps({
 @import '/src/assets/css/global.css';
 
 .banner-wrap {
-  background-color: $purple;
+  background-color: $yellow;
   width: 100%;
 }
 .banner {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: $purple;
   align-items: center;
   padding: 43px 24px;
   text-align: left;

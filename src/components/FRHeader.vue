@@ -5,6 +5,7 @@
         <div class="header-left">
           <img :src="Logo" @click="scroll(0)" />
         </div>
+        <!--
         <FRHeaderLinks
           class="header-right"
           :links="headerLinks"
@@ -32,6 +33,7 @@
             />
           </div>
         </div>
+        -->
       </div>
     </div>
   </Sticky>
@@ -162,9 +164,6 @@ const activeLink = computed(() => {
   .header-left {
     @mixin flex-center;
     position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
     img {
       height: 38px;
       cursor: pointer;

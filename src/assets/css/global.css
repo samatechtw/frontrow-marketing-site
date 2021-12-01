@@ -6,6 +6,7 @@ $text3: #777777;
 $bg-light1: #f4f2ff;
 $bg-light2: #fbfbfb;
 $purple: #451dd6;
+$pink2: #d453cc;
 $teal: #0ceabf;
 $red: #ef466f;
 $blue: #0087cb;
@@ -64,6 +65,12 @@ $font-text: 'Plex', Garamond, serif;
 @define-mixin text $size {
   font-family: $font-text;
   font-weight: 400;
+  font-size: $size;
+}
+
+@define-mixin text-medium $size {
+  font-family: $font-text;
+  font-weight: 500;
   font-size: $size;
 }
 

@@ -1,35 +1,26 @@
 <template>
-  <div class="cta-wrap">
-    <div class="cta-container container">
-      <div class="cta-left">
-        <div class="cta-text-wrap">
-          <div class="cta-title">
-            {{ t('cta1') }}
-          </div>
-          <div class="cta-title">
-            {{ t('cta2') }}
-          </div>
-          <div class="cta-text">
-            {{ t('cta_text') }}
-          </div>
+  <div class="home-cta-wrap">
+    <div class="home-cta">
+      <div class="home-cta-box">
+        <div class="cta-title" v-html="t('home.cta1')" />
+        <div class="cta-title" v-html="t('home.cta2')" />
+        <div class="cta-text">
+          {{ t('home.cta_text') }}
         </div>
       </div>
-      <div class="cta-right">
-        <img :src="Cta" />
+    </div>
+    <div class="home-cta-right" :style="{ 'background-image': `url(${Lines})` }">
+      <div class="home-cta-image">
+        <img :src="CtaImage" />
       </div>
     </div>
-    <Banner
-      :title="t('whitepaper.title')"
-      :text="t('whitepaper.subtitle')"
-      :link="WhitepaperEng"
-      :linkText="t('whitepaper.download')"
-    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-import { WhitepaperEng } from '../config';
+import Lines from '/src/assets/img/lines.png';
+import CtaImage from '/src/assets/img/cta.jpg';
 
 const { t } = useI18n();
 </script>
@@ -37,70 +28,92 @@ const { t } = useI18n();
 <style lang="postcss">
 @import '/src/assets/css/global.css';
 
-.cta-wrap {
-  background-color: $bg-light1;
-  .cta-container {
+.home-cta-wrap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: $purple;
+  justify-content: flex-end;
+  .home-cta-right {
     display: flex;
-    padding: 80px 0 88px;
-  }
-  .cta-left {
-    width: 50%;
-    margin-left: 40px;
-  }
-  .cta-right {
-    width: 50%;
-    img {
-      width: 100%;
-      margin-left: -40px;
-      max-width: 523px;
-    }
-  }
-  .cta-text-wrap {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    display: flex;
+    align-items: center;
+    width: 33%;
     height: 100%;
-    flex-direction: column;
-    padding: 80px 0 0 40px;
-
+    height: 540px;
+    background-color: $pink2;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .home-cta-image img {
+    width: 267px;
+    border-radius: 30px;
+    position: relative;
+    left: -50%;
+  }
+  .home-cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    .home-cta-box {
+      display: flex;
+      flex-direction: column;
+      padding: 48px 300px 0 48px;
+    }
     .cta-title {
-      @mixin title 44px;
-      color: $purple;
+      @mixin medium 52px;
+      color: $teal;
     }
     .cta-text {
-      @mixin text 15px;
-      margin-top: 8px;
-      color: $text2;
+      @mixin text-medium 16px;
+      color: $yellow;
+      line-height: 23px;
+      margin-top: 24px;
+      padding-bottom: 32px;
+      max-width: 440px;
+    }
+    .home-cta-button {
+      width: 288px;
     }
   }
-  @media (max-width: 640px) {
-    .cta-container {
-      flex-wrap: wrap;
-      justify-content: center;
-      padding-bottom: 0;
+  @media (max-width: 1080px) {
+    .home-cta .home-cta-box {
+      padding-right: 180px;
     }
-    .cta-left,
-    .cta-right {
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+    .home-cta-image {
+      max-width: 80%;
+      img {
+        left: unset;
+      }
+    }
+    .home-cta {
+      padding: 0 40px 48px;
       width: 100%;
       justify-content: center;
-      margin: 0;
-    }
-    .cta-text-wrap {
       text-align: center;
-      padding: 0;
-      margin: 0;
-      max-width: 90%;
+      .home-cta-box {
+        align-items: center;
+      }
       .cta-title {
-        font-size: 36px;
+        font-size: 40px;
+      }
+      .home-cta-box {
+        margin: unset;
+        padding: 48px 0 0;
       }
     }
-    .cta-right {
-      margin-top: 40px;
-      text-align: center;
-      img {
-        max-width: 80%;
-      }
+    .home-cta-right {
+      @mixin flex-center;
+      background-image: unset !important;
+      background-color: $purple;
+      height: unset;
+      width: 100%;
     }
   }
 }

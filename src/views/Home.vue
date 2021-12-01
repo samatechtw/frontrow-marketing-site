@@ -2,28 +2,42 @@
   <div class="home-wrap">
     <FRHeader :activeSection="activeSection" />
     <Cta />
+    <Banner
+      :title="t('whitepaper.title')"
+      :text="t('whitepaper.subtitle')"
+      :link="WhitepaperEng"
+      :linkText="t('whitepaper.download')"
+    />
+    <Future />
+    <Token ref="token" :selected="activeSection === 'token'" />
+    <!--
     <Benefits ref="benefits" :selected="activeSection === 'benefits'" />
     <Who ref="who" :selected="activeSection === 'who'" />
     <Risk ref="risks" :selected="activeSection === 'risks'" />
-    <Future />
+    -->
     <Features />
     <Design />
-    <Token ref="token" :selected="activeSection === 'token'" />
     <!--
     <Team ref="team" :selected="activeSection === 'team'" />
     -->
+    <!--
     <Faq ref="faq" :selected="activeSection === 'faq'" />
+    -->
     <Contact />
     <FRFooter />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { debounce } from '/src/utils';
+import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+// import { debounce } from '/src/utils';
+import { WhitepaperEng } from '../config';
 
+const { t } = useI18n();
 const activeSection = ref();
 
+/*
 const benefits = ref();
 const who = ref();
 const risks = ref();
@@ -55,6 +69,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onScrollDebounce);
 });
+*/
 </script>
 
 <style lang="postcss">
@@ -62,6 +77,7 @@ onBeforeUnmount(() => {
 
 .home-wrap {
   color: $black;
+  width: 100%;
   > div {
     position: relative;
     z-index: 2;
