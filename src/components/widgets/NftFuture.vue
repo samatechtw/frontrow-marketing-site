@@ -1,0 +1,78 @@
+<template>
+  <svg
+    width="500px"
+    height="847px"
+    viewBox="0 0 500 847"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <rect fill="#451DD6" x="0" y="0" width="500" height="847"></rect>
+      <text
+        font-family="'Plex', Garamond, serif"
+        font-size="15"
+        font-weight="400"
+        line-spacing="23"
+        letter-spacing="0.33"
+        fill="#FFFFFF"
+      >
+        <tspan x="103" y="420">isMedia is launching the first</tspan>
+        <tspan x="103" y="443">NFT Marketplace for digital</tspan>
+        <tspan x="103" y="466">assets with clear utility and</tspan>
+        <tspan x="103" y="489">easy consumability, targeted</tspan>
+        <tspan x="103" y="512">for the general public.</tspan>
+      </text>
+      <text
+        font-family="'Haas', Helvetica, sans-serif"
+        font-size="46"
+        font-weight="500"
+        line-spacing="48"
+        letter-spacing="1"
+        fill="#FFFFFF"
+      >
+        <tspan x="80" y="191">The</tspan>
+        <tspan x="80" y="239">Future</tspan>
+        <tspan x="80" y="287">NFT</tspan>
+        <tspan x="80" y="335">Platform</tspan>
+      </text>
+      <line
+        x1="80"
+        y1="41"
+        x2="80"
+        y2="847"
+        id="Path-14"
+        stroke="#FFFFFF"
+        stroke-width="1.5"
+        opacity="0.0957481748"
+      ></line>
+      <line
+        x1="318"
+        y1="41"
+        x2="318"
+        y2="847"
+        id="Path-14-Copy"
+        stroke="#FFFFFF"
+        stroke-width="1.5"
+        opacity="0.0957481748"
+      ></line>
+      <rect id="Rectangle" fill="#FFFFFF" x="79" y="405" width="4" height="60"></rect>
+      <text
+        id="World-class-UX/UI-De"
+        font-family="'Haas', Helvetica, sans-serif"
+        font-size="18"
+        font-weight="500"
+        line-spacing="23"
+        letter-spacing="1"
+        fill="#FFFFFF"
+      >
+        <tspan x="256" y="613">World-class UX/UI Design</tspan>
+        <tspan x="256" y="636">Good Curation of Content</tspan>
+        <tspan x="256" y="659">diverse Functionality</tspan>
+        <tspan x="256" y="682">Own Mainnet</tspan>
+        <tspan x="256" y="705">Own Custodial Wallet</tspan>
+        <tspan x="256" y="728">Credit Card Functionality</tspan>
+      </text>
+    </g>
+  </svg>
+</template>

@@ -2,7 +2,7 @@
   <div class="future">
     <div id="future" class="anchor" />
     <div class="future-left">
-      <img :src="NftFuture" />
+      <NftFuture />
     </div>
     <div class="future-right">
       <img :src="NftDesign2" />
@@ -19,30 +19,21 @@
   padding-bottom: 80px;
   background-color: $bg-light2;
   .future-left {
-    width: 50%;
+    width: 45%;
     position: relative;
-    .future-block {
-      position: absolute;
-      left: 0;
-      top: -42px;
-      height: 83px;
-      max-width: 70%;
-      width: 450px;
-      background-color: $yellow;
-    }
-    img {
+    background-color: $purple;
+    svg {
       width: 100%;
     }
   }
   .future-right {
-    width: 50%;
+    width: 55%;
     img {
       width: 100%;
     }
   }
   @media (max-width: 540px) {
     flex-wrap: wrap;
-    padding-top: 96px;
     .future-left,
     .future-right {
       width: 100%;

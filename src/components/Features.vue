@@ -1,7 +1,7 @@
 <template>
   <div class="features-wrap">
     <div class="features container">
-      <img :src="NftFeatures" />
+      <NftFeatures />
     </div>
   </div>
 </template>
@@ -14,8 +14,11 @@
   padding-bottom: 48px;
 }
 .features {
-  img {
+  svg {
     width: 100%;
+  }
+  @media (max-width: 600px) {
+    padding: 0;
   }
 }
 </style>
