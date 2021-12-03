@@ -10,9 +10,7 @@
         </div>
       </div>
       <div class="banner-right">
-        <a target="_blank" :href="link" class="fr-button banner-eng">
-          {{ linkText }}
-        </a>
+        <slot />
       </div>
     </div>
   </div>
@@ -25,14 +23,6 @@ defineProps({
     required: true,
   },
   text: {
-    type: String,
-    required: true,
-  },
-  link: {
-    type: String,
-    required: true,
-  },
-  linkText: {
     type: String,
     required: true,
   },

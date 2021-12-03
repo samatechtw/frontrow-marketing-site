@@ -19,16 +19,16 @@
       </svg>
       <img :src="Who" />
     </div>
-    <Banner
-      :title="t('who.onepager')"
-      :text="t('who.available')"
-      :link="OnepagerEng"
-      :linkText="t('who.eng')"
-    />
+    <Banner :title="t('who.onepager')" :text="t('who.available')">
+      <a target="_blank" :href="OnepagerEng" class="fr-button banner-eng">
+        {{ t('who.eng') }}
+      </a>
+    </Banner>
   </div>
 </template>
 
 <script lang="ts" setup>
+import Banner from './widgets/Banner.vue';
 import { useI18n } from 'vue-i18n';
 import { OnepagerEng } from '/src/config';
 
