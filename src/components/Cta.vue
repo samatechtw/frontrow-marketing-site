@@ -19,7 +19,7 @@
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-import Lines from '/src/assets/img/lines.png';
+import Lines from '/src/assets/img/lines.svg';
 import CtaImage from '/src/assets/img/cta.jpg';
 
 const { t } = useI18n();
