@@ -6,9 +6,6 @@
       <a target="_blank" :href="WhitepaperEng" class="fr-button banner-eng">
         {{ t('who.eng') }}
       </a>
-      <a target="_blank" :href="WhitepaperKor" class="fr-button banner-eng">
-        {{ t('who.kor') }}
-      </a>
     </Banner>
     <Future />
     <Token ref="token" :selected="activeSection === 'token'" />
@@ -35,7 +32,6 @@ import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 // import { debounce } from '/src/utils';
 import { WhitepaperEng } from '../config';
-import { WhitepaperKor } from '../config';
 
 const { t } = useI18n();
 const activeSection = ref();

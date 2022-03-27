@@ -15,11 +15,6 @@
             {{ t('who.eng') }}
           </div>
         </a>
-        <a target="_blank" :href="WhitepaperKor">
-          <div class="whitepaper-button">
-            {{ t('who.kor') }}
-          </div>
-        </a>
       </div>
     </div>
   </div>
@@ -28,7 +23,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 import { WhitepaperEng } from '/src/config';
-import { WhitepaperKor } from '/src/config';
 
 const { t } = useI18n();
 </script>
