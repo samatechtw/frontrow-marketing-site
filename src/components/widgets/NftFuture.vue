@@ -17,11 +17,11 @@
         letter-spacing="0.33"
         fill="#FFFFFF"
       >
-        <tspan x="103" y="420">isMedia is launching the first</tspan>
-        <tspan x="103" y="443">NFT Marketplace for digital</tspan>
-        <tspan x="103" y="466">assets with clear utility and</tspan>
-        <tspan x="103" y="489">easy consumability, targeted</tspan>
-        <tspan x="103" y="512">for the general public.</tspan>
+        <tspan x="100" y="420">Front Row is launching the first</tspan>
+        <tspan x="100" y="443">NFT Marketplace for digital</tspan>
+        <tspan x="100" y="466">assets with clear utility and</tspan>
+        <tspan x="100" y="489">easy consumability, targeted</tspan>
+        <tspan x="100" y="512">for the general public.</tspan>
       </text>
       <text
         font-family="'Haas', Helvetica, sans-serif"
