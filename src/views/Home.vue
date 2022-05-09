@@ -4,7 +4,7 @@
     <Cta />
     <Banner :title="t('whitepaper.title')" :text="t('whitepaper.subtitle')">
       <a target="_blank" :href="WhitepaperEng" class="fr-button banner-eng">
-        {{ t('who.eng') }}
+        {{ t('whitepaper.download') }}
       </a>
     </Banner>
     <Future />
@@ -83,6 +83,10 @@ onBeforeUnmount(() => {
   }
   .cta {
     z-index: 1;
+  }
+  .fr-button.banner-eng {
+    color: white;
+    background-color: $purple;
   }
 }
 </style>

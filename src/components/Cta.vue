@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="home-cta-right" :style="{ 'background-image': `url(${Lines})` }">
+    <div class="home-cta-right" :style="{ 'background-image': `url(${MainBg})` }">
       <div class="home-cta-image">
         <img :src="CtaImage" />
       </div>
@@ -19,7 +19,7 @@
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-import Lines from '/src/assets/img/lines.svg';
+import MainBg from '/src/assets/img/main-bg.svg';
 import CtaImage from '/src/assets/img/cta.jpg';
 
 const { t } = useI18n();
@@ -37,7 +37,7 @@ const { t } = useI18n();
   .home-cta-right {
     display: flex;
     align-items: center;
-    width: 33%;
+    width: 40%;
     height: 100%;
     height: 540px;
     background-color: $pink2;
@@ -67,7 +67,7 @@ const { t } = useI18n();
     }
     .cta-text {
       @mixin text-medium 16px;
-      color: $yellow;
+      color: white;
       line-height: 23px;
       margin-top: 24px;
       padding-bottom: 32px;

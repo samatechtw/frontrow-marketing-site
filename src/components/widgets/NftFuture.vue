@@ -8,14 +8,14 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <rect fill="#451DD6" x="0" y="0" width="500" height="847"></rect>
+      <rect fill="#F9F9F9" x="0" y="0" width="500" height="847"></rect>
       <text
         font-family="'Plex', Garamond, serif"
         font-size="15"
         font-weight="400"
         line-spacing="23"
         letter-spacing="0.33"
-        fill="#FFFFFF"
+        fill="#451DD6"
       >
         <tspan x="100" y="420">Front Row is launching the first</tspan>
         <tspan x="100" y="443">NFT Marketplace for digital</tspan>
@@ -29,7 +29,7 @@
         font-weight="500"
         line-spacing="48"
         letter-spacing="1"
-        fill="#FFFFFF"
+        fill="#451DD6"
       >
         <tspan x="80" y="191">The</tspan>
         <tspan x="80" y="239">Future</tspan>
@@ -42,7 +42,7 @@
         x2="80"
         y2="847"
         id="Path-14"
-        stroke="#FFFFFF"
+        stroke="#451DD6"
         stroke-width="1.5"
         opacity="0.0957481748"
       ></line>
@@ -52,11 +52,11 @@
         x2="318"
         y2="847"
         id="Path-14-Copy"
-        stroke="#FFFFFF"
+        stroke="#451DD6"
         stroke-width="1.5"
         opacity="0.0957481748"
       ></line>
-      <rect id="Rectangle" fill="#FFFFFF" x="79" y="405" width="4" height="60"></rect>
+      <rect id="Rectangle" fill="#451DD6" x="79" y="405" width="4" height="60"></rect>
       <text
         id="World-class-UX/UI-De"
         font-family="'Haas', Helvetica, sans-serif"
@@ -64,7 +64,7 @@
         font-weight="500"
         line-spacing="23"
         letter-spacing="1"
-        fill="#FFFFFF"
+        fill="#451DD6"
       >
         <tspan x="256" y="613">World-class UX/UI Design</tspan>
         <tspan x="256" y="636">Good Curation of Content</tspan>

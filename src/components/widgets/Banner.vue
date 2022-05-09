@@ -33,7 +33,7 @@ defineProps({
 @import '/src/assets/css/global.css';
 
 .banner-wrap {
-  background-color: $yellow;
+  background-color: $teal;
   width: 100%;
 }
 .banner {

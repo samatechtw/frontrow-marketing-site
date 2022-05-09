@@ -5,7 +5,7 @@
       <NftFuture />
     </div>
     <div class="future-right">
-      <img :src="NftDesign2" />
+      <img :src="Platform" />
     </div>
   </div>
 </template>
@@ -16,12 +16,11 @@
 .future {
   width: 100%;
   display: flex;
-  padding-bottom: 80px;
   background-color: $bg-light2;
   .future-left {
     width: 45%;
     position: relative;
-    background-color: $purple;
+    background-color: $bg-light;
     svg {
       width: 100%;
     }

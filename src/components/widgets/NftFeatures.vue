@@ -72,7 +72,7 @@
         <tspan x="839.505" y="90">2</tspan>
         <tspan x="839.505" y="113">1</tspan>
       </text>
-      <path fill="#FFDA00" d="M121.505 316h282v76h-282z" />
+      <path fill="#0CEABF" d="M121.505 316h282v76h-282z" />
       <path
         stroke="#FFF"
         stroke-width="1.5"

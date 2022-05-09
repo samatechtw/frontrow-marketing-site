@@ -4,7 +4,7 @@
       {{ t('nft.design') }}
     </div>
     <div class="design-image">
-      <img :src="NftDesign" />
+      <img :src="Design" />
     </div>
   </div>
 </template>
