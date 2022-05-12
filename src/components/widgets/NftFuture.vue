@@ -9,6 +9,21 @@
   >
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <rect fill="#F9F9F9" x="0" y="0" width="500" height="847"></rect>
+      <a xlink:href="https://collectfrontrow.com" target="_blank">
+        <g>
+          <rect x="80" y="274" width="220" height="46" fill="#f550ea" rx="23"></rect>
+          <text
+            x="135"
+            y="303"
+            font-family="'Plex', Garamond, serif"
+            font-weight="500"
+            font-size="16"
+            fill="white"
+          >
+            View Platform
+          </text>
+        </g>
+      </a>
       <text
         font-family="'Plex', Garamond, serif"
         font-size="15"
@@ -17,11 +32,14 @@
         letter-spacing="0.33"
         fill="#451DD6"
       >
-        <tspan x="100" y="420">Front Row is launching the first</tspan>
-        <tspan x="100" y="443">NFT Marketplace for digital</tspan>
-        <tspan x="100" y="466">assets with clear utility and</tspan>
-        <tspan x="100" y="489">easy consumability, targeted</tspan>
-        <tspan x="100" y="512">for the general public.</tspan>
+        <tspan x="100" y="390">FrontRow is the premier NFT platform for</tspan>
+        <tspan x="100" y="413">exclusive K-pop and entertainment collectibles.</tspan>
+        <tspan x="100" y="436">FrontRow is leading a new generation of social</tspan>
+        <tspan x="100" y="459">Web3.0 apps with a community-driven</tspan>
+        <tspan x="100" y="482">marketplace model distinct from current</tspan>
+        <tspan x="100" y="505">offerings, with creation tools, fandoms, social,</tspan>
+        <tspan x="100" y="528">and gamification features designed in</tspan>
+        <tspan x="100" y="551">collaboration with the world-famous MetaLab.</tspan>
       </text>
       <text
         font-family="'Haas', Helvetica, sans-serif"
@@ -31,10 +49,8 @@
         letter-spacing="1"
         fill="#451DD6"
       >
-        <tspan x="80" y="191">The</tspan>
-        <tspan x="80" y="239">Future</tspan>
-        <tspan x="80" y="287">NFT</tspan>
-        <tspan x="80" y="335">Platform</tspan>
+        <tspan x="80" y="191">The Future</tspan>
+        <tspan x="80" y="239">NFT Platform</tspan>
       </text>
       <line
         x1="80"
@@ -56,7 +72,7 @@
         stroke-width="1.5"
         opacity="0.0957481748"
       ></line>
-      <rect id="Rectangle" fill="#451DD6" x="79" y="405" width="4" height="60"></rect>
+      <rect id="Rectangle" fill="#451DD6" x="79" y="370" width="4" height="60"></rect>
       <text
         id="World-class-UX/UI-De"
         font-family="'Haas', Helvetica, sans-serif"
@@ -66,12 +82,12 @@
         letter-spacing="1"
         fill="#451DD6"
       >
-        <tspan x="256" y="613">World-class UX/UI Design</tspan>
-        <tspan x="256" y="636">Good Curation of Content</tspan>
-        <tspan x="256" y="659">diverse Functionality</tspan>
-        <tspan x="256" y="682">Own Mainnet</tspan>
-        <tspan x="256" y="705">Own Custodial Wallet</tspan>
-        <tspan x="256" y="728">Credit Card Functionality</tspan>
+        <tspan x="100" y="623">World-class UX/UI Design</tspan>
+        <tspan x="100" y="646">Good Curation of Content</tspan>
+        <tspan x="100" y="669">diverse Functionality</tspan>
+        <tspan x="100" y="692">Own Mainnet</tspan>
+        <tspan x="100" y="715">Own Custodial Wallet</tspan>
+        <tspan x="100" y="738">Credit Card Functionality</tspan>
       </text>
     </g>
   </svg>

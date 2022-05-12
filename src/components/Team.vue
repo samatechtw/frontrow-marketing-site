@@ -5,32 +5,29 @@
       {{ t('team.title') }}
     </div>
     <div class="team-content">
-      <div class="team-member">
-        <img :src="TpaCeo" />
-        <div class="team-title">
-          {{ t('team.tpa') }}
-        </div>
-        <div class="team-text">
-          {{ t('team.tpa_text') }}
-        </div>
+      <div class="team-col">
+        <TeamMember
+          v-for="(member, index) in team1"
+          :key="index"
+          :name="member.name"
+          :title="member.title"
+        />
       </div>
-      <div class="team-member">
-        <img :src="IsmediaCeo" />
-        <div class="team-title">
-          {{ t('team.ismedia') }}
-        </div>
-        <div class="team-text">
-          {{ t('team.ismedia_text') }}
-        </div>
+      <div class="team-col">
+        <TeamMember
+          v-for="(member, index) in team2"
+          :key="index"
+          :name="member.name"
+          :title="member.title"
+        />
       </div>
-      <div class="team-member">
-        <img :src="Cfo" />
-        <div class="team-title">
-          {{ t('team.cfo') }}
-        </div>
-        <div class="team-text">
-          {{ t('team.cfo_text') }}
-        </div>
+      <div class="team-col">
+        <TeamMember
+          v-for="(member, index) in team3"
+          :key="index"
+          :name="member.name"
+          :title="member.title"
+        />
       </div>
     </div>
   </div>
@@ -39,51 +36,46 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
+const { t, tm } = useI18n();
+
+const team = tm('team.employees') as Record<string, string>[];
+
+const team1 = team.slice(0, 5);
+const team2 = team.slice(5, 10);
+const team3 = team.slice(10, 15);
 </script>
 
 <style lang="postcss">
 @import '/src/assets/css/global.css';
 
 .team {
-  padding: 80px 0;
+  padding-top: 72px;
+  padding-bottom: 80px;
   text-align: center;
-  .team-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .team-member {
-    width: 260px;
-    &:not(:last-child) {
-      margin-right: 32px;
-    }
-    img {
-      width: 90px;
-    }
-  }
   .team-title {
     @mixin title 15px;
     margin-top: 4px;
   }
-  .team-text {
-    @mixin text 15px;
-    margin-top: 8px;
-    color: $text1;
-    line-height: 1.7em;
+  .team-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    flex-wrap: wrap;
   }
-  @media (max-width: 540px) {
+  .team-col {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 580px) {
     padding-top: 40px;
     .team-content {
-      flex-wrap: wrap;
+      justify-content: space-around;
     }
-    .team-member {
+  }
+  @media (max-width: 420px) {
+    .team-content {
       width: 100%;
-      max-width: 300px;
-      margin: 32px 0 0;
-      &:not(:last-child) {
-        margin-right: 0;
-      }
+      justify-content: flex-start;
     }
   }
 }

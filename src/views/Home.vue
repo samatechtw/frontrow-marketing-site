@@ -15,13 +15,11 @@
     <Risk ref="risks" :selected="activeSection === 'risks'" />
     -->
     <Features />
-    <Design />
-    <!--
     <Team ref="team" :selected="activeSection === 'team'" />
-    -->
     <!--
     <Faq ref="faq" :selected="activeSection === 'faq'" />
     -->
+    <Design />
     <Contact />
     <FRFooter />
   </div>

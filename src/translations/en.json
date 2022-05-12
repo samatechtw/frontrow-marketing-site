@@ -52,7 +52,7 @@
     "performance_text": "Front Row is a major corporation with key partnerships and diverse international capabilities, resulting in years of success with this model."
   },
   "token": {
-    "title": "TOKEN ALLOCATION",
+    "title": "Token Allocation",
     "roadmap": "Roadmap",
     "lockup": "Lock-Up Schedule",
     "lock_items": [
@@ -66,13 +66,75 @@
     ]
   },
   "team": {
-    "title": "TEAM",
+    "title": "Team",
     "tpa": "CEO – Jusung Myung",
     "tpa_text": "Chairman of the Board of Directors at isMedia TPA Retail Co. U.S. Corporate head. Former co-founder of One holdings group. Investor of Salk Institute via Nanos Co. Ltd.",
     "ismedia": "CEO of isMedia – Kitae Kim",
     "ismedia_text": "Former CFO, YNG Company. Former CEO, Eduplanet. Former Director, Korea Culture and Tourism Institute. Former Managing Director, Tubeasset America.",
     "cfo": "CEO/CFO of isMedia - Insuk Kim",
-    "cfo_text": "Chairman of the Board of Directors at TPA Group. Former Division Director at KTB Investment & Securities Co., Ltd. Former General Manager at KWOOM Securities Co. Ltd."
+    "cfo_text": "Chairman of the Board of Directors at TPA Group. Former Division Director at KTB Investment & Securities Co., Ltd. Former General Manager at KWOOM Securities Co. Ltd.",
+    "employees": [
+      {
+        "name": "J Choi",
+        "title": "CEO"
+      },
+      {
+        "name": "Patrick Ortell",
+        "title": "Engineering Manager"
+      },
+      {
+        "name": "Darryl Boediarto",
+        "title": "Senior UI/UX Developer"
+      },
+      {
+        "name": "Claire Mao",
+        "title": "Android Developer"
+      },
+      {
+        "name": "Steven Chiu",
+        "title": "Frontend Developer"
+      },
+      {
+        "name": "Eddie Lee",
+        "title": "CPO"
+      },
+      {
+        "name": "Dmitri Moore",
+        "title": "Architect, Backend, Devops"
+      },
+      {
+        "name": "Illia Nazarov",
+        "title": "Blockchain Developer"
+      },
+      {
+        "name": "Keith Chuang",
+        "title": "Quality Assurance"
+      },
+      {
+        "name": "Ian Ho",
+        "title": "Manager Taiwan & Lead Backend Developer"
+      },
+      {
+        "name": "Sam Pullman",
+        "title": "CTO"
+      },
+      {
+        "name": "Vlad Bodnia",
+        "title": "Full Stack Web Developer"
+      },
+      {
+        "name": "Mark Andrews",
+        "title": "Sales, Accounting Executive"
+      },
+      {
+        "name": "David Lee",
+        "title": "iOS Developer"
+      },
+      {
+        "name": "Jonathan Tse",
+        "title": "Software Developer"
+      }
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
