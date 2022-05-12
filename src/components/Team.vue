@@ -68,12 +68,9 @@ const team3 = team.slice(10, 15);
   }
   @media (max-width: 580px) {
     padding-top: 40px;
-    .team-content {
-      justify-content: space-around;
-    }
   }
   @media (max-width: 420px) {
-    .team-content {
+    .team-col {
       width: 100%;
       justify-content: flex-start;
     }
