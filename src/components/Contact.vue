@@ -137,7 +137,7 @@ const send = async () => {
 .contact-wrap {
   background: white;
   color: $text2;
-  padding: 180px 0 72px;
+  padding: 0 0 72px;
   text-align: center;
   width: 100%;
   .fr-title {
@@ -189,7 +189,6 @@ const send = async () => {
     margin: 24px auto 0;
   }
   @media (max-width: 1000px) {
-    padding-top: 140px;
     .contact-background-clip {
       height: 60px;
     }

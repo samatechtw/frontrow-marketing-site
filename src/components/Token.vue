@@ -51,7 +51,7 @@ const { t, tm } = useI18n();
 @import '/src/assets/css/global.css';
 
 .token {
-  padding: 72px 0 88px;
+  padding: 72px 0 64px;
   text-align: center;
   #token {
     top: -60px;

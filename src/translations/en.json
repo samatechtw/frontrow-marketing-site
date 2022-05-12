@@ -39,7 +39,7 @@
     "kor": "KOR"
   },
   "nft": {
-    "design": "PLATFORM DESIGN"
+    "design": "Platform Design"
   },
   "risk": {
     "title": "DeFi and Investor Safety",
@@ -135,6 +135,9 @@
         "title": "Software Developer"
       }
     ]
+  },
+  "exchanges": {
+    "title": "Exchange Listings"
   },
   "faq": {
     "title": "Frequently Asked Questions",

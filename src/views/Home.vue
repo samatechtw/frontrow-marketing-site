@@ -19,6 +19,7 @@
     <!--
     <Faq ref="faq" :selected="activeSection === 'faq'" />
     -->
+    <Exchanges />
     <Design />
     <Contact />
     <FRFooter />

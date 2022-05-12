@@ -11,14 +11,18 @@
 
 .features-wrap {
   background-color: $bg-light2;
-  padding-bottom: 48px;
-}
-.features {
-  svg {
-    width: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  .features {
+    svg {
+      width: 100%;
+    }
   }
   @media (max-width: 600px) {
-    padding: 0;
+    .features {
+      padding: 0;
+    }
   }
 }
 </style>
