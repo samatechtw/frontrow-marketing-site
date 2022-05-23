@@ -68,27 +68,14 @@ const api = new FetchApi({
   responseInterceptors: [jsonInterceptor],
 });
 
-const sendEmail = (name: string, email: string, inquiry: string) =>
+const sendEmail = (name: string, email: string, message: string) =>
   api.request({
-    url: 'https://api.sendinblue.com/v3/smtp/email',
+    url: 'https://api.frontrow.foundation/mail/frontrow',
     method: 'POST',
-    headers: {
-      charset: 'iso-8859-1',
-      'api-key':
-        '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',
-    },
     data: {
-      sender: { name, email },
-      to: [
-        {
-          name: 'Front Row Info',
-          email: 'info@tpa.finance',
-        },
-      ],
-      subject: 'Front Row Foundation Site Form',
-      htmlContent:
-        '<html><head></head><body>' +
-        `<h4>From: ${email}</h4><h4>Name: ${name}</h4><h4>Inquiry:</h4><p>${inquiry}</p></body></html>`,
+      name,
+      email,
+      inquiry: message,
     },
   });
 
