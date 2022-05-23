@@ -56,6 +56,8 @@ a {
   border-radius: 23px;
   height: 46px;
   color: $purple;
+  cursor: pointer;
+  user-select: none;
 }
 
 .container {

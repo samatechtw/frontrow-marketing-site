@@ -171,7 +171,7 @@
     "invalid_email": "The email address is invalid",
     "invalid_name": "The name must be between 2 and 100 characters.",
     "invalid_inquiry": "The inquiry must be between 10 and 1000 characters.",
-    "email_error": "Error sending mail, try again later or email info{'@'}tpa.finance",
+    "email_error": "Error sending mail, try again later or email info{'@'}collectfrontrow.com",
     "email_success": "Inquiry sent successfully",
     "email_limit": "Inquiry rate limit exceeded, try again in a few minutes."
   },
