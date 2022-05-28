@@ -18,15 +18,23 @@
           <div class="fr-title">
             {{ t('token.lockup') }}
           </div>
-          <div
-            v-for="(item, index) in tm('token.lock_items') as Record<string, string>"
-            :key="index"
-            :class="`token-schedule-item item${index}`"
-          >
-            <div class="bullet" />
-            <div class="token-schedule-text">
-              {{ item }}
+          <div class="lockup-text">
+            {{ t('token.lockup_text') }}
+          </div>
+          <div class="token-schedule-items">
+            <div
+              v-for="(item, index) in tm('token.lock_items') as Record<string, string>"
+              :key="index"
+              class="token-schedule-item"
+            >
+              <div class="bullet" />
+              <div class="token-schedule-text">
+                {{ item }}
+              </div>
             </div>
+          </div>
+          <div class="lockup-text">
+            {{ t('token.lockup_footer') }}
           </div>
         </div>
         <div class="lockup-image">
@@ -93,6 +101,9 @@ const { t, tm } = useI18n();
       margin-bottom: 40px;
       padding-right: 24px;
     }
+    .lockup-text {
+      @mixin text 15px;
+    }
     .lockup-items {
       display: flex;
       align-items: flex-start;
@@ -111,6 +122,9 @@ const { t, tm } = useI18n();
         width: 100%;
       }
     }
+    .token-schedule-items {
+      margin: 8px 0 24px;
+    }
     .token-schedule-item {
       margin-top: 20px;
       @mixin text 15px;
@@ -123,30 +137,7 @@ const { t, tm } = useI18n();
         height: 14px;
         margin-right: 8px;
         margin-top: 3px;
-      }
-      &.item0 {
-        margin-top: 0;
-        .bullet {
-          background-color: rgb(245, 163, 148);
-        }
-      }
-      &.item1 .bullet {
-        background-color: rgb(107, 177, 224);
-      }
-      &.item2 .bullet {
-        background-color: rgb(115, 201, 214);
-      }
-      &.item3 .bullet {
-        background-color: rgb(245, 224, 197);
-      }
-      &.item4 .bullet {
-        background-color: rgb(143, 152, 249);
-      }
-      &.item5 .bullet {
-        background-color: rgb(204, 204, 204);
-      }
-      &.item6 .bullet {
-        background-color: rgb(204, 204, 204);
+        background-color: $purple;
       }
     }
   }

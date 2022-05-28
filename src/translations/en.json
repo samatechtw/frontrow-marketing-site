@@ -55,15 +55,18 @@
     "title": "Token Allocation",
     "roadmap": "Roadmap",
     "lockup": "Lock-Up Schedule",
+    "lockup_text": "The total supply of 10,000,000,000 FRR will be allocated as such:",
     "lock_items": [
-      "Defi Loan & Reward pool: 5% unlocked on Month 0 and 5% unlocks each month from Month 11",
-      "Ecosystem: 5 % unlocks each month from Month 35",
-      "Foundation Reserve: 5% unlocks each month from Month 35",
-      "Team, Advisors & Partners: 5% unlocks each month Month 11",
-      "Marketing: 5% unlocked on Month 0 and 5% unlocks each month from Month 11",
-      "Token Sales (Private): 5% unlocks each week from Month 0 for private investors",
-      "Token Sales (Public): no lock for public investors (total tokens limited to 0.08% of the total supply)"
-    ]
+      "Operation & Farming pool: 5% Unlocks on [M+0], 5% unlocks every other month from [M+11]",
+      "Ecosystem: 5% unlocks every month from [M+35]",
+      "Foundation Reserve: 5% unlocks every month from [M+35]",
+      "Team, Advisors & Partners: 5% unlocks every other month from [M+11]",
+      "Marketing: 10% unlocks on [M+0], 10% unlocks every other month from [M+11]",
+      "Seed : 5% Unlocks on [M+0], 5% unlocks every other month from [M+12]",
+      "Private 1: 5% Unlocks on [M+3], 5% unlocks every other month from [M+15]",
+      "Private 2: 5% Unlocks on [M+6], 5% unlocks every other month from [M+15]"
+    ],
+    "lockup_footer": "[M+0] = December 16th, 2021"
   },
   "team": {
     "title": "Team",
