@@ -2,11 +2,13 @@
   <div class="home-wrap">
     <FRHeader :activeSection="activeSection" />
     <Cta />
+    <!--
     <Banner :title="t('whitepaper.title')" :text="t('whitepaper.subtitle')">
       <a target="_blank" :href="WhitepaperEng" class="fr-button banner-eng">
         {{ t('whitepaper.download') }}
       </a>
     </Banner>
+    -->
     <Future />
     <Token ref="token" :selected="activeSection === 'token'" />
     <!--
@@ -15,8 +17,8 @@
     <Risk ref="risks" :selected="activeSection === 'risks'" />
     -->
     <Features />
-    <Team ref="team" :selected="activeSection === 'team'" />
     <!--
+    <Team ref="team" :selected="activeSection === 'team'" />
     <Faq ref="faq" :selected="activeSection === 'faq'" />
     -->
     <Exchanges />
