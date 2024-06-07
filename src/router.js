@@ -11,15 +11,23 @@ const router = createRouter({
       component: Home,
       meta: { title: 'Front Row Foundation' },
     },
+    /*
     {
       path: '/whitepaper',
       component: WhitepaperRedirect,
+    },
+    */
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'Home',
+      component: Home,
+      meta: { title: 'Front Row Foundation' },
     },
   ],
 });
 
 router.afterEach((to, _from) => {
-  const parentTitle = to.matched.some(record => record.meta.title);
+  const parentTitle = to.matched.some((record) => record.meta.title);
   document.title = to.meta.title || parentTitle || 'Front Row Foundation';
 });
 
